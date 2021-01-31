@@ -1,5 +1,4 @@
-﻿import Vue from 'vue'
-import store from '@/store'
+﻿import store from '@/store'
 import router from "@/router";
 
 const helpers = {
@@ -28,8 +27,7 @@ const helpers = {
 
 
 export default {
-    install: () => {
-        Vue.prototype.$helper = helpers
-        Vue.$helper = helpers
+    install: (app) => {
+        app.config.globalProperties.$helper = helpers;
     }
 }
