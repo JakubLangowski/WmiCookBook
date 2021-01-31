@@ -1,6 +1,5 @@
 <template>
     <header>
-        <h1>Header</h1>
         <Nav />
     </header>
 </template>
@@ -9,7 +8,9 @@
 import Nav from "@/views/layout/Nav";
 export default {
     name: "Header",
-    components: {Nav}
+    components: {
+        Nav
+    }
 }
 </script>
 
