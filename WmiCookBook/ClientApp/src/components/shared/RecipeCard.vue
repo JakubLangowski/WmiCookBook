@@ -71,11 +71,4 @@ export default {
 
 <style scoped>
 
-.img-hover-zoom img {
-    transition: transform .5s ease;
-}
-
-.img-hover-zoom:hover img {
-    transform: scale(1.05);
-}
 </style>

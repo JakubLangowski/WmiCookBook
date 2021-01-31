@@ -5,16 +5,18 @@ import AddRecipePage from "@/views/AddRecipePage";
 import NotFound from "@/views/errors/NotFound";
 import Forbidden from "@/views/errors/Forbidden";
 import RecipesPage from "@/views/RecipesPage";
+import RecipePage from "@/views/RecipePage";
 
 const routes = [
     {path: '/', redirect: "/home"},
-    {path: '/home', component: HomePage, meta: {title: "Home"} },
-    {path: '/recipes', component: RecipesPage, meta: {title: "Przepisy"}},
-    {path: '/addRecipe', component: AddRecipePage, meta: {title: "Dodaj Przepis"}},
+    {path: '/home', component: HomePage, name: "HomePage", meta: {title: "Home"} },
+    {path: '/recipes', component: RecipesPage, name: "RecipesPage", meta: {title: "Przepisy"}},
+    {path: '/addRecipe', component: AddRecipePage, name: "AddRecipePage", meta: {title: "Dodaj Przepis"}},
+    {path: '/recipe/:id', component: RecipePage, name: "RecipePage", meta: {title: "Przepis"}},
 
-    { path: '/forbidden', component: Forbidden, meta: {title: "Forbidden"}},
-    { path: '/:pathMatch(.*)*', component: NotFound, meta: {title: "Not Found"} },
-    { path: '/:pathMatch(.*)', component: NotFound, meta: {title: "Not Found"} },
+    { path: '/forbidden', component: Forbidden, name: "ForbiddenPage", meta: {title: "Forbidden"}},
+    { path: '/:pathMatch(.*)*', component: NotFound, name: "NotFoundPage", meta: {title: "Not Found"} },
+    { path: '/:pathMatch(.*)', component: NotFound, name: "NotFoundPage", meta: {title: "Not Found"} },
 ]
 
 const router = createRouter({

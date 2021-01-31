@@ -1,4 +1,6 @@
 <template>
+    <HomeCategoryRow :is-loaded="loadedFeaturedCategories" title="Wyróżnione Kategorie" :categories="featuredCategories"/>
+    <br>
     <HomeCardRow :is-loaded="loadedFeaturedRecipes" title="Wyróżnione Przepisy" :recipes="featuredRecipes"/>
     <br>
     <HomeCardRow :is-loaded="loadedPopularRecipes" title="Popularne Przepisy" :recipes="popularRecipes"/>
@@ -8,10 +10,12 @@
 
 <script>
 import HomeCardRow from "@/components/home/HomeCardRow";
+import HomeCategoryRow from "@/components/home/HomeCategoryRow";
 
 export default {
     name: "HomePage",
     components: {
+        HomeCategoryRow,
         HomeCardRow
     },
     data: () => ({
@@ -20,9 +24,18 @@ export default {
         loadedPopularRecipes: false,
         popularRecipes: [],
         loadedNewRecipes: false,
-        newRecipes: []
+        newRecipes: [],
+        loadedFeaturedCategories: false,
+        featuredCategories: []
     }),
     mounted() {
+        this.fetchFeaturedCategories()
+            .then((response) => {
+                setTimeout(() => {
+                    this.featuredCategories = response;
+                    this.loadedFeaturedCategories = true;
+                }, 700)
+            });
         this.fetchFeaturedRecipes()
             .then((response) => {
                 setTimeout(() => {
@@ -46,6 +59,30 @@ export default {
             });
     },
     methods: {
+        fetchFeaturedCategories: async function () {
+            return [
+                {
+                    id: 1,
+                    name: "Dania Wegetariańskie",
+                    image: "https://s3.przepisy.pl/przepisy3ii/img/variants/prod/uploads/1609160242S-danie-wege.jpg"
+                },
+                {
+                    id: 2,
+                    name: "Sałatki",
+                    image: "https://s3.przepisy.pl/przepisy3ii/img/variants/prod/uploads/1609160241S-salatki.jpg"
+                },
+                {
+                    id: 3,
+                    name: "Wege",
+                    image: "https://s3.przepisy.pl/przepisy3ii/img/variants/prod/uploads/1609160241S-przepisy-na-karnawal.jpg"
+                },
+                {
+                    id: 4,
+                    name: "Przepisy Fit",
+                    image: "https://s3.przepisy.pl/przepisy3ii/img/variants/prod/uploads/1609160241S-przepisy-fit.jpg"
+                },
+            ]
+        },
         fetchFeaturedRecipes: async function () {
             return [
                 {

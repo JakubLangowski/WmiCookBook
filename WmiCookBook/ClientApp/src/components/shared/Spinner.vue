@@ -1,6 +1,6 @@
 <template>
-    <div class="h-16 w-full flex justify-center">
-        <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
+    <div class="h-12 w-full flex justify-center">
+        <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-12 w-12"></div>
     </div>
 </template>
 
