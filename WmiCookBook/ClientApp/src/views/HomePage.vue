@@ -1,11 +1,9 @@
 <template>
-    <div>
-        <HomeCardRow :is-loaded="loadedFeaturedRecipes" title="Wyróżnione Przepisy" :recipes="featuredRecipes"/>
-        <br>
-        <HomeCardRow :is-loaded="loadedPopularRecipes" title="Popularne Przepisy" :recipes="popularRecipes"/>
-        <br>
-        <HomeCardRow :is-loaded="loadedNewRecipes" title="Nowe Przepisy" :recipes="newRecipes"/>
-    </div>
+    <HomeCardRow :is-loaded="loadedFeaturedRecipes" title="Wyróżnione Przepisy" :recipes="featuredRecipes"/>
+    <br>
+    <HomeCardRow :is-loaded="loadedPopularRecipes" title="Popularne Przepisy" :recipes="popularRecipes"/>
+    <br>
+    <HomeCardRow :is-loaded="loadedNewRecipes" title="Nowe Przepisy" :recipes="newRecipes"/>
 </template>
 
 <script>
