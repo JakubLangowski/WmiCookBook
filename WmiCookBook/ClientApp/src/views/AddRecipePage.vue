@@ -1,10 +1,12 @@
 <template>
-    <h1>Nav</h1>
+  <div>
+    Tutaj tworzymy przepis
+  </div>
 </template>
 
 <script>
 export default {
-    name: "Nav"
+  name: "AddRecipePage",
 }
 </script>
 
