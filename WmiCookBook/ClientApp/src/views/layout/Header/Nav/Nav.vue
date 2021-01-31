@@ -29,27 +29,13 @@
             </div>
             <div class="hidden sm:block sm:ml-6">
               <div class="flex space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <router-link
-                    class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
-                    to="/home"
-                >
-                  Strona Główna
-                </router-link>
 
-                <router-link
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    to="/recipes"
-                >
-                  Przepisy
-                </router-link>
-
-                <router-link
-                    class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    to="/addRecipe"
-                >
-                  Dodaj przepis
-                </router-link>
+                <NavLink
+                    v-for="({to, title}, index) in links"
+                    :key="index"
+                    :to="to"
+                    :title="title"
+                />
 
               </div>
             </div>
@@ -59,32 +45,20 @@
 
       <!--
         Mobile menu, toggle classes based on menu state.
-
         Menu open: "block", Menu closed: "hidden"
       -->
       <div v-show="menuOpened" class="sm:hidden">
-        <div class="px-2 pt-2 pb-3 space-y-1">
-          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-          <router-link
-              class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
-              to="/home"
-          >
-            Strona Główna
-          </router-link>
+        <div
+            class="px-2 pt-2 pb-3 space-y-1"
+        >
+          <NavLink
+              v-for="({to, title}, index) in links"
+              :key="index"
+              :to="to"
+              :title="title"
+              :isMobile="true"
+          />
 
-          <router-link
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-              to="/recipes"
-          >
-            Przepisy
-          </router-link>
-
-          <router-link
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-              to="/addRecipe"
-          >
-            Dodaj Przepis
-          </router-link>
         </div>
       </div>
     </nav>
@@ -92,10 +66,28 @@
 </template>
 
 <script>
+
+import NavLink from "@/views/layout/Header/Nav/NavLink";
+
 export default {
   name: "Nav",
+  components: {NavLink},
   data: () => ({
     menuOpened: false,
+    links: [
+      {
+        to: "/home",
+        title: "Strona Główna"
+      },
+      {
+        to: "/recipes",
+        title: "Przepisy"
+      },
+      {
+        to: "/addRecipe",
+        title: "Dodaj Przepis"
+      }
+    ]
   })
 }
 </script>
