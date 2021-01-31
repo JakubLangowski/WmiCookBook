@@ -1,39 +1,29 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from "@/views/Home";
+import HomePage from "@/views/HomePage";
+import AddRecipePage from "@/views/AddRecipePage";
 import NotFound from "@/views/errors/NotFound";
 import Forbidden from "@/views/errors/Forbidden";
-import Example from "@/views/Example";
+import RecipesPage from "@/views/RecipesPage";
 
 
 Vue.use(VueRouter)
 
 const routes = [
+    {path: '/', redirect: "/home"},
+    {path: '/home', component: HomePage, meta: {title: "Home"}},
+    {path: '/recipes', component: RecipesPage, meta: {title: "Przepisy"}},
+    {path: '/addRecipe', component: AddRecipePage, meta: {title: "Dodaj Przepis"}},
 
-    { path: '/', component: Home, meta: { title: "Home"} },
-    
-    { path: '/home', component: Home, meta: { title: "Home"}, 
-        children: [
-            { path: 'dashboard', component: Forbidden, meta: { title: "Home"} },
-            { path: ':id', component: Forbidden, meta: { title: "Home"} },
-        ] 
-    },
+    {path: '/forbidden', component: Forbidden, meta: {title: "Forbidden"}},
+    {path: "*", component: NotFound, meta: {title: "Not Found"}}
 
-    { path: '/example', component: Example, meta: { title: "Example"},
-        children: [
-            { path: 'dashboard', component: Example, meta: { title: "Example"} },
-            { path: ':id', component: Example, meta: { title: "Example"} },
-        ]
-    },
-    
-    { path: '/forbidden', component: Forbidden, meta: { title: "Forbidden"} },
-    { path: "*", component: NotFound, meta: { title: "Not Found"} }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes
+    mode: 'history',
+    base: process.env.BASE_URL,
+    routes
 })
 
 export default router
