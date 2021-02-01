@@ -1,11 +1,13 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter, createWebHistory} from 'vue-router'
 
-import HomePage from "@/views/HomePage";
-import AddRecipePage from "@/views/AddRecipePage";
+import HomePage from "@/views/pages/HomePage";
+import AddRecipePage from "@/views/pages/AddRecipePage";
+import RecipesPage from "@/views/pages/RecipesPage";
+import RecipePage from "@/views/pages/RecipePage";
 import NotFound from "@/views/errors/NotFound";
 import Forbidden from "@/views/errors/Forbidden";
-import RecipesPage from "@/views/RecipesPage";
-import RecipePage from "@/views/RecipePage";
+import ContactPage from "@/views/pages/ContactPage";
+import RegulationsPage from "@/views/pages/RegulationsPage";
 
 const routes = [
     {path: '/', redirect: "/home"},
@@ -14,9 +16,12 @@ const routes = [
     {path: '/addRecipe', component: AddRecipePage, name: "AddRecipePage", meta: {title: "Dodaj Przepis"}},
     {path: '/recipe/:id', component: RecipePage, name: "RecipePage", meta: {title: "Przepis"}},
 
-    { path: '/forbidden', component: Forbidden, name: "ForbiddenPage", meta: {title: "Forbidden"}},
-    { path: '/:pathMatch(.*)*', component: NotFound, name: "NotFoundPage", meta: {title: "Not Found"} },
-    { path: '/:pathMatch(.*)', component: NotFound, name: "NotFoundPage", meta: {title: "Not Found"} },
+    {path: '/contact', component: ContactPage, name: "ContactPage", meta: {title: "Kontakt"}},
+    {path: '/regulations', component: RegulationsPage, name: "RegulationsPage", meta: {title: "Regulamin"}},
+
+    {path: '/forbidden', component: Forbidden, name: "ForbiddenPage", meta: {title: "Forbidden"}},
+    {path: '/:pathMatch(.*)*', component: NotFound, name: "NotFoundPage", meta: {title: "Not Found"}},
+    {path: '/:pathMatch(.*)', component: NotFound, name: "NotFoundPage", meta: {title: "Not Found"}},
 ]
 
 const router = createRouter({

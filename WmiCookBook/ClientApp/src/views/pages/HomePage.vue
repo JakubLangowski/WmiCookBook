@@ -57,6 +57,9 @@ export default {
                     this.loadedNewRecipes = true;
                 }, 1200)
             });
+
+
+
     },
     methods: {
         fetchFeaturedCategories: async function () {
