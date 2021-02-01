@@ -1,12 +1,12 @@
 <template>
-    <footer>
-        <h1>Footer</h1>
-    </footer>
+    <div>
+        Strona z pojedyńczym przepisem
+    </div>
 </template>
 
 <script>
 export default {
-    name: "Footer"
+    name: "RecipePage"
 }
 </script>
 

@@ -1,0 +1,12 @@
+.img-hover-zoom img,
+.img-hover-zoom .img-hover-text {
+  transition: transform .5s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.05);
+}
+
+.img-hover-zoom:hover .img-hover-text {
+  transform: scale(1.15);
+}

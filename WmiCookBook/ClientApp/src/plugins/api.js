@@ -1,4 +1,4 @@
-import Vue from 'vue'
+
 import axios from 'axios'
 import store from '../store'
 
@@ -18,12 +18,10 @@ instance.interceptors.request.use(function(config) {
 }, function(err) {
     return Promise.reject(err);
 });
-Vue.use({
-    install: () => {
-        Vue.prototype.$api = instance
-        Vue.$api = instance
+
+
+export default {
+    install: (app) => {
+        app.config.globalProperties.$api = instance;
     }
-})
-
-
-export default instance;
+}

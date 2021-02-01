@@ -1,25 +1,31 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from "@/views/Home";
+import {createRouter, createWebHistory} from 'vue-router'
+
+import HomePage from "@/views/pages/HomePage";
+import AddRecipePage from "@/views/pages/AddRecipePage";
+import RecipesPage from "@/views/pages/RecipesPage";
+import RecipePage from "@/views/pages/RecipePage";
 import NotFound from "@/views/errors/NotFound";
 import Forbidden from "@/views/errors/Forbidden";
-
-
-Vue.use(VueRouter)
+import ContactPage from "@/views/pages/ContactPage";
+import RegulationsPage from "@/views/pages/RegulationsPage";
 
 const routes = [
+    {path: '/', redirect: "/home"},
+    {path: '/home', component: HomePage, name: "HomePage", meta: {title: "Home"} },
+    {path: '/recipes', component: RecipesPage, name: "RecipesPage", meta: {title: "Przepisy"}},
+    {path: '/addRecipe', component: AddRecipePage, name: "AddRecipePage", meta: {title: "Dodaj Przepis"}},
+    {path: '/recipe/:id', component: RecipePage, name: "RecipePage", meta: {title: "Przepis"}},
 
-    { path: '/', component: Home, meta: { title: "Home"} },
-    { path: '/home', component: Home, meta: { title: "Home"} },
-    
-    
-    { path: '/forbidden', component: Forbidden, meta: { title: "Forbidden"} },
-    { path: "*", component: NotFound, meta: { title: "Not Found"} }
+    {path: '/contact', component: ContactPage, name: "ContactPage", meta: {title: "Kontakt"}},
+    {path: '/regulations', component: RegulationsPage, name: "RegulationsPage", meta: {title: "Regulamin"}},
+
+    {path: '/forbidden', component: Forbidden, name: "ForbiddenPage", meta: {title: "Forbidden"}},
+    {path: '/:pathMatch(.*)*', component: NotFound, name: "NotFoundPage", meta: {title: "Not Found"}},
+    {path: '/:pathMatch(.*)', component: NotFound, name: "NotFoundPage", meta: {title: "Not Found"}},
 ]
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 

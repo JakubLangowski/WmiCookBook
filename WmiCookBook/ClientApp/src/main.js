@@ -1,19 +1,15 @@
-import Vue from 'vue'
-import App from './views/layout/App.vue'
+import { createApp } from 'vue'
+import App from "@/views/layout/App";
 import router from './router'
 import store from './store'
 import api from "./plugins/api";
-import Helper from "./plugins/helper";
-import "@/plugins/vee-validate";
+import helper from "./plugins/helper";
 import '@/assets/css/main.scss'
 
-Vue.use(Helper)
 
-Vue.config.productionTip = false
-
-new Vue({
-    router,
-    store,
-    api,
-    render: h => h(App)
-}).$mount('#app')
+createApp(App)
+    .use(store)
+    .use(router)
+    .use(api)
+    .use(helper)
+    .mount('#app')
