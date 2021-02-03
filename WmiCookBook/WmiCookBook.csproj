@@ -12,6 +12,7 @@
     <PropertyGroup>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <NoWarn>$(NoWarn);1591</NoWarn>
+        <UserSecretsId>9de9cec1-4aa8-4c43-be0f-1016fa4afa36</UserSecretsId>
     </PropertyGroup>
     
     <ItemGroup>
@@ -47,7 +48,6 @@
     
     <ItemGroup>
       <Folder Include="ClientApp\src\components\shared" />
-      <Folder Include="Controllers" />
       <Folder Include="Validators" />
     </ItemGroup>
 
