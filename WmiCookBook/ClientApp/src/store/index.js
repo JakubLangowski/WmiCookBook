@@ -1,12 +1,11 @@
 import { createStore } from 'vuex'
+import toast from "@/store/modules/toast";
+import user from "@/store/modules/user";
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+    strict: true,
+    modules: {
+        toast,
+        user,
+    },
 })

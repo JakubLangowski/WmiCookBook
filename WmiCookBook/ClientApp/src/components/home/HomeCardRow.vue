@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import RecipeCard from "@/components/shared/RecipeCard";
-import RecipeCardSkeletonLoader from "@/components/shared/RecipeCardSkeletonLoader";
+import RecipeCard from "@/components/home/RecipeCard";
+import RecipeCardSkeletonLoader from "@/components/home/RecipeCardSkeletonLoader";
 export default {
     name: "HomeCardRow",
     components: {

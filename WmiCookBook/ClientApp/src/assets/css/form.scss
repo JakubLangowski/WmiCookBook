@@ -1,0 +1,100 @@
+.form-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    display: inline-block;
+    vertical-align: middle;
+    background-origin: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    flex-shrink: 0;
+    height: 1em;
+    width: 1em;
+    color: #dc2626;
+    background-color: #fff;
+    border-color: #e2e8f0;
+    border-width: 1px;
+    border-radius: 0.25rem;
+}
+
+.form-checkbox:checked {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3e%3c/svg%3e");
+    border-color: transparent;
+    background-color: currentColor;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.floating-input {
+    @apply relative;
+}
+
+.floating-input > input,
+.floating-input > select,
+.floating-input > textarea {
+    @apply border-2 border-gray-300 rounded leading-tight shadow-lg focus:outline-none focus:border-gray-400 w-full p-3;
+}
+
+.floating-input > select {
+    padding-top: 1.6rem;
+}
+
+.floating-input > textarea {
+    resize: none;
+    @apply h-64;
+}
+
+.floating-input > input,
+.floating-input > select {
+    @apply h-16;
+}
+
+.floating-input > input.error,
+.floating-input > select.error,
+.floating-input > textarea.error {
+    @apply border-red-500;
+}
+
+.floating-input > label {
+    @apply absolute top-0 left-0 px-3 py-5 h-full pointer-events-none transform origin-left transition-all duration-100 ease-in-out text-gray-700 font-semibold opacity-75;
+}
+
+.floating-input > span {
+    @apply absolute text-red-500 text-xs;
+    right: 10px;
+    top: 5px;
+    max-width: 50%;
+    text-align: right;
+}
+
+.floating-input > input::placeholder,
+.floating-input > textarea::placeholder {
+    color: transparent;
+}
+
+.floating-input > input:focus,
+.floating-input > input:not(:placeholder-shown),
+.floating-input > textarea:focus,
+.floating-input > textarea:not(:placeholder-shown) {
+    @apply pt-8;
+}
+
+.floating-input > select:focus ~ label,
+.floating-input > select:valid ~ label {
+    @apply opacity-75 scale-75 -translate-y-3 translate-x-1;
+}
+
+.floating-input > input:focus ~ label,
+.floating-input > input:not(:placeholder-shown) ~ label {
+    @apply opacity-75 scale-75 -translate-y-3 translate-x-1;
+}
+
+.floating-input > textarea:focus ~ label,
+.floating-input > textarea:not(:placeholder-shown) ~ label {
+    @apply opacity-75 scale-75 -translate-y-10 translate-x-1;
+}

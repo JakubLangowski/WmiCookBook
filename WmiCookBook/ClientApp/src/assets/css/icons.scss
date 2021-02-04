@@ -18,3 +18,28 @@
   background: url("~@/assets/icons/timer-outline.svg") center no-repeat;
   background-size: contain;
 }
+
+.close-icon {
+    background: url("~@/assets/icons/close.svg") center no-repeat;
+    background-size: contain;
+}
+
+.arrow-up-icon {
+    mask: url("~@/assets/icons/arrow-up.svg") center no-repeat;
+    mask-size: contain;
+}
+
+.filter-icon {
+    mask: url("~@/assets/icons/filter.svg") center no-repeat;
+    mask-size: contain;
+}
+
+.logout-icon {
+    mask: url("~@/assets/icons/logout.svg") center no-repeat;
+    mask-size: contain;
+}
+
+.menu-icon {
+    mask: url("~@/assets/icons/menu.svg") center no-repeat;
+    mask-size: contain;
+}

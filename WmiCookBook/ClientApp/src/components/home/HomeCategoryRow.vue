@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import CategoryCard from "@/components/shared/CategoryCard";
-import CategoryCardSkeletonLoader from "@/components/shared/CategoryCardSkeletonLoader";
+import CategoryCard from "@/components/home/CategoryCard";
+import CategoryCardSkeletonLoader from "@/components/home/CategoryCardSkeletonLoader";
 
 export default {
     name: "HomeCategoryRow",
