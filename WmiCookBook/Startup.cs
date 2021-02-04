@@ -22,6 +22,7 @@ using WmiCookBook.Data;
 using WmiCookBook.Filters;
 using WmiCookBook.Helpers;
 using WmiCookBook.Middleware;
+using WmiCookBook.Models;
 using WmiCookBook.Options;
 using WmiCookBook.Services;
 using WmiCookBook.Services.Interfaces;
@@ -105,6 +106,8 @@ namespace WmiCookBook
         private void InstallDatabaseServices(IServiceCollection services)
         {
             services.AddDbContext<DatabaseContext>(x =>
+                x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<Model>(x =>
                 x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
         
