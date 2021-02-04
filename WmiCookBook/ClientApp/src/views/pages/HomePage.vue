@@ -11,6 +11,7 @@
 <script>
 import HomeCardRow from "@/components/home/HomeCardRow";
 import HomeCategoryRow from "@/components/home/HomeCategoryRow";
+import {mapGetters} from "vuex";
 
 export default {
     name: "HomePage",

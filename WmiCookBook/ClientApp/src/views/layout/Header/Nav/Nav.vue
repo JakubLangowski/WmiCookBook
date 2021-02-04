@@ -36,7 +36,16 @@
                     :to="to"
                     :title="title"
                 />
-
+                  <NavLink
+                      v-if="!isAuthenticated"
+                      to="/login"
+                      title="Login"
+                  />
+                  <NavLink
+                      v-if="isAuthenticated"
+                      to="/admin/dashboard"
+                      title="Panel Administratora"
+                  />
               </div>
             </div>
           </div>
@@ -58,7 +67,12 @@
               :title="title"
               :isMobile="true"
           />
-
+          <NavLink
+              v-if="isAuthenticated"
+              to="/admin/dashboard"
+              title="Panel Administratora"
+              :isMobile="true"
+          />
         </div>
       </div>
     </nav>
@@ -68,6 +82,7 @@
 <script>
 
 import NavLink from "@/views/layout/Header/Nav/NavLink";
+import {mapGetters} from "vuex";
 
 export default {
   name: "Nav",
@@ -88,7 +103,12 @@ export default {
         title: "Dodaj Przepis"
       }
     ]
-  })
+  }),
+    computed: {
+        ...mapGetters('user', [
+            'isAuthenticated',
+        ])
+    }
 }
 </script>
 

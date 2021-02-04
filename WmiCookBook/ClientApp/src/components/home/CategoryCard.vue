@@ -14,7 +14,7 @@ export default {
     name: "CategoryCard",
     props: {
         to: {
-            type: String,
+            type: Object,
             required: true
         },
         name: {
