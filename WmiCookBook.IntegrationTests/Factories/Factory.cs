@@ -1,5 +1,10 @@
-﻿using Bogus;
+﻿using System.Collections.Generic;
+using Bogus;
 using WmiCookBook.Contracts.Request.Auth;
+using WmiCookBook.Contracts.Request.Category;
+using WmiCookBook.Contracts.Request.Ingredient;
+using WmiCookBook.Contracts.Request.Recipe;
+using WmiCookBook.Contracts.Request.Step;
 using WmiCookBook.Helpers;
 using WmiCookBook.Models;
 
@@ -54,6 +59,126 @@ namespace WmiCookBook.IntegrationTests.Factories
                     .RuleFor(x => x.NewPassword, "NewPassword#2!")
                     .RuleFor(x => x.ConfirmNewPassword, "NewPassword#2!")
                     .Generate();
+            }
+        }
+        
+        public class Recipe
+        {
+            public static Models.Recipe GetModel(bool isAccepted = true, bool isFeatured = false)
+            {
+                return new Faker<Models.Recipe>()
+                    .RuleFor(x => x.Name, f => f.Lorem.Word())
+                    .RuleFor(x => x.Time, f => f.Random.Number(1, 1000))
+                    .RuleFor(x => x.Difficulty, f => f.Random.Number(1, 3))
+                    .RuleFor(x => x.Steps, Step.GetModels())
+                    .RuleFor(x => x.Ingredients, Ingredient.GetModels())
+                    .RuleFor(x => x.IsFeatured, isFeatured)
+                    .RuleFor(x => x.IsAccepted, isAccepted)
+                    .RuleFor(x => x.Category, Category.GetModel());
+            }
+            
+            public static CreateRecipeRequest GetCreateRecipeRequest(int categoryId)
+            {
+                return new Faker<CreateRecipeRequest>()
+                    .RuleFor(x => x.Name, f => f.Lorem.Word())
+                    .RuleFor(x => x.Time, f => f.Random.Number(1, 1000))
+                    .RuleFor(x => x.Difficulty, f => f.Random.Number(1, 3))
+                    .RuleFor(x => x.Steps, Step.GetCreateStepRequests())
+                    .RuleFor(x => x.Ingredients, Ingredient.GetCreateIngredientRequests())
+                    .RuleFor(x => x.CategoryId, categoryId);
+            }
+        }
+        
+        public class Category
+        {
+            public static Models.Category GetModel()
+            {
+                return new Faker<Models.Category>()
+                    .RuleFor(x => x.Name, f => f.Lorem.Word())
+                    .Generate();
+            }
+            
+            public static CreateCategoryRequest GetCreateCategoryRequest()
+            {
+                return new Faker<CreateCategoryRequest>()
+                    .RuleFor(x => x.Name, f => f.Lorem.Word())
+                    .Generate();
+            }
+        }
+        
+        public class Ingredient
+        {
+            public static Models.Ingredient GetModel()
+            {
+                return new Faker<Models.Ingredient>()
+                    .RuleFor(x => x.Name, f => f.Lorem.Word())
+                    .RuleFor(x => x.Quantity, f => f.Lorem.Word())
+                    .Generate();
+            }
+            
+            public static CreateIngredientRequest GetCreateIngredientRequest()
+            {
+                return new Faker<CreateIngredientRequest>()
+                    .RuleFor(x => x.Name, f => f.Lorem.Word())
+                    .RuleFor(x => x.Quantity, f => f.Lorem.Word())
+                    .Generate();
+            }
+            
+            public static List<Models.Ingredient> GetModels(int qty = 1)
+            {
+                List<Models.Ingredient> ingredients = new List<Models.Ingredient>();
+                for (int i = 0; i < qty; i++)
+                {
+                    ingredients.Add(GetModel());
+                }
+                return ingredients;
+            }
+            
+            public static List<CreateIngredientRequest> GetCreateIngredientRequests(int qty = 1)
+            {
+                List<CreateIngredientRequest> ingredients = new List<CreateIngredientRequest>();
+                for (int i = 0; i < qty; i++)
+                {
+                    ingredients.Add(GetCreateIngredientRequest());
+                }
+                return ingredients;
+            }
+        }
+        
+        public class Step
+        {
+            public static Models.Step GetModel()
+            {
+                return new Faker<Models.Step>()
+                    .RuleFor(x => x.Description, f => f.Lorem.Sentence())
+                    .Generate();
+            }
+            
+            public static List<Models.Step> GetModels(int qty = 1)
+            {
+                List<Models.Step> ingredients = new List<Models.Step>();
+                for (int i = 0; i < qty; i++)
+                {
+                    ingredients.Add(GetModel());
+                }
+                return ingredients;
+            }
+            
+            public static CreateStepRequest GetCreateStepRequest()
+            {
+                return new Faker<CreateStepRequest>()
+                    .RuleFor(x => x.Description, f => f.Lorem.Sentence())
+                    .Generate();
+            }
+            
+            public static List<CreateStepRequest> GetCreateStepRequests(int qty = 1)
+            {
+                List<CreateStepRequest> ingredients = new List<CreateStepRequest>();
+                for (int i = 0; i < qty; i++)
+                {
+                    ingredients.Add(GetCreateStepRequest());
+                }
+                return ingredients;
             }
         }
     }

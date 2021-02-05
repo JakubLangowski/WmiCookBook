@@ -10,8 +10,8 @@ namespace WmiCookBook.Contracts.Request.Recipe
         public string Name { get; set; }
         public int Difficulty { get; set; }
         public int Time { get; set; }
-        public virtual ICollection<AddIngredientRequest> Ingredients { get; set; }
-        public virtual ICollection<AddStepRequest> Steps { get; set; }
+        public virtual ICollection<CreateIngredientRequest> Ingredients { get; set; }
+        public virtual ICollection<CreateStepRequest> Steps { get; set; }
         public int CategoryId { get; set; }
     }
 }

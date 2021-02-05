@@ -22,8 +22,8 @@ namespace WmiCookBook.MappingProfiles
             CreateMap<RecipeQuery, RecipeFilter>();
             CreateMap<CreateRecipeRequest, Recipe>();
 
-            CreateMap<AddIngredientRequest, Ingredient>();
-            CreateMap<AddStepRequest, Step>();
+            CreateMap<CreateIngredientRequest, Ingredient>();
+            CreateMap<CreateStepRequest, Step>();
 
             CreateMap<CreateCategoryRequest, Category>();
         }

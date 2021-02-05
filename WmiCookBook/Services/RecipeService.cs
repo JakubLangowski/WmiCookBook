@@ -32,6 +32,7 @@ namespace WmiCookBook.Services
         public async Task<List<Recipe>> GetFeaturedRecipeAsync()
         {
             return await _context.Recipes
+                .Where(x => x.IsAccepted)
                 .Where(x => x.IsFeatured)
                 .Take(4)
                 .ToListAsync();
@@ -40,6 +41,7 @@ namespace WmiCookBook.Services
         public async Task<Recipe> GetRecipeByIdAsync(int id)
         {
             return await _context.Recipes
+                .Where(x => x.IsAccepted)
                 .Include(x => x.Ingredients)
                 .Include(x => x.Steps)
                 .Include(x => x.Category)
@@ -82,6 +84,7 @@ namespace WmiCookBook.Services
         {
             if (recipeFilter.CategoryId != null && recipeFilter.CategoryId.Length > 0)
                 return queryable.Where(x => recipeFilter.CategoryId.Contains(x.CategoryId));
+            queryable = queryable.Where(x => x.IsAccepted);
             return queryable;
         }
     }
