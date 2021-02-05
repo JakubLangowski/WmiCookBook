@@ -28,44 +28,25 @@ namespace WmiCookBook.Data
         {
             base.OnModelCreating(modelBuilder);
             
-            modelBuilder.Entity<Step>()
-                .HasKey(x => x.Id);
-            modelBuilder.Entity<Step>()
-                .Property(x => x.Description)
-                .HasMaxLength(1000);
-
             modelBuilder.Entity<Category>()
                 .HasKey(x => x.Id);
-            modelBuilder.Entity<Category>()
-                .HasMany(x => x.Recipes)
-                .WithOne()
-                .HasForeignKey(x => x.CategoryId)
-                .IsRequired(true)
-                .OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<Category>()
                 .Property(x => x.Name)
                 .HasMaxLength(100);
 
             modelBuilder.Entity<Recipe>()
                 .HasKey(x => x.Id);
-            modelBuilder.Entity<Recipe>()
-                .HasMany(x => x.Ingredients)
-                .WithOne()
-                .HasForeignKey(x => x.RecipeId)
-                .IsRequired(true)
-                .OnDelete(DeleteBehavior.Cascade);
-            modelBuilder.Entity<Recipe>()
-                .HasMany(x => x.Steps)
-                .WithOne()
-                .HasForeignKey(x => x.RecipeId)
-                .IsRequired(true)
-                .OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<Recipe>()
                 .Property(x => x.Name)
                 .HasMaxLength(100);
             modelBuilder.Entity<Recipe>()
                 .Property(x => x.Image)
                 .HasMaxLength(500);
+            modelBuilder.Entity<Recipe>()
+                .HasOne(x => x.Category)
+                .WithMany(x => x.Recipes)
+                .HasForeignKey(x => x.CategoryId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Ingredient>()
                 .HasKey(x => x.Id);
@@ -75,6 +56,22 @@ namespace WmiCookBook.Data
             modelBuilder.Entity<Ingredient>()
                 .Property(x => x.Quantity)
                 .HasMaxLength(100);
+            modelBuilder.Entity<Ingredient>()
+                .HasOne(x => x.Recipe)
+                .WithMany(x => x.Ingredients)
+                .HasForeignKey(x => x.RecipeId)
+                .OnDelete(DeleteBehavior.Cascade);
+            
+            modelBuilder.Entity<Step>()
+                .HasKey(x => x.Id);
+            modelBuilder.Entity<Step>()
+                .Property(x => x.Description)
+                .HasMaxLength(1000);
+            modelBuilder.Entity<Step>()
+                .HasOne(x => x.Recipe)
+                .WithMany(x => x.Steps)
+                .HasForeignKey(x => x.RecipeId)
+                .OnDelete(DeleteBehavior.Cascade);
             
             Seeder.SeedUsers(modelBuilder, _authHelper);
         }

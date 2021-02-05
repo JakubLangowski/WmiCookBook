@@ -105,7 +105,7 @@ namespace WmiCookBook.Controllers
         [SwaggerResponse(400, "", typeof(ErrorResponse))]
         //
         [HttpPut(ApiRoutes.Auth.ChangePassword)]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize]
         public async Task<IActionResult> ChangePassword([FromBody] AuthChangePasswordRequest request)
         {
             var authResponse = await _authService.ChangePasswordAsync(request);

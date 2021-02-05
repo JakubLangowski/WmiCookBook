@@ -40,18 +40,18 @@ export default {
 <style scoped>
 .btn{
     @apply mt-1 inline-flex justify-center py-2 px-4 border
-    text-sm leading-5 font-medium rounded transition duration-150 ease-in-out
+    text-sm leading-5 font-medium rounded transition duration-150 ease-in-out;
 }
 
 .btn-normal{
     @apply border-none shadow-lg
-    text-white bg-red-600 hover:bg-red-500
-    focus:outline-none focus:bg-red-500 focus:border-red-600 focus:ring-red-600
+    text-white bg-gray-600 hover:bg-red-500
+    focus:outline-none focus:bg-red-500 focus:border-red-600 focus:ring-red-600;
 }
 
 .btn-outline{
-    @apply border-2 border-red-500 shadow-lg
-    text-red-600 bg-white hover:text-white hover:bg-red-600
-    focus:outline-none focus:text-white focus:bg-red-600 focus:ring-red-600
+    @apply border-2 border-gray-500 shadow-lg
+    text-gray-600 bg-white hover:text-white hover:bg-gray-600
+    focus:outline-none focus:text-white focus:bg-gray-600 focus:ring-gray-600;
 }   
 </style>

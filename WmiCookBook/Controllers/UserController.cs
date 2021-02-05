@@ -21,7 +21,7 @@ namespace WmiCookBook.Controllers
     [ApiController]
     [Produces("application/json")]
     [Consumes("application/json")]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -48,7 +48,6 @@ namespace WmiCookBook.Controllers
         ///  <response code="400"></response>
         [SwaggerResponse(200, "", typeof(PagedResponse<List<UserResponse>>))]
         //
-        [Authorize(Roles = "Admin")]
         [HttpGet(ApiRoutes.User.GetAll)]
         public async Task<IActionResult> GetAll([FromQuery] PaginationQuery paginationQuery)
         {
