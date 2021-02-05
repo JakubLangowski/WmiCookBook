@@ -91,10 +91,11 @@ namespace WmiCookBook.IntegrationTests.Factories
         
         public class Category
         {
-            public static Models.Category GetModel()
+            public static Models.Category GetModel(bool isFeatured = false)
             {
                 return new Faker<Models.Category>()
                     .RuleFor(x => x.Name, f => f.Lorem.Word())
+                    .RuleFor(x => x.IsFeatured, isFeatured)
                     .Generate();
             }
             
