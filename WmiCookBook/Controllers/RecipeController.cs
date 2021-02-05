@@ -74,6 +74,20 @@ namespace WmiCookBook.Controllers
         }
         
         /// <summary>
+        /// Zwraca listę nowych przepisów (max 8 przepisów)
+        /// </summary>
+        /// <response code="200"></response>
+        [SwaggerResponse(200, "", typeof(List<RecipeResponse>))]
+        //
+        [HttpGet(ApiRoutes.Recipe.GetNew)]
+        public async Task<IActionResult> GetNewRecipes()
+        {
+            var recipeList = await _recipeService.GetNewRecipeAsync();
+            var recipeResponse = _mapper.Map<List<RecipeResponse>>(recipeList);
+            return Ok(recipeResponse);
+        }
+        
+        /// <summary>
         /// Zwraca pojedyńczy przepis ze składnikami i krokami
         /// </summary>
         /// <param name="recipeId"></param>
@@ -82,8 +96,8 @@ namespace WmiCookBook.Controllers
         [SwaggerResponse(200, "", typeof(RecipeResponse))]
         [SwaggerResponse(404)]
         //
-        [HttpGet(ApiRoutes.Recipe.Get, Name = "GetById")]
-        public async Task<IActionResult> GetById([FromRoute] int recipeId)
+        [HttpGet(ApiRoutes.Recipe.Get, Name = "GetRecipeById")]
+        public async Task<IActionResult> GetRecipeById([FromRoute] int recipeId)
         {
             var recipe = await _recipeService.GetRecipeByIdAsync(recipeId);
             if (recipe == null)
@@ -111,15 +125,16 @@ namespace WmiCookBook.Controllers
             if (createdRecipe.Id == 0)
                 return BadRequest(new ErrorResponse("Wystąpił błąd podczas dodawania"));
             
-            return CreatedAtAction(nameof(GetById), 
+            return CreatedAtAction(nameof(GetRecipeById), 
                 new {recipeId = createdRecipe.Id},
                 _mapper.Map<RecipeFullResponse>(createdRecipe));
         }
-        
+
         /// <summary>
         /// Dodaje lub usuwa przepis z wyróżnionych
         /// </summary>
         /// <param name="recipeId"></param>
+        /// <param name="featuredRequest"></param>
         /// <response code="200"></response>
         /// <response code="400"></response>
         /// <response code="404"></response>
@@ -140,6 +155,34 @@ namespace WmiCookBook.Controllers
             
             if (!updated)
                 return BadRequest(new ErrorResponse("Wystąpił błąd podczas dodawanie przepisu do wyróżnionych"));
+
+            return Ok();
+        }
+        
+        /// <summary>
+        /// Ustawia przepis jako zaakceptowany przez admina
+        /// </summary>
+        /// <param name="recipeId"></param>
+        /// <response code="200"></response>
+        /// <response code="400"></response>
+        /// <response code="404"></response>
+        [SwaggerResponse(204)]
+        [SwaggerResponse(400, "", typeof(ErrorResponse))]
+        [SwaggerResponse(404)]
+        //
+        [Authorize]
+        [HttpPatch(ApiRoutes.Recipe.AcceptRecipe)]
+        public async Task<IActionResult> AcceptRecipe([FromRoute] int recipeId)
+        {
+            var recipe = await _recipeService.GetRecipeByIdAsync(recipeId);
+            
+            if (recipe == null)
+                return NotFound();
+
+            var updated = await _recipeService.AcceptRecipeAsync(recipe);
+            
+            if (!updated)
+                return BadRequest(new ErrorResponse("Wystąpił błąd podczas akceptowania przepisu"));
 
             return Ok();
         }

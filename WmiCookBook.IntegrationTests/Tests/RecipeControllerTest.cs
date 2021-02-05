@@ -51,9 +51,8 @@ namespace WmiCookBook.IntegrationTests.Tests
         }
         
         [Fact]
-        public async Task Get__User_Cant_Retrieve_List_Of_Not_Accepted_Recipe()
+        public async Task GetAll__User_Cant_Retrieve_List_Of_Not_Accepted_Recipe()
         {
-            await LogInAs("user@gmail.com");
             await CreateRecipe(false);            
             await CreateRecipe(false);            
 
@@ -71,13 +70,32 @@ namespace WmiCookBook.IntegrationTests.Tests
         }
         
         [Fact]
+        public async Task GetAll__Admin_Can_Retrieve_List_Of_Not_Accepted_Recipe()
+        {
+            await LogInAs("admin@gmail.com");
+            await CreateRecipe(false);            
+            await CreateRecipe(false);            
+
+            var response = await Client.GetAsync(ApiRoutes.Recipe.GetAll);
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
+            
+            var body = await response.Content.ReadAsAsync<PagedResponse<RecipeResponse>>();
+            body.Data.Should().NotBeEmpty();
+            body.Data.Should().HaveCount(2);
+            
+            body.Meta.Should().NotBeNull();
+            body.Meta.PageNumber.Should().Be(1);
+            body.Meta.Total.Should().Be(2);
+            body.Meta.TotalPages.Should().Be(1);
+        }
+        
+        [Fact]
         public async Task GetAll__User_Can_Retrieve_4_Featured_Recipes()
         {
-            await CreateRecipe(true, true);            
-            await CreateRecipe(true, true);            
-            await CreateRecipe(true, true);            
-            await CreateRecipe(true, true);            
-            await CreateRecipe(true, true);            
+            for (int i = 0; i < 5; i++)
+            {
+                await CreateRecipe(true, true);
+            }      
             
             var response = await Client.GetAsync(ApiRoutes.Recipe.GetFeatured);
             response.StatusCode.Should().Be(HttpStatusCode.OK);
@@ -88,9 +106,24 @@ namespace WmiCookBook.IntegrationTests.Tests
         }
         
         [Fact]
+        public async Task GetAll__User_Can_Retrieve_8_New_Recipes()
+        {
+            for (int i = 0; i < 9; i++)
+            {
+                await CreateRecipe(true, true);
+            }
+            
+            var response = await Client.GetAsync(ApiRoutes.Recipe.GetNew);
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
+            
+            var body = await response.Content.ReadAsAsync<List<RecipeResponse>>();
+            body.Should().NotBeEmpty();
+            body.Should().HaveCount(8);
+        }
+        
+        [Fact]
         public async Task Get__User_Can_Retrieve_One_Accepted_Recipe()
         {
-            await LogInAs("user@gmail.com");
             Recipe createdRecipe = await CreateRecipe(true);
 
             var getEndpoint = ApiRoutes.Recipe.Get.Replace("{recipeId}", createdRecipe.Id.ToString());
@@ -111,18 +144,27 @@ namespace WmiCookBook.IntegrationTests.Tests
         [Fact]
         public async Task Get__User_Cant_Retrieve_Not_Accepted_Recipe()
         {
-            await LogInAs("user@gmail.com");
             Recipe createdRecipe = await CreateRecipe(false);
 
             var getEndpoint = ApiRoutes.Recipe.Get.Replace("{recipeId}", createdRecipe.Id.ToString());
             var response = await Client.GetAsync(getEndpoint);
             response.StatusCode.Should().Be(HttpStatusCode.NotFound);
         }
+        
+        [Fact]
+        public async Task Get__Admin_Can_Retrieve_Not_Accepted_Recipe()
+        {
+            await LogInAs("admin@gmail.com");
+            Recipe createdRecipe = await CreateRecipe(false);
+
+            var getEndpoint = ApiRoutes.Recipe.Get.Replace("{recipeId}", createdRecipe.Id.ToString());
+            var response = await Client.GetAsync(getEndpoint);
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
+        }
 
         [Fact]
         public async Task Create__User_Can_Create_Recipe()
         {
-            await LogInAs("user@gmail.com");
             Category category = await CreateCategory();
             CreateRecipeRequest recipeRequest = Factory.Recipe.GetCreateRecipeRequest(category.Id);
             

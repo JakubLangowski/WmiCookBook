@@ -28,11 +28,13 @@ namespace WmiCookBook.Contracts
             // Get
             public const string GetAll = Base + "recipe";                   
             public const string GetFeatured = Base + "recipe/featured";        
+            public const string GetNew = Base + "recipe/new";        
             public const string Get = Base + "recipe/{recipeId}";     
             // Post
             public const string Create = Base + "recipe";
             // Patch
-            public const string AddToFeatured = Base + "recipe/{recipeId}";
+            public const string AddToFeatured = Base + "recipe/{recipeId}/featured";
+            public const string AcceptRecipe = Base + "recipe/{recipeId}/accept";
             // Delete
             public const string Delete = Base + "recipe/{recipeId}";
         }
@@ -42,6 +44,7 @@ namespace WmiCookBook.Contracts
             // Get
             public const string GetAll = Base + "category";
             public const string GetFeatured = Base + "category/featured";
+            public const string Get = Base + "category/{categoryId}";
             // Post
             public const string Create = Base + "category";
             // Patch
