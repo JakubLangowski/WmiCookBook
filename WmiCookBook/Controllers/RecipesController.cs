@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WmiCookBook.Data;
 using WmiCookBook.Models;
 
 namespace WmiCookBook.Controllers
@@ -11,9 +12,9 @@ namespace WmiCookBook.Controllers
     [ApiController]
     public class RecipesController : ControllerBase
     {
-        private readonly Model _context;
+        private readonly DatabaseContext _context;
 
-        public RecipesController(Model context)
+        public RecipesController(DatabaseContext context)
         {
             _context = context;
         }

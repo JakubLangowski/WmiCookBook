@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WmiCookBook.Data;
 using WmiCookBook.Models;
 
 namespace WmiCookBook.Controllers
@@ -13,9 +14,9 @@ namespace WmiCookBook.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        private readonly Model _context;
+        private readonly DatabaseContext _context;
 
-        public CategoriesController(Model context)
+        public CategoriesController(DatabaseContext context)
         {
             _context = context;
         }
