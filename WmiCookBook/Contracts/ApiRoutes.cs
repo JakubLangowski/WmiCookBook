@@ -15,10 +15,39 @@ namespace WmiCookBook.Contracts
     
         public static class Auth
         {
+            // Post
             public const string Login = Base + "auth/login";
             public const string Register = Base + "auth/register";
             public const string Refresh = Base + "auth/refresh";
+            // Put
             public const string ChangePassword = Base + "user/updatePassword";
+        }
+        
+        public static class Recipe
+        {
+            // Get
+            public const string GetAll = Base + "recipe";                   
+            public const string GetFeatured = Base + "recipe/featured";        
+            public const string Get = Base + "recipe/{recipeId}";     
+            // Post
+            public const string Create = Base + "recipe";
+            // Patch
+            public const string AddToFeatured = Base + "recipe/{recipeId}";
+            // Delete
+            public const string Delete = Base + "recipe/{recipeId}";
+        }
+        
+        public static class Category
+        {
+            // Get
+            public const string GetAll = Base + "category";
+            public const string GetFeatured = Base + "category/featured";
+            // Post
+            public const string Create = Base + "category";
+            // Patch
+            public const string AddToFeatured = Base + "category/{categoryId}";
+            // Delete
+            public const string Delete = Base + "category/{categoryId}";
         }
     }
 }

@@ -56,6 +56,8 @@ namespace WmiCookBook
             
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IRecipeService, RecipeService>();
+            services.AddScoped<ICategoryService, CategoryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -106,8 +108,6 @@ namespace WmiCookBook
         private void InstallDatabaseServices(IServiceCollection services)
         {
             services.AddDbContext<DatabaseContext>(x =>
-                x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDbContext<Model>(x =>
                 x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
         
@@ -177,10 +177,10 @@ namespace WmiCookBook
                 x.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Example API",
+                    Title = "WmiCookBokk API",
                     Description = "Example API Description",
                 });
-                
+
                 x.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Description = "JWT Authorization header using the Bearer scheme",
@@ -190,21 +190,6 @@ namespace WmiCookBook
                     Type = SecuritySchemeType.ApiKey,
                 });
                 
-                x.AddSecurityRequirement(new OpenApiSecurityRequirement
-                {
-                    {
-                        new OpenApiSecurityScheme
-                        {
-                            Reference = new OpenApiReference
-                            {
-                                Type = ReferenceType.SecurityScheme,
-                                Id = "Bearer"
-                            }
-                        },
-                        Array.Empty<string>()
-                    }
-                });
-                
                 var xmlFile = $"{Assembly.GetEntryAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 x.IncludeXmlComments(xmlPath);
@@ -212,7 +197,8 @@ namespace WmiCookBook
                 x.ExampleFilters();
                 x.OperationFilter<AddResponseHeadersFilter>();
                 x.OperationFilter<AppendAuthorizeToSummaryOperationFilter>();
-                // x.OperationFilter<SecurityRequirementsOperationFilter>();
+                x.OperationFilter<AuthResponsesOperationFilter>();
+                x.OperationFilter<SecurityRequirementsOperationFilter>();
             });
             service.AddSwaggerExamplesFromAssemblyOf<Startup>();
         }
