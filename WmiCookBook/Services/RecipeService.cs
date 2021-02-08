@@ -49,7 +49,7 @@ namespace WmiCookBook.Services
             queryable = FilterAccepted(queryable);
             
             return await queryable
-                .OrderBy(x => x.CreatedAt)
+                .OrderByDescending(x => x.CreatedAt)
                 .Take(8)
                 .ToListAsync();
         }
@@ -109,7 +109,7 @@ namespace WmiCookBook.Services
         private IQueryable<Recipe> FilteredRecipes(IQueryable<Recipe> queryable, RecipeFilter recipeFilter)
         {
             if (recipeFilter.CategoryId != null && recipeFilter.CategoryId.Length > 0)
-                return queryable.Where(x => recipeFilter.CategoryId.Contains(x.CategoryId));
+                queryable = queryable.Where(x => recipeFilter.CategoryId.Contains(x.CategoryId));
             queryable = FilterAccepted(queryable);
             return queryable;
         }

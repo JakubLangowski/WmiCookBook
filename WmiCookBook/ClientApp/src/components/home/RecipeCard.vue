@@ -6,8 +6,8 @@
                 <h2 class="text-lg text-center text-gray-700 font-semibold mx-2 my-2">{{ name }}</h2>
                 <div class="grid grid-cols-2 mx-1 my-2">
                     <span class="text-center">
-                        <span class="p-3 mr-1 lg:mr-3" :class="getDifficultyLevelIcon(difficultyLevel)"></span>
-                        {{ getDifficultyLevelText(difficultyLevel) }}
+                        <span class="p-3 mr-1 lg:mr-3" :class="getDifficultyLevelIcon(difficulty)"></span>
+                        {{ getDifficultyLevelText(difficulty) }}
                     </span>
                     <span class="text-center">
                         <span class="p-3 mr-1 lg:mr-3 timer-outline-icon"></span>
@@ -31,7 +31,7 @@ export default {
             type: String,
             required: true
         },
-        difficultyLevel: {
+        difficulty: {
             type: Number,
             required: true
         },

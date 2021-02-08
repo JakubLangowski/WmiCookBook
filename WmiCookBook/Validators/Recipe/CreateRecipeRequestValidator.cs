@@ -30,6 +30,16 @@ namespace WmiCookBook.Validators.Recipe
                         .Must(categoryId => categoryService.CategoryExists(categoryId))
                         .WithMessage("Podana kategoria nie istnieje");
                 });
+            
+            RuleFor(x => x.Ingredients)
+                .NotEmpty().WithMessage("Przepis musi mieć przynajmniej jeden składnik")
+                .Must(x => x.Count > 0).WithMessage("Przepis musi mieć przynajmniej jeden składnik")
+                .Must(x => x.Count <= 20).WithMessage("Przepis może posiadać maksymalnie 20 składników");
+            
+            RuleFor(x => x.Steps)
+                .NotEmpty().WithMessage("Przepis musi mieć przynajmniej jeden krok")
+                .Must(x => x.Count > 0).WithMessage("Przepis musi mieć przynajmniej jeden krok")
+                .Must(x => x.Count <= 20).WithMessage("Przepis może posiadać maksymalnie 10 kroków");
 
             RuleForEach(x => x.Ingredients)
                 .ChildRules(ingredient =>

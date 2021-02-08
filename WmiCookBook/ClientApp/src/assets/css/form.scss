@@ -46,7 +46,7 @@
 
 .floating-input > textarea {
     resize: none;
-    @apply h-64;
+    @apply h-24;
 }
 
 .floating-input > input,
@@ -96,5 +96,5 @@
 
 .floating-input > textarea:focus ~ label,
 .floating-input > textarea:not(:placeholder-shown) ~ label {
-    @apply opacity-75 scale-75 -translate-y-10 translate-x-1;
+    @apply opacity-75 scale-75 -translate-y-6 translate-x-1;
 }
