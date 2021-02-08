@@ -33,6 +33,9 @@ namespace WmiCookBook.Data
             modelBuilder.Entity<Category>()
                 .Property(x => x.Name)
                 .HasMaxLength(100);
+            modelBuilder.Entity<Category>()
+                .Property(x => x.Image)
+                .HasMaxLength(500);
 
             modelBuilder.Entity<Recipe>()
                 .HasKey(x => x.Id);

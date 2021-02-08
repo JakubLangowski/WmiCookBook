@@ -68,6 +68,7 @@ namespace WmiCookBook.IntegrationTests.Factories
             {
                 return new Faker<Models.Recipe>()
                     .RuleFor(x => x.Name, f => f.Lorem.Word())
+                    .RuleFor(x => x.Image, f => f.Internet.Url())
                     .RuleFor(x => x.Time, f => f.Random.Number(1, 1000))
                     .RuleFor(x => x.Difficulty, f => f.Random.Number(1, 3))
                     .RuleFor(x => x.Steps, Step.GetModels())
@@ -81,6 +82,7 @@ namespace WmiCookBook.IntegrationTests.Factories
             {
                 return new Faker<CreateRecipeRequest>()
                     .RuleFor(x => x.Name, f => f.Lorem.Word())
+                    .RuleFor(x => x.Image, f => f.Internet.Url())
                     .RuleFor(x => x.Time, f => f.Random.Number(1, 1000))
                     .RuleFor(x => x.Difficulty, f => f.Random.Number(1, 3))
                     .RuleFor(x => x.Steps, Step.GetCreateStepRequests())
@@ -95,6 +97,7 @@ namespace WmiCookBook.IntegrationTests.Factories
             {
                 return new Faker<Models.Category>()
                     .RuleFor(x => x.Name, f => f.Lorem.Word())
+                    .RuleFor(x => x.Image, f => f.Internet.Url())
                     .RuleFor(x => x.IsFeatured, isFeatured)
                     .Generate();
             }
@@ -103,6 +106,7 @@ namespace WmiCookBook.IntegrationTests.Factories
             {
                 return new Faker<CreateCategoryRequest>()
                     .RuleFor(x => x.Name, f => f.Lorem.Word())
+                    .RuleFor(x => x.Image, f => f.Internet.Url())
                     .Generate();
             }
         }

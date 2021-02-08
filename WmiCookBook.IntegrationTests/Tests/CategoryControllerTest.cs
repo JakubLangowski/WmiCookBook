@@ -74,6 +74,7 @@ namespace WmiCookBook.IntegrationTests.Tests
             
             responseData.Id.Should().Be(createdCategory.Id);
             responseData.Name.Should().Be(createdCategory.Name);
+            responseData.Image.Should().Be(createdCategory.Image);
         }
         
         [Fact]
@@ -88,6 +89,7 @@ namespace WmiCookBook.IntegrationTests.Tests
             var responseData = await response.Content.ReadAsAsync<CategoryResponse>();
             responseData.Id.Should().Be(1);
             responseData.Name.Should().Be(categoryRequest.Name);
+            responseData.Image.Should().Be(categoryRequest.Image);
 
             int count = await Context.Categories.AsNoTracking().CountAsync();
             count.Should().Be(1);

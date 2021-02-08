@@ -134,6 +134,7 @@ namespace WmiCookBook.IntegrationTests.Tests
             
             responseData.Id.Should().Be(createdRecipe.Id);
             responseData.Name.Should().Be(createdRecipe.Name);
+            responseData.Image.Should().Be(createdRecipe.Image);
             responseData.Difficulty.Should().Be(createdRecipe.Difficulty);
             responseData.Time.Should().Be(createdRecipe.Time);
             responseData.Steps.Should().HaveCount(createdRecipe.Steps.Count);
@@ -174,6 +175,7 @@ namespace WmiCookBook.IntegrationTests.Tests
             var responseData = await response.Content.ReadAsAsync<RecipeFullResponse>();
             responseData.Id.Should().Be(1);
             responseData.Name.Should().Be(recipeRequest.Name);
+            responseData.Image.Should().Be(recipeRequest.Image);
             responseData.Difficulty.Should().Be(recipeRequest.Difficulty);
             responseData.Time.Should().Be(recipeRequest.Time);
             responseData.Steps.Should().HaveCount(recipeRequest.Steps.Count);
