@@ -45,6 +45,7 @@ namespace WmiCookBook.Data
             modelBuilder.Entity<Recipe>()
                 .Property(x => x.Image)
                 .HasMaxLength(500);
+
             modelBuilder.Entity<Recipe>()
                 .HasOne(x => x.Category)
                 .WithMany(x => x.Recipes)
@@ -76,12 +77,12 @@ namespace WmiCookBook.Data
                 .HasForeignKey(x => x.RecipeId)
                 .OnDelete(DeleteBehavior.Cascade);
             
-            Seeder.SeedUsers(modelBuilder, _authHelper);
+            Seeder.SeedUsers(modelBuilder, _authHelper, _environment);
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseLazyLoadingProxies();
-        }
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // {
+        //     optionsBuilder.UseLazyLoadingProxies();
+        // }
     }
 }

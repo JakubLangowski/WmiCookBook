@@ -7,6 +7,7 @@
             :value="inputValue"
             @input="handleChange"
             @blur="handleBlur"
+            :class="(errorMessage) ? 'error' : ''"
         />
         <label :for="name">{{ label }}</label>
         <transition>
