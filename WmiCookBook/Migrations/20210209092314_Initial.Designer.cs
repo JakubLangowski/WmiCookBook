@@ -10,7 +10,7 @@ using WmiCookBook.Data;
 namespace WmiCookBook.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20210208212629_Initial")]
+    [Migration("20210209092314_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -684,7 +684,7 @@ namespace WmiCookBook.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2021, 2, 8, 22, 26, 28, 652, DateTimeKind.Local).AddTicks(8228),
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 914, DateTimeKind.Local).AddTicks(692),
                             Difficulty = 2,
                             Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/lasagne-z-sosem-bolognese.jpg",
                             IsAccepted = true,
@@ -696,7 +696,7 @@ namespace WmiCookBook.Migrations
                         {
                             Id = 2,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2021, 2, 8, 22, 26, 28, 655, DateTimeKind.Local).AddTicks(2727),
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 916, DateTimeKind.Local).AddTicks(4862),
                             Difficulty = 1,
                             Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/makaron-z-kurczakiem-i-sosem-smietanowym.jpg",
                             IsAccepted = true,
@@ -708,7 +708,7 @@ namespace WmiCookBook.Migrations
                         {
                             Id = 3,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2021, 2, 8, 22, 26, 28, 655, DateTimeKind.Local).AddTicks(2773),
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 916, DateTimeKind.Local).AddTicks(4910),
                             Difficulty = 1,
                             Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/super-szybkie-tagliatelle-z-kurczakiem658590.jpg",
                             IsAccepted = true,
@@ -720,7 +720,7 @@ namespace WmiCookBook.Migrations
                         {
                             Id = 4,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2021, 2, 8, 22, 26, 28, 655, DateTimeKind.Local).AddTicks(2794),
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 916, DateTimeKind.Local).AddTicks(4928),
                             Difficulty = 1,
                             Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/frittata-z-dynia-i-serem-feta.jpg",
                             IsAccepted = true,
@@ -732,7 +732,7 @@ namespace WmiCookBook.Migrations
                         {
                             Id = 5,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2021, 2, 8, 22, 26, 28, 655, DateTimeKind.Local).AddTicks(2805),
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 916, DateTimeKind.Local).AddTicks(4939),
                             Difficulty = 1,
                             Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/roladki-po-bolonsku543812.jpg",
                             IsAccepted = true,
@@ -744,7 +744,7 @@ namespace WmiCookBook.Migrations
                         {
                             Id = 6,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2021, 2, 8, 22, 26, 28, 655, DateTimeKind.Local).AddTicks(2816),
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 916, DateTimeKind.Local).AddTicks(4951),
                             Difficulty = 1,
                             Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/curry-z-kurczaka.jpg",
                             IsAccepted = true,
@@ -756,7 +756,7 @@ namespace WmiCookBook.Migrations
                         {
                             Id = 7,
                             CategoryId = 4,
-                            CreatedAt = new DateTime(2021, 2, 8, 22, 26, 28, 655, DateTimeKind.Local).AddTicks(2827),
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 916, DateTimeKind.Local).AddTicks(4961),
                             Difficulty = 1,
                             Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/nalesniki-z-kurczakiem-i-pieczarkami-2.jpg",
                             IsAccepted = true,
@@ -1077,15 +1077,15 @@ namespace WmiCookBook.Migrations
                         {
                             Id = 1,
                             Email = "admin@gmail.com",
-                            PasswordHash = new byte[] { 35, 47, 164, 202, 137, 172, 206, 92, 251, 123, 233, 120, 69, 38, 124, 2, 229, 229, 241, 94, 150, 22, 214, 20, 92, 16, 252, 214, 80, 212, 58, 253, 5, 200, 136, 31, 13, 77, 212, 27, 88, 143, 18, 81, 95, 244, 44, 87, 39, 156, 38, 205, 114, 155, 126, 21, 53, 93, 166, 187, 125, 39, 160, 208 },
-                            PasswordSalt = new byte[] { 201, 35, 139, 100, 33, 219, 235, 211, 42, 169, 168, 96, 49, 245, 180, 179, 146, 84, 23, 118, 109, 234, 97, 36, 140, 179, 29, 118, 1, 146, 165, 86, 93, 226, 124, 120, 18, 33, 159, 186, 211, 132, 130, 61, 93, 121, 125, 45, 253, 212, 199, 170, 13, 137, 101, 186, 159, 78, 156, 158, 25, 233, 69, 26, 71, 217, 201, 242, 61, 92, 199, 99, 188, 96, 217, 81, 246, 200, 112, 95, 122, 234, 179, 181, 231, 151, 4, 102, 24, 4, 208, 248, 191, 90, 59, 3, 128, 106, 152, 25, 167, 247, 138, 229, 72, 214, 44, 134, 109, 70, 100, 139, 51, 110, 64, 2, 208, 138, 57, 255, 207, 197, 19, 163, 99, 174, 3, 158 }
+                            PasswordHash = new byte[] { 172, 56, 74, 32, 26, 56, 65, 72, 148, 205, 213, 42, 107, 70, 186, 163, 249, 180, 39, 192, 74, 143, 254, 61, 48, 211, 66, 28, 133, 247, 102, 125, 161, 7, 57, 119, 20, 102, 131, 22, 169, 107, 109, 49, 54, 98, 161, 20, 70, 23, 124, 58, 57, 37, 254, 116, 218, 9, 31, 128, 48, 182, 151, 35 },
+                            PasswordSalt = new byte[] { 231, 49, 26, 66, 154, 30, 23, 237, 134, 188, 237, 82, 240, 7, 10, 214, 152, 225, 136, 34, 96, 44, 38, 247, 144, 9, 37, 99, 227, 77, 245, 166, 68, 86, 190, 212, 24, 4, 5, 185, 36, 213, 231, 67, 129, 50, 71, 39, 88, 15, 211, 107, 130, 135, 243, 23, 234, 188, 194, 106, 38, 145, 94, 206, 43, 89, 83, 206, 237, 57, 65, 152, 64, 61, 140, 83, 118, 176, 89, 116, 224, 242, 85, 160, 216, 25, 118, 104, 64, 140, 235, 182, 51, 210, 231, 49, 133, 9, 185, 235, 97, 38, 35, 92, 60, 244, 96, 95, 151, 33, 114, 109, 28, 73, 21, 25, 6, 233, 5, 162, 179, 57, 230, 143, 92, 162, 75, 65 }
                         },
                         new
                         {
                             Id = 2,
                             Email = "user@gmail.com",
-                            PasswordHash = new byte[] { 35, 47, 164, 202, 137, 172, 206, 92, 251, 123, 233, 120, 69, 38, 124, 2, 229, 229, 241, 94, 150, 22, 214, 20, 92, 16, 252, 214, 80, 212, 58, 253, 5, 200, 136, 31, 13, 77, 212, 27, 88, 143, 18, 81, 95, 244, 44, 87, 39, 156, 38, 205, 114, 155, 126, 21, 53, 93, 166, 187, 125, 39, 160, 208 },
-                            PasswordSalt = new byte[] { 201, 35, 139, 100, 33, 219, 235, 211, 42, 169, 168, 96, 49, 245, 180, 179, 146, 84, 23, 118, 109, 234, 97, 36, 140, 179, 29, 118, 1, 146, 165, 86, 93, 226, 124, 120, 18, 33, 159, 186, 211, 132, 130, 61, 93, 121, 125, 45, 253, 212, 199, 170, 13, 137, 101, 186, 159, 78, 156, 158, 25, 233, 69, 26, 71, 217, 201, 242, 61, 92, 199, 99, 188, 96, 217, 81, 246, 200, 112, 95, 122, 234, 179, 181, 231, 151, 4, 102, 24, 4, 208, 248, 191, 90, 59, 3, 128, 106, 152, 25, 167, 247, 138, 229, 72, 214, 44, 134, 109, 70, 100, 139, 51, 110, 64, 2, 208, 138, 57, 255, 207, 197, 19, 163, 99, 174, 3, 158 }
+                            PasswordHash = new byte[] { 172, 56, 74, 32, 26, 56, 65, 72, 148, 205, 213, 42, 107, 70, 186, 163, 249, 180, 39, 192, 74, 143, 254, 61, 48, 211, 66, 28, 133, 247, 102, 125, 161, 7, 57, 119, 20, 102, 131, 22, 169, 107, 109, 49, 54, 98, 161, 20, 70, 23, 124, 58, 57, 37, 254, 116, 218, 9, 31, 128, 48, 182, 151, 35 },
+                            PasswordSalt = new byte[] { 231, 49, 26, 66, 154, 30, 23, 237, 134, 188, 237, 82, 240, 7, 10, 214, 152, 225, 136, 34, 96, 44, 38, 247, 144, 9, 37, 99, 227, 77, 245, 166, 68, 86, 190, 212, 24, 4, 5, 185, 36, 213, 231, 67, 129, 50, 71, 39, 88, 15, 211, 107, 130, 135, 243, 23, 234, 188, 194, 106, 38, 145, 94, 206, 43, 89, 83, 206, 237, 57, 65, 152, 64, 61, 140, 83, 118, 176, 89, 116, 224, 242, 85, 160, 216, 25, 118, 104, 64, 140, 235, 182, 51, 210, 231, 49, 133, 9, 185, 235, 97, 38, 35, 92, 60, 244, 96, 95, 151, 33, 114, 109, 28, 73, 21, 25, 6, 233, 5, 162, 179, 57, 230, 143, 92, 162, 75, 65 }
                         });
                 });
 

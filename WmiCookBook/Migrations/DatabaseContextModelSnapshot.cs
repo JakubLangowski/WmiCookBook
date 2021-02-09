@@ -26,6 +26,10 @@ namespace WmiCookBook.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
+                    b.Property<string>("Image")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
                     b.Property<bool>("IsFeatured")
                         .HasColumnType("bit");
 
@@ -36,6 +40,36 @@ namespace WmiCookBook.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/makaron-z-kurczakiem-i-sosem-smietanowym.jpg",
+                            IsFeatured = true,
+                            Name = "Makarony"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/535x0/dania_weganskie476337.jpg",
+                            IsFeatured = true,
+                            Name = "Wegetariańskie"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/535x0/dania_glowne491942.jpg",
+                            IsFeatured = true,
+                            Name = "Dania główne"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/nalesniki-z-kurczakiem-i-pieczarkami-2.jpg",
+                            IsFeatured = true,
+                            Name = "Przekąski"
+                        });
                 });
 
             modelBuilder.Entity("WmiCookBook.Models.Ingredient", b =>
@@ -61,6 +95,547 @@ namespace WmiCookBook.Migrations
                     b.HasIndex("RecipeId");
 
                     b.ToTable("Ingredients");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Czosnek ząbki",
+                            Quantity = "2 sztuki",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Fix Lasagne Knorr ",
+                            Quantity = "1 opakowanie",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Mięso mielone wołowe ",
+                            Quantity = "500g",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Czerwone wino ",
+                            Quantity = "150ml",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Cebula",
+                            Quantity = "2 sztuki",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Koncentrat pomidorowy",
+                            Quantity = "1 łyżka",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Makaron lasagne ",
+                            Quantity = "1 opakowanie",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Mleko",
+                            Quantity = "500ml",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Name = "Mąka",
+                            Quantity = "3 łyżki",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Name = "Masło",
+                            Quantity = "60g",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Name = "Ser żółty ",
+                            Quantity = "150g",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Name = "Gałka muszkatołowa z Indonezji Knorr ",
+                            Quantity = "1 szczypta",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Name = "Oliwa",
+                            Quantity = "3 łyżki",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Name = "Woda",
+                            Quantity = "400ml",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Name = "Filety z piersi kurczaka ",
+                            Quantity = "500g",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Name = "Rosół z kury Knorr",
+                            Quantity = "1 sztuka",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Name = "Makaron penne ",
+                            Quantity = "300g",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Name = "Pieczarki",
+                            Quantity = "300g",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Name = "Cebula",
+                            Quantity = "1 sztuka",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Name = "Delikatna przyprawa uniwersalna Knorr ",
+                            Quantity = "1 łyżeczka",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Name = "Woda",
+                            Quantity = "300ml",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Name = "Śmietana 18%",
+                            Quantity = "200ml",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Name = "Mąka pszenna",
+                            Quantity = "2 łyżki",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Name = "Olej do smażenia",
+                            Quantity = "80ml",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Name = "Mała natka pietruszki",
+                            Quantity = "1 pęczek",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Name = "Starty parmezan lub inny żółty ser",
+                            Quantity = "100g",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Name = "Makaron tagiatelle",
+                            Quantity = "300g",
+                            RecipeId = 3
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Name = "Naturalnie smaczne Tagiatelle z kurczakiem Knorr",
+                            Quantity = "1 opakowanie",
+                            RecipeId = 3
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Name = "Pierś z kurczaka",
+                            Quantity = "1 sztuka",
+                            RecipeId = 3
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Name = "Śmietana 18%",
+                            Quantity = "150ml",
+                            RecipeId = 3
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Name = "Woda",
+                            Quantity = "100ml",
+                            RecipeId = 3
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Name = "Starty ser mozzarella",
+                            Quantity = "4 łyżki",
+                            RecipeId = 3
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Name = "Olej",
+                            Quantity = "2 łyżki",
+                            RecipeId = 3
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Name = "Dynia",
+                            Quantity = "Pół średniej",
+                            RecipeId = 4
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Name = "Ser feta ",
+                            Quantity = "200g",
+                            RecipeId = 4
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Name = "Oliwki drylowane",
+                            Quantity = "100g",
+                            RecipeId = 4
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Name = "Oliwa",
+                            Quantity = "3 łyżki",
+                            RecipeId = 4
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Name = "Sok z cytryny",
+                            Quantity = "2 łyżeczki",
+                            RecipeId = 4
+                        },
+                        new
+                        {
+                            Id = 39,
+                            Name = "Zioła",
+                            Quantity = "Do smaku",
+                            RecipeId = 4
+                        },
+                        new
+                        {
+                            Id = 40,
+                            Name = "Pierś z kurczaka ",
+                            Quantity = "3 sztuki",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 41,
+                            Name = "Szpinak rozmrożony i odciśnięty z soku ",
+                            Quantity = "450g",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 42,
+                            Name = "Naturalnie smaczne Spaghetti Bolognese Knorr ",
+                            Quantity = "1 opakowanie",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 43,
+                            Name = "Mozzarella",
+                            Quantity = "100g",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 44,
+                            Name = "Pomidory pelatti ",
+                            Quantity = "1 słoik",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 45,
+                            Name = "Chilli",
+                            Quantity = "1 sztuka",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 46,
+                            Name = "Cebula",
+                            Quantity = "1 sztuka",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 47,
+                            Name = "Suszone pomidory ",
+                            Quantity = "50g",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 48,
+                            Name = "Gałka muszkatołowa z Indonezji Knorr",
+                            Quantity = "Szczypta",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 49,
+                            Name = "Ząbki czosnku ",
+                            Quantity = "2 sztuki",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 50,
+                            Name = "Orzechy nerkowca ",
+                            Quantity = "100g",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 51,
+                            Name = "Śmietana 18% ",
+                            Quantity = "100ml",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 52,
+                            Name = "Margaryna",
+                            Quantity = "3 łyżki",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 53,
+                            Name = "Podwójna pierś z kurczaka",
+                            Quantity = "1 sztuka",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 54,
+                            Name = "Przyprawa do złotego kurczaka Knorr ",
+                            Quantity = "1 łyżka",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 55,
+                            Name = "Średnie cebule ",
+                            Quantity = "2 sztuki",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 56,
+                            Name = "Puszka mleka kokosowego ",
+                            Quantity = "1 sztuka",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 57,
+                            Name = "Papryczka chilli ",
+                            Quantity = "1 sztuka",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 58,
+                            Name = "Pasta curry ",
+                            Quantity = "1 łyżka",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 59,
+                            Name = "Curry Knorr ",
+                            Quantity = "2 łyżki",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 60,
+                            Name = "Śmietana 18% ",
+                            Quantity = "1 łyżka",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 61,
+                            Name = "Limonka",
+                            Quantity = "1 sztuka",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 62,
+                            Name = "Olej do smażenia",
+                            Quantity = "Wedle uznania",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 63,
+                            Name = "Filet z kurczaka ",
+                            Quantity = "300g",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 64,
+                            Name = "Pieczarki",
+                            Quantity = "300g",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 65,
+                            Name = "Menu ze Smakiem Sos pieczarkowy z cebulką Knorr",
+                            Quantity = "1 opakowanie",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 66,
+                            Name = "Cebula dymka",
+                            Quantity = "2 sztuki",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 67,
+                            Name = "Szczypiorek",
+                            Quantity = "1 pęczek",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 68,
+                            Name = "Sól",
+                            Quantity = "Do zmaku",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 69,
+                            Name = "Pieprz czarny z Wietnamu mielony Knorr",
+                            Quantity = "1 szczypta",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 70,
+                            Name = "Olej do smażenia",
+                            Quantity = "Wedle uznania",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 71,
+                            Name = "Ząbki czosnku ",
+                            Quantity = "2 sztuki",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 72,
+                            Name = "Mąka",
+                            Quantity = "250g",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 73,
+                            Name = "Mleko",
+                            Quantity = "250ml",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 74,
+                            Name = "Jajko",
+                            Quantity = "1 sztuka",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 75,
+                            Name = "Woda gazowana",
+                            Quantity = "50ml",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 76,
+                            Name = "Olej",
+                            Quantity = "1 łyżeczka",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 77,
+                            Name = "Sól",
+                            Quantity = "Do smaku",
+                            RecipeId = 7
+                        });
                 });
 
             modelBuilder.Entity("WmiCookBook.Models.Recipe", b =>
@@ -101,6 +676,92 @@ namespace WmiCookBook.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Recipes");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 914, DateTimeKind.Local).AddTicks(692),
+                            Difficulty = 2,
+                            Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/lasagne-z-sosem-bolognese.jpg",
+                            IsAccepted = true,
+                            IsFeatured = true,
+                            Name = "Lasagne",
+                            Time = 60
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 916, DateTimeKind.Local).AddTicks(4862),
+                            Difficulty = 1,
+                            Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/makaron-z-kurczakiem-i-sosem-smietanowym.jpg",
+                            IsAccepted = true,
+                            IsFeatured = true,
+                            Name = "Makaron z kurczakiem i sosem śmietanowym",
+                            Time = 45
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 916, DateTimeKind.Local).AddTicks(4910),
+                            Difficulty = 1,
+                            Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/super-szybkie-tagliatelle-z-kurczakiem658590.jpg",
+                            IsAccepted = true,
+                            IsFeatured = true,
+                            Name = "Super szybkie tagliatelle z kurczakiem",
+                            Time = 25
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 916, DateTimeKind.Local).AddTicks(4928),
+                            Difficulty = 1,
+                            Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/frittata-z-dynia-i-serem-feta.jpg",
+                            IsAccepted = true,
+                            IsFeatured = true,
+                            Name = "Pieczona dynia z fetą i oliwkami",
+                            Time = 40
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CategoryId = 3,
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 916, DateTimeKind.Local).AddTicks(4939),
+                            Difficulty = 1,
+                            Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/roladki-po-bolonsku543812.jpg",
+                            IsAccepted = true,
+                            IsFeatured = true,
+                            Name = "Roladki po bolońsku",
+                            Time = 45
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CategoryId = 3,
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 916, DateTimeKind.Local).AddTicks(4951),
+                            Difficulty = 1,
+                            Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/curry-z-kurczaka.jpg",
+                            IsAccepted = true,
+                            IsFeatured = true,
+                            Name = "Kurczak curry",
+                            Time = 45
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CategoryId = 4,
+                            CreatedAt = new DateTime(2021, 2, 9, 10, 23, 13, 916, DateTimeKind.Local).AddTicks(4961),
+                            Difficulty = 1,
+                            Image = "https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/nalesniki-z-kurczakiem-i-pieczarkami-2.jpg",
+                            IsAccepted = true,
+                            IsFeatured = true,
+                            Name = "Naleśniki z kurczakiem i pieczarkami",
+                            Time = 45
+                        });
                 });
 
             modelBuilder.Entity("WmiCookBook.Models.RefreshToken", b =>
@@ -153,6 +814,236 @@ namespace WmiCookBook.Migrations
                     b.HasIndex("RecipeId");
 
                     b.ToTable("Steps");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Cebule i czosnek pokrój w drobną kostkę, wrzuć na rozgrzaną oliwę. Jak tylko się przesmażą dodaj mielone mięso i smaż powoli.",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Wlej wino i poczekaj, aż odparuje.",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Fix Knorr wymieszaj w 400 mililitrach wody i wlej do mięsa. Całość duś powoli około 20 minut, mięso powinno być miękkie, a sos gęsty.",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "Przygotuj sos beszamel. W rondelku rozpuść masło i wsyp mąkę. Mieszaj, aż mąka połączy się z tłuszczem.",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Description = "Wlej mleko i energicznie mieszaj tak, aby rozbić wszystkie grudki. Sos zagotuj, dopraw szczyptą soli oraz gałką muszkatołową. Na końcu dodaj do gorącego sosu połowę startego sera (najlepszy będzie o wyrazistym smaku). Mieszaj, aż ser się roztopi.",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Najlepiej w kwadratowym lub prostokątnym naczyniu żaroodpornym układaj lasagne. Najpierw posmaruj dno sosem beszamel, następnie układaj surowy makaron tak, aby płaty pokryły dno i lekko zachodziły jeden za drugi.",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Description = "Następnie ponownie posmaruj makaron sosem beszamel. Później nałóż warstwę mięsa, następnie połóż drugą warstwę makaronu i beszamelu. Czynność powtarzaj do wyczerpania mięsa. Ostatnią warstwę przykryj makaronem i polej po wierzchu obficie pozostałym beszamelem. Na końcu posyp serem i piecz w piekarniku rozgrzanym do 180 °C przez 30 minut.",
+                            RecipeId = 1
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Description = "Ugotuj makaron al dente.",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Description = "Piersi pokrój w kostkę 1x1 cm, cebulę w plastry, a pieczarki w ćwiartki.",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Description = "Mięso dopraw do smaku przyprawą warzywną oraz pieprzem, oprósz w mące, obsmaż na patelni na rozgrzanym tłuszczu na złoty kolor. Dodaj cebulę i pieczarki. Całość smaż, aż zupełnie odparują soki z mięsa i grzybów.",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Description = "Dodaj śmietanę i 300 ml zimnej wody. Całość gotuj około 5 minut, aż sos zgęstnieje, a następnie dopraw kostką Rosołu z kury Knorr, dodaj ugotowany makaron i posiekaną natkę pietruszki. Całość dokładnie wymieszaj.",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Description = "Makaron podawaj posypany startym serem.",
+                            RecipeId = 2
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Description = "Pierś kurczaka pokrój w kostkę 1x1 cm. Na patelni rozgrzej olej i usmaż pokrojone mięso.",
+                            RecipeId = 3
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Description = "W miseczce wymieszaj zawartość opakowania Knorr z wodą i śmietaną, wlej na patelnię i zagotuj.",
+                            RecipeId = 3
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Description = "Makaron ugotuj al dente we wrzącej lekko osolonej wodzie i odcedź. Ugotowany makaron przełóż na patelnię i wymieszaj z sosem.",
+                            RecipeId = 3
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Description = "Gotowy makaron wyłóż na talerze i posyp startym serem.",
+                            RecipeId = 3
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Description = "Umyj dynię, odsącz nasienie i pokrój w plastry.",
+                            RecipeId = 4
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Description = "Wyłóż blachę papierem do pieczenia, ułóż na niej cząstki dyni.",
+                            RecipeId = 4
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Description = "Posmaruj dynię łyżeczką oliwy.",
+                            RecipeId = 4
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Description = "Wstaw do piekarnika rozgrzanego do 200C i piecz przez około 30 minut (należy dynię raz obrócić). Można też upiec dynię na grillu.",
+                            RecipeId = 4
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Description = "Przygotuj sos: oliwa, sos z cytryny i zioła.",
+                            RecipeId = 4
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Description = "Posyp dynię fetą.",
+                            RecipeId = 4
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Description = "Na patelni na rozgrzanym tłuszczu podsmaż posiekany czosnek cebulkę i papryczkę chili, dodaj szpinak całość smaż chwilę. Dodaj śmietanę i pokruszone orzeszki nerkowca.",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Description = "Jeśli uważasz za konieczne dopraw do smaku i odstaw na bok do ostygnięcia. Gdy farsz będzie już zimny dodaj do niego pokrojone w drobna kostkę suszone pomidory i ser mozzarella.",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Description = "Na foli ułóż piersi z kurczaka przykryj drugą warstwa foli i delikatnie uderzając tłuczkiem rozbij mięso na cienki płat. Na mięsie ułóż porcję szpinaku.",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Description = "Brzegi mięsa delikatnie zawiń do środka całość zroluj zabezpieczając roladki wykałaczkami przed rozwinięciem się.",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Description = "Roladki obsmaż z obu stron na rozgrzanym tłuszczu, przełóż je na bok, na tę samą patelnie wlej pomidory z puszki oraz ¼ szklanki wody. Dodaj 1 opakowanie Knorr Naturalnie smaczne.",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Description = "Całość dokładnie wymieszaj i zagotuj. Do sosu włóż na powrót roladki duś pod przykryciem około 15 minut aż mięso dojdzie środku.",
+                            RecipeId = 5
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Description = "Kurczaka pokrój w paski i obficie posyp curry oraz Przyprawą do złotego kurczaka Knorr. ",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Description = "Pozostaw go na 20 minut w lodówce.",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Description = "Pokrój cebule i chilli, po czym podsmaż je. Dodaj kurczaka i ponownie podsmaż.",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Description = "Następnie dodaj mleko kokosowe, śmietanę, pastę curry i sok z połówki limonki. Gotuj do ",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Description = "momentu, gdy sos się zredukuje i odrobinę zgęstnieje. Podawaj z ryżem.",
+                            RecipeId = 6
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Description = "Składniki na ciasto naleśnikowe połącz za pomocą miksera na gładką masę. Smaż cienkie naleśniki na złocisty kolor z obu stron.",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Description = "Kurczaka umyj i pokrój w paski, oprósz solą i pieprzem.",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Description = "Pieczarki umyj i pokrój w plastry. Cebulę, czosnek i szczypior posiekaj.",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Description = "Przesmaż na patelni kurczaka, następnie dodaj cebulę i czosnek. Po 1 minucie dorzuć pieczarki.",
+                            RecipeId = 7
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Description = "Podsmażaj wszystko razem 5 minut. Dodaj śmietanę i sos Knorr. Gotuj na małym ogniu, aż całość zgęstnieje. Podawaj naleśniki posmarowane ciepłym sosem, złożone w trójkąty i posypane szczypiorkiem.",
+                            RecipeId = 7
+                        });
                 });
 
             modelBuilder.Entity("WmiCookBook.Models.User", b =>
@@ -184,22 +1075,15 @@ namespace WmiCookBook.Migrations
                         {
                             Id = 1,
                             Email = "admin@gmail.com",
-                            PasswordHash = new byte[] { 47, 174, 101, 168, 104, 136, 140, 43, 19, 85, 179, 101, 163, 62, 131, 215, 210, 254, 136, 250, 25, 62, 123, 218, 96, 201, 38, 217, 149, 210, 249, 60, 63, 204, 240, 101, 102, 42, 234, 196, 77, 213, 19, 194, 238, 72, 92, 94, 210, 87, 153, 81, 9, 235, 191, 163, 171, 88, 216, 13, 243, 207, 170, 232 },
-                            PasswordSalt = new byte[] { 150, 15, 201, 59, 39, 104, 61, 196, 155, 235, 225, 231, 239, 251, 59, 240, 94, 58, 234, 153, 2, 76, 161, 68, 115, 173, 142, 210, 168, 121, 91, 62, 235, 193, 148, 84, 104, 240, 79, 6, 3, 192, 226, 147, 147, 145, 56, 163, 111, 157, 51, 27, 245, 88, 210, 161, 235, 68, 118, 100, 11, 166, 30, 221, 172, 249, 149, 43, 158, 171, 135, 103, 80, 213, 102, 145, 238, 1, 59, 173, 114, 71, 159, 147, 125, 67, 30, 168, 163, 14, 43, 35, 29, 56, 220, 54, 9, 42, 10, 242, 148, 132, 102, 52, 177, 57, 104, 139, 183, 247, 124, 45, 99, 53, 206, 105, 8, 230, 86, 6, 234, 156, 101, 146, 219, 234, 76, 235 }
+                            PasswordHash = new byte[] { 172, 56, 74, 32, 26, 56, 65, 72, 148, 205, 213, 42, 107, 70, 186, 163, 249, 180, 39, 192, 74, 143, 254, 61, 48, 211, 66, 28, 133, 247, 102, 125, 161, 7, 57, 119, 20, 102, 131, 22, 169, 107, 109, 49, 54, 98, 161, 20, 70, 23, 124, 58, 57, 37, 254, 116, 218, 9, 31, 128, 48, 182, 151, 35 },
+                            PasswordSalt = new byte[] { 231, 49, 26, 66, 154, 30, 23, 237, 134, 188, 237, 82, 240, 7, 10, 214, 152, 225, 136, 34, 96, 44, 38, 247, 144, 9, 37, 99, 227, 77, 245, 166, 68, 86, 190, 212, 24, 4, 5, 185, 36, 213, 231, 67, 129, 50, 71, 39, 88, 15, 211, 107, 130, 135, 243, 23, 234, 188, 194, 106, 38, 145, 94, 206, 43, 89, 83, 206, 237, 57, 65, 152, 64, 61, 140, 83, 118, 176, 89, 116, 224, 242, 85, 160, 216, 25, 118, 104, 64, 140, 235, 182, 51, 210, 231, 49, 133, 9, 185, 235, 97, 38, 35, 92, 60, 244, 96, 95, 151, 33, 114, 109, 28, 73, 21, 25, 6, 233, 5, 162, 179, 57, 230, 143, 92, 162, 75, 65 }
                         },
                         new
                         {
                             Id = 2,
-                            Email = "moderator@gmail.com",
-                            PasswordHash = new byte[] { 47, 174, 101, 168, 104, 136, 140, 43, 19, 85, 179, 101, 163, 62, 131, 215, 210, 254, 136, 250, 25, 62, 123, 218, 96, 201, 38, 217, 149, 210, 249, 60, 63, 204, 240, 101, 102, 42, 234, 196, 77, 213, 19, 194, 238, 72, 92, 94, 210, 87, 153, 81, 9, 235, 191, 163, 171, 88, 216, 13, 243, 207, 170, 232 },
-                            PasswordSalt = new byte[] { 150, 15, 201, 59, 39, 104, 61, 196, 155, 235, 225, 231, 239, 251, 59, 240, 94, 58, 234, 153, 2, 76, 161, 68, 115, 173, 142, 210, 168, 121, 91, 62, 235, 193, 148, 84, 104, 240, 79, 6, 3, 192, 226, 147, 147, 145, 56, 163, 111, 157, 51, 27, 245, 88, 210, 161, 235, 68, 118, 100, 11, 166, 30, 221, 172, 249, 149, 43, 158, 171, 135, 103, 80, 213, 102, 145, 238, 1, 59, 173, 114, 71, 159, 147, 125, 67, 30, 168, 163, 14, 43, 35, 29, 56, 220, 54, 9, 42, 10, 242, 148, 132, 102, 52, 177, 57, 104, 139, 183, 247, 124, 45, 99, 53, 206, 105, 8, 230, 86, 6, 234, 156, 101, 146, 219, 234, 76, 235 }
-                        },
-                        new
-                        {
-                            Id = 3,
                             Email = "user@gmail.com",
-                            PasswordHash = new byte[] { 47, 174, 101, 168, 104, 136, 140, 43, 19, 85, 179, 101, 163, 62, 131, 215, 210, 254, 136, 250, 25, 62, 123, 218, 96, 201, 38, 217, 149, 210, 249, 60, 63, 204, 240, 101, 102, 42, 234, 196, 77, 213, 19, 194, 238, 72, 92, 94, 210, 87, 153, 81, 9, 235, 191, 163, 171, 88, 216, 13, 243, 207, 170, 232 },
-                            PasswordSalt = new byte[] { 150, 15, 201, 59, 39, 104, 61, 196, 155, 235, 225, 231, 239, 251, 59, 240, 94, 58, 234, 153, 2, 76, 161, 68, 115, 173, 142, 210, 168, 121, 91, 62, 235, 193, 148, 84, 104, 240, 79, 6, 3, 192, 226, 147, 147, 145, 56, 163, 111, 157, 51, 27, 245, 88, 210, 161, 235, 68, 118, 100, 11, 166, 30, 221, 172, 249, 149, 43, 158, 171, 135, 103, 80, 213, 102, 145, 238, 1, 59, 173, 114, 71, 159, 147, 125, 67, 30, 168, 163, 14, 43, 35, 29, 56, 220, 54, 9, 42, 10, 242, 148, 132, 102, 52, 177, 57, 104, 139, 183, 247, 124, 45, 99, 53, 206, 105, 8, 230, 86, 6, 234, 156, 101, 146, 219, 234, 76, 235 }
+                            PasswordHash = new byte[] { 172, 56, 74, 32, 26, 56, 65, 72, 148, 205, 213, 42, 107, 70, 186, 163, 249, 180, 39, 192, 74, 143, 254, 61, 48, 211, 66, 28, 133, 247, 102, 125, 161, 7, 57, 119, 20, 102, 131, 22, 169, 107, 109, 49, 54, 98, 161, 20, 70, 23, 124, 58, 57, 37, 254, 116, 218, 9, 31, 128, 48, 182, 151, 35 },
+                            PasswordSalt = new byte[] { 231, 49, 26, 66, 154, 30, 23, 237, 134, 188, 237, 82, 240, 7, 10, 214, 152, 225, 136, 34, 96, 44, 38, 247, 144, 9, 37, 99, 227, 77, 245, 166, 68, 86, 190, 212, 24, 4, 5, 185, 36, 213, 231, 67, 129, 50, 71, 39, 88, 15, 211, 107, 130, 135, 243, 23, 234, 188, 194, 106, 38, 145, 94, 206, 43, 89, 83, 206, 237, 57, 65, 152, 64, 61, 140, 83, 118, 176, 89, 116, 224, 242, 85, 160, 216, 25, 118, 104, 64, 140, 235, 182, 51, 210, 231, 49, 133, 9, 185, 235, 97, 38, 35, 92, 60, 244, 96, 95, 151, 33, 114, 109, 28, 73, 21, 25, 6, 233, 5, 162, 179, 57, 230, 143, 92, 162, 75, 65 }
                         });
                 });
 
