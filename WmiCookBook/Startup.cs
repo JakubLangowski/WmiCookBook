@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -87,7 +88,7 @@ namespace WmiCookBook
             }
             
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            // app.UseStaticFiles();
             app.UseRouting();
             app.UseCors(x => x
                 .AllowAnyOrigin()
@@ -99,10 +100,34 @@ namespace WmiCookBook
             {
                 endpoints.MapControllers();
             });
-            if (env.IsDevelopment())
+
+            app.UseStaticFiles(new StaticFileOptions
             {
-                app.UseVueDevelopmentServer();
-            }
+                FileProvider = new PhysicalFileProvider(
+                Path.Combine(env.ContentRootPath, @"ClientApp/dist/css")),
+                RequestPath = "/css"
+            });
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.ContentRootPath, @"ClientApp/dist/js")),
+                RequestPath = "/js"
+            });
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.ContentRootPath, @"ClientApp/dist/img")),
+                RequestPath = "/img"
+            });
+
+            app.UseSpa(spa =>
+            {
+                spa.Options.SourcePath = "ClientApp";
+                if (env.IsDevelopment())
+                {
+                    app.UseVueDevelopmentServer();
+                }
+            });
         }
         
         private void InstallDatabaseServices(IServiceCollection services)
