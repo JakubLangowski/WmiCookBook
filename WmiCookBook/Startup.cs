@@ -124,14 +124,14 @@ namespace WmiCookBook
             app.UseStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(
-                    Path.Combine(env.ContentRootPath, @"ClientApp/dist/storage/recipes")),
+                    Path.Combine(env.ContentRootPath, @"Storage/Recipes")),
                 RequestPath = "/storage/recipes"
             });
             
             app.UseStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(
-                    Path.Combine(env.ContentRootPath, @"ClientApp/dist/storage/categories")),
+                    Path.Combine(env.ContentRootPath, @"Storage/Categories")),
                 RequestPath = "/storage/categories"
             });
             

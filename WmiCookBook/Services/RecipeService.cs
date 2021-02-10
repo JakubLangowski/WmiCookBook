@@ -69,9 +69,9 @@ namespace WmiCookBook.Services
                 .SingleOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task<Recipe> CreateRecipeAsync(Recipe recipe)
+        public async Task<Recipe> CreateRecipeAsync(Recipe recipe, IFormFile formFile)
         {
-            string fileName = await _imageService.UploadFile(recipe.Image);
+            string fileName = await _imageService.UploadFile(formFile);
             recipe.Image = fileName;
             await _context.Recipes.AddAsync(recipe);
             await _context.SaveChangesAsync();

@@ -1,5 +1,6 @@
 <template>
     <h3 class="text-3xl font-bold">Lista zakupów: </h3>
+    <br>
     <table class="table-auto ingredientsList mt-4">
         <thead>
             <tr>

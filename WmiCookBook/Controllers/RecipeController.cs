@@ -117,11 +117,12 @@ namespace WmiCookBook.Controllers
         [SwaggerResponse(400, "", typeof(ErrorResponse))]
         //
         
+        [Consumes("multipart/form-data")]
         [HttpPost(ApiRoutes.Recipe.Create)]
-        public async Task<IActionResult> Create([FromBody] CreateRecipeRequest request)
+        public async Task<IActionResult> Create([FromForm] CreateRecipeRequest request)
         {
             var newRecipe = _mapper.Map<Recipe>(request);
-            var createdRecipe = await _recipeService.CreateRecipeAsync(newRecipe);
+            var createdRecipe = await _recipeService.CreateRecipeAsync(newRecipe, request.Image);
             
             if (createdRecipe.Id == 0)
                 return BadRequest(new ErrorResponse("Wystąpił błąd podczas dodawania"));

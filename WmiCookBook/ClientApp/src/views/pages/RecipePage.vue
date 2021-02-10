@@ -1,6 +1,6 @@
 <template>
-    <div v-if="recipeLoaded" class="grid grid-cols-12">
-        <div class="col-span-12 lg:col-span-6">
+    <div v-if="recipeLoaded" class="grid grid-cols-12 gap-5">
+        <div class="col-span-12 lg:col-span-6 bg-white shadow-2xl rounded-lg">
             <h1 class="text-3xl text-center lg:text-5xl font-bold text-gray-700 md:p-3 lg:p-7 ">{{ recipe.name }}</h1>
             <h3 class="text-xl text-center lg:text-xl font-bold text-gray-700 md:p-3 lg:p-7 p-3">Kategoria: <span class="font-semibold">{{ recipe.category.name }}</span></h3>
             <div class="grid grid-cols-2 py-3 h-48 lg:h-52 items-center">
@@ -9,20 +9,20 @@
                     <span class="p-3 p-6 lg:p-8" :class="getDifficultyLevelIcon(recipe.difficulty)"></span>
                     <span class="text-lg font-semibold text-gray-700 pb-2">{{getDifficultyLevelText(recipe.difficulty) }}</span>
                 </span>
-                    <span class="text-center flex flex-col">
-                      <span class="text-lg font-semibold text-gray-700 pb-2">Czas wykonania</span>
-                <span class="p-3 p-6 lg:p-8 timer-outline-icon"></span>
+                <span class="text-center flex flex-col">
+                    <span class="text-lg font-semibold text-gray-700 pb-2">Czas wykonania</span>
+                    <span class="p-3 p-6 lg:p-8 timer-outline-icon"></span>
                     <span class="text-lg font-semibold text-gray-700 pb-2">{{ recipe.time }} min</span>
                 </span>
             </div>
         </div>
-        <div class="col-span-12 lg:col-span-6">
-            <img class="object-contain h-96 w-full" :src="recipe.image" :alt="recipe.name"/>
+        <div class="col-span-12 lg:col-span-6 recipe-image-wrapper">
+            <img class="recipe-img" :src="recipe.image" :alt="recipe.name"/>
         </div>
-        <div class="col-span-12 lg:col-span-6 py-3 md:p-5 lg:p-8">
+        <div class="col-span-12 lg:col-span-6 py-3 md:p-5 lg:p-8 bg-white shadow-2xl rounded-lg p-3">
             <IngredientsList :ingredients="recipe.ingredients"/>
         </div>
-        <div class="col-span-12 lg:col-span-6 py-3 md:p-5 lg:p-8">
+        <div class="col-span-12 lg:col-span-6 py-3 md:p-5 lg:p-8 bg-white shadow-2xl rounded-lg p-3">
             <StepsList :steps="recipe.steps"/>
         </div>
     </div>
@@ -77,22 +77,22 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
-.leftCol {
-    flex: 1 1 50%;
-}
-
-.rightCol {
-    flex: 1 1 50%;
-
-    //img {
-    //  border-radius: 5px;
-    //  min-width: 500px;
-    //  @media (max-width: 500px) {
-    //    min-width: 300px;
-    //  }
-    //  width: 100%;
-    //}
-}
+<style lang="scss" scoped>
+    .recipe-image-wrapper {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        min-height: 375px;
+        border-radius: 3px;
+        position: relative;
+    }
+    .recipe-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
 </style>

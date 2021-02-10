@@ -20,7 +20,8 @@ namespace WmiCookBook.MappingProfiles
             CreateMap<AuthChangePasswordRequest, User>();
 
             CreateMap<RecipeQuery, RecipeFilter>();
-            CreateMap<CreateRecipeRequest, Recipe>();
+            CreateMap<CreateRecipeRequest, Recipe>()
+                .ForMember(x => x.Image, opt => opt.Ignore());
 
             CreateMap<CreateIngredientRequest, Ingredient>();
             CreateMap<CreateStepRequest, Step>();

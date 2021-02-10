@@ -8,7 +8,7 @@ namespace WmiCookBook.Contracts.Request.Recipe
     public class CreateRecipeRequest
     {
         public string Name { get; set; }
-        public string Image { get; set; }
+        public IFormFile Image { get; set; }
         public int Difficulty { get; set; }
         public int Time { get; set; }
         public virtual ICollection<CreateIngredientRequest> Ingredients { get; set; }

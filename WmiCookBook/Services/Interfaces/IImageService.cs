@@ -6,6 +6,7 @@ namespace WmiCookBook.Services.Interfaces
 {
     public interface IImageService
     {
-        public Task<string> UploadFile(string fileBase64, string folderPath = "storage/recipes/");
+        public Task<string> UploadBase64File(string fileBase64, string folderPath = "storage/recipes/");
+        public Task<string> UploadFile(IFormFile formFile, string folderPath = "storage/recipes/");
     }
 }

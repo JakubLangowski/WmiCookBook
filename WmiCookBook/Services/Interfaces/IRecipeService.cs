@@ -13,7 +13,7 @@ namespace WmiCookBook.Services.Interfaces
         Task<List<Recipe>> GetFeaturedRecipeAsync();
         Task<List<Recipe>> GetNewRecipeAsync();
         Task<Recipe> GetRecipeByIdAsync(int id);
-        Task<Recipe> CreateRecipeAsync(Recipe recipe);
+        Task<Recipe> CreateRecipeAsync(Recipe recipe, IFormFile formFile);
         Task<bool> AcceptRecipeAsync(Recipe recipe);
         Task<bool> AddRecipeToFeaturedAsync(Recipe recipe, FeaturedRequest featuredRequest);
         Task<bool> DeleteRecipeAsync(Recipe recipe);

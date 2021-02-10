@@ -19,6 +19,15 @@
   background-size: contain;
 }
 
+.scale-down-image {
+    object-fit: scale-down!important;
+}
+
+.bg-upload {
+    background: url("~@/assets/bg-upload.jpg") center no-repeat;
+    background-size: contain;
+}
+
 .cookbook-icon {
     background: url("~@/assets/icons/cookbooklogo.svg") center no-repeat;
     background-size: contain;
