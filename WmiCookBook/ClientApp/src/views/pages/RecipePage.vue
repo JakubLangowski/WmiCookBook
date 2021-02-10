@@ -1,14 +1,14 @@
 <template>
   <div class="flex flex-wrap">
     <div class="leftCol">
-      <h1 class="text-3xl font-bold text-gray-500 md:p-5 lg:p-8">{{ recipe.name }}</h1>
+      <h1 class="text-3xl lg:text-5xl font-bold text-gray-500 md:p-3 lg:p-7">{{ recipe.name }}</h1>
       <div class="grid grid-cols-2 py-3 md:p-5 lg:p-8">
                     <span class="text-center">
-                        <span class="p-3 mr-1 lg:mr-3" :class="getDifficultyLevelIcon(difficulty)"></span>
+                        <span class="p-3 lg:p-8 mr-1 lg:mr-3" :class="getDifficultyLevelIcon(recipe.difficulty)"></span>
                         {{ getDifficultyLevelText(recipe.difficulty) }}
                     </span>
         <span class="text-center">
-                        <span class="p-3 mr-1 lg:mr-3 timer-outline-icon"></span>
+                        <span class="p-3 lg:p-8 mr-1 lg:mr-3 timer-outline-icon"></span>
                         {{ recipe.time }} min
                     </span>
       </div>
@@ -85,10 +85,10 @@ export default {
   flex: 1 1 50%;
 
   img {
+    border-radius: 5px;
     min-width: 500px;
     @media (max-width: 500px) {
       min-width: 300px;
-      border: 5px solid green;
     }
     width: 100%;
   }
