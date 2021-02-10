@@ -1,5 +1,4 @@
 <template>
-  <div>
     <h3 class="text-3xl font-bold"> Przygotowanie: </h3>
     <StepsListItem
         v-for="({description},index) in steps"
@@ -7,7 +6,6 @@
         :index="index"
         :key="index"
     />
-  </div>
 </template>
 
 <script>
@@ -19,7 +17,7 @@ export default {
   components: {StepsListItem},
   props: {
     steps: {
-      type: [],
+      type: Array,
       required: true,
     }
   },
