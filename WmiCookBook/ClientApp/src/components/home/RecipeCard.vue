@@ -1,7 +1,9 @@
 <template>
     <router-link :to="to" class="col-span-12 sm:col-span-6 lg:col-span-3 rounded bg-white shadow-xl border border-gray-200">
         <div class="flex flex-col my-auto h-full items-center img-hover-zoom overflow-hidden">
-            <img :src="image" :alt="name">
+            <div class="recipe-card-image-wrapper">
+                <img class="recipe-card-img" :src="image" :alt="name">
+            </div>
             <div class="w-full h-full flex flex-col justify-around z-20">
                 <h2 class="text-lg text-center text-gray-700 font-semibold mx-2 my-2">{{ name }}</h2>
                 <div class="grid grid-cols-2 mx-1 my-2">
@@ -69,6 +71,18 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+.recipe-card-image-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    max-height: 250px;
+    border-radius: 3px;
+    position: relative;
+}
+.recipe-card-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
 </style>

@@ -59,6 +59,7 @@ namespace WmiCookBook
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IRecipeService, RecipeService>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IImageService, ImageService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -88,7 +89,7 @@ namespace WmiCookBook
             }
             
             app.UseHttpsRedirection();
-            // app.UseStaticFiles();
+           
             app.UseRouting();
             app.UseCors(x => x
                 .AllowAnyOrigin()
@@ -119,7 +120,21 @@ namespace WmiCookBook
                     Path.Combine(env.ContentRootPath, @"ClientApp/dist/img")),
                 RequestPath = "/img"
             });
-
+            
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.ContentRootPath, @"Storage/Recipes")),
+                RequestPath = "/storage/recipes"
+            });
+            
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.ContentRootPath, @"Storage/Categories")),
+                RequestPath = "/storage/categories"
+            });
+            
             app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = "ClientApp";
@@ -133,7 +148,7 @@ namespace WmiCookBook
         private void InstallDatabaseServices(IServiceCollection services)
         {
             services.AddDbContext<DatabaseContext>(x =>
-                x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection2")));
         }
         
         private void InstallAuthService(IServiceCollection service)

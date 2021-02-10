@@ -86,7 +86,7 @@
 
 .floating-input > select:focus ~ label,
 .floating-input > select:valid ~ label {
-    @apply opacity-75 scale-75 -translate-y-3 translate-x-1;
+    @apply opacity-75 scale-75 -translate-y-4 translate-x-1;
 }
 
 .floating-input > input:focus ~ label,

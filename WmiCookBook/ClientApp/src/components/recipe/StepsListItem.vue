@@ -1,6 +1,6 @@
 <template>
-  <div class="py-2">
-    <div class="text-xl font-bold"> Krok {{ index + 1 }}</div>
+  <div class="py-2 text-center lg:text-left ">
+    <div class="text-xl font-bold pb-2"> Krok {{ index + 1 }}</div>
     <div> {{ description }}</div>
   </div>
 </template>

@@ -10,12 +10,8 @@ namespace WmiCookBook.Models
         public string Image { get; set; }
         public int Difficulty { get; set; }
         public int Time { get; set; }
-        
-        // TODO Zmienić default na false
-        public bool IsAccepted { get; set; } = true;
-        
-        // TODO Zmienić default na false
-        public bool IsFeatured { get; set; } = true;
+        public bool IsAccepted { get; set; } = false;
+        public bool IsFeatured { get; set; } = false;
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public virtual ICollection<Ingredient> Ingredients { get; set; }
         public virtual ICollection<Step> Steps { get; set; }

@@ -87,7 +87,7 @@ namespace WmiCookBook.Data
                         Image = importJson.Image,
                         Name = importJson.Name
                     });
-                    foreach (CreateRecipeRequest recipeRequest in importJson.Recipes)
+                    foreach (SeedRecipeRequest recipeRequest in importJson.Recipes)
                     {
                         recipes.Add(new Recipe
                         {

@@ -1,14 +1,13 @@
 using System.Collections.Generic;
-using Microsoft.AspNetCore.Http;
 using WmiCookBook.Contracts.Request.Ingredient;
 using WmiCookBook.Contracts.Request.Step;
 
-namespace WmiCookBook.Contracts.Request.Recipe
+namespace WmiCookBook.Data
 {
-    public class CreateRecipeRequest
+    public class SeedRecipeRequest
     {
         public string Name { get; set; }
-        public IFormFile Image { get; set; }
+        public string Image { get; set; }
         public int Difficulty { get; set; }
         public int Time { get; set; }
         public virtual ICollection<CreateIngredientRequest> Ingredients { get; set; }

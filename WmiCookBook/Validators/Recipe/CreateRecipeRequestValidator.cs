@@ -1,6 +1,7 @@
 using FluentValidation;
 using WmiCookBook.Contracts.Request.Recipe;
 using WmiCookBook.Services.Interfaces;
+using WmiCookBook.Validators.Rules;
 
 namespace WmiCookBook.Validators.Recipe
 {
@@ -11,11 +12,9 @@ namespace WmiCookBook.Validators.Recipe
             RuleFor(x => x.Name)
                 .NotEmpty().WithMessage("Podaj nazwę przepisu")
                 .MaximumLength(100).WithMessage("Nazwa nie może przekraczać 100 znaków");
-            
-            RuleFor(x => x.Image)
-                .NotEmpty().WithMessage("Dodaj url zdjęcia")
-                .MaximumLength(500).WithMessage("Url zdjęcia nie może przekraczać 500 znaków");
-            
+
+            RuleFor(x => x.Image).SetValidator(new FileValidator());
+
             RuleFor(x => x.Difficulty)
                 .InclusiveBetween(1, 3).WithMessage("Podaj poprawny poziom trudności");
             

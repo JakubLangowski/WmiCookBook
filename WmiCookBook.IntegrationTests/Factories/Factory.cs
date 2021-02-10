@@ -1,5 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
 using Bogus;
+using Microsoft.AspNetCore.Http;
 using WmiCookBook.Contracts.Request.Auth;
 using WmiCookBook.Contracts.Request.Category;
 using WmiCookBook.Contracts.Request.Ingredient;
@@ -68,7 +72,7 @@ namespace WmiCookBook.IntegrationTests.Factories
             {
                 return new Faker<Models.Recipe>()
                     .RuleFor(x => x.Name, f => f.Lorem.Word())
-                    .RuleFor(x => x.Image, f => f.Internet.Url())
+                    .RuleFor(x => x.Image, f => f.Lorem.Word())
                     .RuleFor(x => x.Time, f => f.Random.Number(1, 1000))
                     .RuleFor(x => x.Difficulty, f => f.Random.Number(1, 3))
                     .RuleFor(x => x.Steps, Step.GetModels())
@@ -78,17 +82,20 @@ namespace WmiCookBook.IntegrationTests.Factories
                     .RuleFor(x => x.Category, Category.GetModel());
             }
             
-            public static CreateRecipeRequest GetCreateRecipeRequest(int categoryId)
-            {
-                return new Faker<CreateRecipeRequest>()
-                    .RuleFor(x => x.Name, f => f.Lorem.Word())
-                    .RuleFor(x => x.Image, f => f.Internet.Url())
-                    .RuleFor(x => x.Time, f => f.Random.Number(1, 1000))
-                    .RuleFor(x => x.Difficulty, f => f.Random.Number(1, 3))
-                    .RuleFor(x => x.Steps, Step.GetCreateStepRequests())
-                    .RuleFor(x => x.Ingredients, Ingredient.GetCreateIngredientRequests())
-                    .RuleFor(x => x.CategoryId, categoryId);
-            }
+            // public static CreateRecipeRequest GetCreateRecipeRequest(int categoryId)
+            // {
+            //     IFormFile file = new FormFile(
+            //         new MemoryStream(
+            //             Convert.FromBase64String(ImageFactory.GetTestImage())), 0, 0, "Data", "dummy.jpg");
+            //     return new Faker<CreateRecipeRequest>()
+            //         .RuleFor(x => x.Name, f => f.Lorem.Word())
+            //         .RuleFor(x => x.Image, file)
+            //         .RuleFor(x => x.Time, f => f.Random.Number(1, 1000))
+            //         .RuleFor(x => x.Difficulty, f => f.Random.Number(1, 3))
+            //         .RuleFor(x => x.Steps, Step.GetCreateStepRequests())
+            //         .RuleFor(x => x.Ingredients, Ingredient.GetCreateIngredientRequests())
+            //         .RuleFor(x => x.CategoryId, categoryId);
+            // }
         }
         
         public class Category

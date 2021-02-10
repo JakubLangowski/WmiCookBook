@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using WmiCookBook.Contracts.Request;
 using WmiCookBook.Data;
@@ -15,11 +16,13 @@ namespace WmiCookBook.Services
     {
         private readonly DatabaseContext _context;
         private readonly IAuthHelper _authHelper;
+        private readonly IImageService _imageService;
 
-        public RecipeService(DatabaseContext context, IAuthHelper authHelper)
+        public RecipeService(DatabaseContext context, IAuthHelper authHelper, IImageService imageService)
         {
             _context = context;
             _authHelper = authHelper;
+            _imageService = imageService;
         }
 
         public async Task<List<Recipe>> GetAllRecipeAsync(PaginationFilter paginationFilter, RecipeFilter recipeFilter)
@@ -66,8 +69,10 @@ namespace WmiCookBook.Services
                 .SingleOrDefaultAsync(x => x.Id == id);
         }
 
-        public async Task<Recipe> CreateRecipeAsync(Recipe recipe)
+        public async Task<Recipe> CreateRecipeAsync(Recipe recipe, IFormFile formFile)
         {
+            string fileName = await _imageService.UploadFile(formFile);
+            recipe.Image = fileName;
             await _context.Recipes.AddAsync(recipe);
             await _context.SaveChangesAsync();
             await _context.Entry(recipe)

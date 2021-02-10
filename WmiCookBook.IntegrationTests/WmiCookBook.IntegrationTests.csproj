@@ -31,5 +31,11 @@
     <ItemGroup>
         <ProjectReference Include="..\WmiCookBook\WmiCookBook.csproj" />
     </ItemGroup>
+
+    <ItemGroup>
+      <None Update="Domain\Images\testImg.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
     
 </Project>

@@ -1,7 +1,9 @@
 <template>
     <div class="min-h-screen flex flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div class="mb-5">
-            <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">
+            <img class="mx-auto h-16 w-auto"
+                 src="~@/assets/icons/cookbooklogo.svg" alt="Workflow">
+<!--            <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow">-->
         </div>
         <div class="max-w-md w-full space-y-8">
             <Form @submit="onSubmit" :validation-schema="schema" class="grid grid-cols-1 grid-rows-2 gap-4 self-center">
