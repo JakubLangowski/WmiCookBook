@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using WmiCookBook.Contracts.Request.Recipe;
 
 namespace WmiCookBook.Data
 {
@@ -7,6 +6,6 @@ namespace WmiCookBook.Data
     {
         public string Name { get; set; }
         public string Image { get; set; }
-        public List<CreateRecipeRequest> Recipes { get; set; }
+        public List<SeedRecipeRequest> Recipes { get; set; }
     }
 }

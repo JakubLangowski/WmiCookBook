@@ -49,7 +49,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="ClientApp\dist\static\" />
+      <Folder Include="ClientApp\dist\storage\categories" />
+      <Folder Include="ClientApp\dist\storage\recipes" />
     </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

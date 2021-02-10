@@ -14,7 +14,7 @@ namespace WmiCookBook.Validators.Recipe
             
             RuleFor(x => x.Image)
                 .NotEmpty().WithMessage("Dodaj url zdjęcia")
-                .MaximumLength(500).WithMessage("Url zdjęcia nie może przekraczać 500 znaków");
+                .Matches(@"^data:image\/(?:gif|png|jpeg|bmp|webp)(?:;charset=utf-8)?;base64,(?:[A-Za-z0-9]|[+/])+={0,2}").WithMessage("Niepoprawne zdjęcie");
             
             RuleFor(x => x.Difficulty)
                 .InclusiveBetween(1, 3).WithMessage("Podaj poprawny poziom trudności");

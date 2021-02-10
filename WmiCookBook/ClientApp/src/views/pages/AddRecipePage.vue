@@ -10,7 +10,13 @@
                 <SelectInput class="col-span-2" name="categoryId" label="Kategoria" :data="categories"/>
             </div>
             <div class="col-span-12 lg:col-span-6">
-                <TextInput class="col-span-2" name="image" type="text" label="Zdjęcie" />
+                <div
+                    class="imagePreviewWrapper"
+                    :class="(!images[0]) ? 'uploadImage' : ''"
+                    :style="(images[0]) ? `background: url(${images[0]}) center no-repeat;`: ''"
+                    @click="selectImage">
+                </div>
+                <input class="hidden" @change="previewFiles" ref="fileInput" type="file" name="image" accept="image/*">
             </div>
             <div class="col-span-12 lg:col-span-6 flex flex-col space-y-1">
                 <h3 class="text-xl font-bold text-center">Składniki</h3>
@@ -100,6 +106,7 @@ export default {
         const app = getCurrentInstance()
         const api = app.appContext.config.globalProperties.$api;
         
+        let images = reactive([""]);
         let categories = reactive([]);
         
         function fetchCategories() {
@@ -113,6 +120,8 @@ export default {
         }
         
         function onSubmit(values) {
+            
+            values.image = images[0];
             api.post('/recipe', values)
                 .then(() => {
                     store.dispatch('toast/successToast', "Dodano nowy przepis. Przepis oczekuje na zaakceptowanie")
@@ -122,7 +131,7 @@ export default {
                     store.dispatch('toast/errorToast', "Wystąpił błąd podczas dodawania przepisu")
                 })
         }
-
+        
         const schema = Yup.object().shape({
             ingredients: Yup.array().min(1).max(20).of(
                 Yup.object().shape({
@@ -136,7 +145,6 @@ export default {
                 })
             ),
             name: Yup.string().max(100).required(),
-            image: Yup.string().url().max(500).required(),
             time: Yup.number().integer().transform(value => (isNaN(value) ? undefined : value)).required().min(1).max(1000),
             difficulty: Yup.number().integer().transform(value => (isNaN(value) ? undefined : value)).required().min(1).max(3),
             categoryId: Yup.number().integer().transform(value => (isNaN(value) ? undefined : value)).required(),
@@ -151,6 +159,7 @@ export default {
             schema,
             state,
             categories,
+            images,
             ingredients: reactive([
                 {
                     name: "",
@@ -186,10 +195,43 @@ export default {
         removeStep(item, index) {
             this.steps.splice(index, 1);
         },
+        selectImage () {
+            this.$refs.fileInput.click()
+        },
+        previewFiles(event) {
+            const files = event.target.files;
+            if (files.length > 0){
+                this.createBase64Image(files[0])
+                    .then(result => {
+                        this.images.splice(0, this.images.length);
+                        this.images.push(result);
+                    })
+            }
+        },
+        createBase64Image (file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = error => reject(error);
+            });
+        }
+
     }
 }
 </script>
 
 <style scoped>
+.imagePreviewWrapper {
+    width: 250px;
+    height: 250px;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+    background-size: contain!important;
+}
 
+.uploadImage {
+    background: url(~@/assets/bg-upload.jpg) center no-repeat;
+}
 </style>

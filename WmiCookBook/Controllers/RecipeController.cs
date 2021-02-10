@@ -116,6 +116,7 @@ namespace WmiCookBook.Controllers
         [SwaggerResponse(201, "", typeof(RecipeResponse))]
         [SwaggerResponse(400, "", typeof(ErrorResponse))]
         //
+        
         [HttpPost(ApiRoutes.Recipe.Create)]
         public async Task<IActionResult> Create([FromBody] CreateRecipeRequest request)
         {
