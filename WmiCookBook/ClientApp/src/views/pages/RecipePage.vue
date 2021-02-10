@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-wrap">
     <div class="leftCol">
-      <h1 class="text-3xl py-4 font-bold text-gray-500">{{ recipe.name }}</h1>
-      <div class="grid grid-cols-2 mx-1 my-2">
+      <h1 class="text-3xl font-bold text-gray-500 md:p-5 lg:p-8">{{ recipe.name }}</h1>
+      <div class="grid grid-cols-2 py-3 md:p-5 lg:p-8">
                     <span class="text-center">
                         <span class="p-3 mr-1 lg:mr-3" :class="getDifficultyLevelIcon(difficulty)"></span>
                         {{ getDifficultyLevelText(recipe.difficulty) }}
@@ -12,10 +12,16 @@
                         {{ recipe.time }} min
                     </span>
       </div>
+      <div class="py-3 md:p-5 lg:p-8">
+        <StepsList :steps="recipe.steps"/>
+      </div>
+
     </div>
     <div class="rightCol">
       <img :src="recipe.image" :alt="recipe.name"/>
-      <IngredientsList :ingredients="recipe.ingredients"/>
+      <div class="py-3 md:p-5 lg:p-8">
+        <IngredientsList :ingredients="recipe.ingredients"/>
+      </div>
     </div>
 
 
@@ -25,10 +31,11 @@
 <script>
 import {recipe} from "@/fixtures/recipe";
 import IngredientsList from "@/components/recipe/IngredientsList";
+import StepsList from "@/components/recipe/StepsList";
 
 export default {
   name: "RecipePage",
-  components: {IngredientsList},
+  components: {StepsList, IngredientsList},
   data: () => ({
     // recipe:undefined
     recipe: recipe,
@@ -71,20 +78,18 @@ export default {
 <style lang="scss">
 
 .leftCol {
-  //min-width: 50%;
   flex: 1 1 50%;
-
-  border: 1px solid blue;
 }
 
 .rightCol {
-  //min-width: 640px;
-  //max-width: 50%;
   flex: 1 1 50%;
-  border: 1px solid red;
 
   img {
-    min-width: 300px;
+    min-width: 500px;
+    @media (max-width: 500px) {
+      min-width: 300px;
+      border: 5px solid green;
+    }
     width: 100%;
   }
 }

@@ -1,27 +1,20 @@
 <template>
-  <tr>
-    <td>
-      <CheckboxInput :name="name" :text="name"/>
-    </td>
-    <td>
-      {{ quantity }}
-    </td>
-  </tr>
+  <div>
+    <div> Krok {{ index }}</div>
+    <div> {{ description }}</div>
+  </div>
 </template>
 
 <script>
-import CheckboxInput from "@/components/shared/CheckboxInput";
 
 export default {
-  name: "IngredientsLisItem",
-  components: {CheckboxInput},
+  name: "StepsListItem",
   props: {
-    name: {
+    description: {
       type: String,
       required: true,
     },
-    quantity: {
-      type: String,
+    index: {
       required: true,
     },
   },
