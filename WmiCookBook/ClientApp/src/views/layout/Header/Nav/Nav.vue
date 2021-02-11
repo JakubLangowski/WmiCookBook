@@ -42,7 +42,7 @@
                   />
                   <NavLink
                       v-if="isAuthenticated"
-                      to="/admin"
+                      to="/admin/recipes"
                       title="Panel Administratora"
                   />
               </div>
@@ -68,7 +68,7 @@
           />
           <NavLink
               v-if="isAuthenticated"
-              to="/admin/dashboard"
+              to="/admin/recipes"
               title="Panel Administratora"
               :isMobile="true"
           />

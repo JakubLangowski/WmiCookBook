@@ -6,7 +6,14 @@
                           type="Submit" 
                           text="Akceptuj" 
                           btn-style="outline" 
-                          @click="toggleAccepted"
+                          @click="showAcceptModal"
+            />
+            <CustomButton v-if="isAuthenticated && !recipe.isAccepted"
+                          class="absolute top-0 left-0"
+                          type="Submit"
+                          text="Usuń"
+                          btn-style="outline"
+                          @click="showDeleteModal"
             />
             <h1 class="mt-3 text-3xl text-center lg:text-5xl font-bold text-gray-700 md:p-3 lg:p-7">{{ recipe.name }}</h1>
             <h3 class="text-xl text-center lg:text-xl font-bold text-gray-700 md:p-3 lg:p-7 p-3">Kategoria: <span class="font-semibold">{{ recipe.category.name }}</span></h3>
@@ -32,6 +39,7 @@
         <div class="col-span-12 lg:col-span-6 py-3 md:p-5 lg:p-8 bg-white shadow-2xl rounded-lg p-3">
             <StepsList :steps="recipe.steps"/>
         </div>
+        <Modal />
     </div>
 </template>
 
@@ -40,10 +48,12 @@ import IngredientsList from "@/components/recipe/IngredientsList";
 import StepsList from "@/components/recipe/StepsList";
 import CustomButton from "@/components/shared/CustomButton";
 import {mapGetters} from "vuex";
+import Modal from "@/components/shared/Modal";
 
 export default {
     name: "RecipePage",
     components: {
+        Modal,
         CustomButton,
         StepsList,
         IngredientsList
@@ -89,14 +99,34 @@ export default {
                     return 'Trudny'
             }
         },
-        toggleAccepted: function () {
-            this.$api.patch(`/recipe/${this.$route.params.id}/accept`)
+        showAcceptModal: function () {
+            this.$store.dispatch('modal/showModal', {
+                title: 'Zaakceptować przepis',
+                callback: () => this.acceptRecipe(this.$route.params.id),
+            });
+        },
+        acceptRecipe: function (id) {
+            this.$api.patch(`/recipe/${id}/accept`)
                 .then(() => {
                     this.$store.dispatch('toast/successToast', "Przepis zaakceptowano")
-                    this.recipe.isAccepted = true;
+                    this.$router.push({ name: "AdminNotAcceptedRecipesPage"})
                 })
                 .catch(() => this.$store.dispatch('toast/errorToast', "Wystąpił błąd podczas akceptowania przepisu"))
         },
+        showDeleteModal: function () {
+            this.$store.dispatch('modal/showModal', {
+                title: 'Czy na pewno chcesz usunąć przepis',
+                callback: () => this.deleteRecipe(this.$route.params.id),
+            });
+        },
+        deleteRecipe: function (id) {
+            this.$api.delete(`/recipe/${id}`)
+                .then(() => {
+                    this.$store.dispatch('toast/successToast', "Usunięto przepis")
+                    this.$router.push({ name: "AdminNotAcceptedRecipesPage"})
+                })
+                .catch(() => this.$store.dispatch('toast/errorToast', "Wystąpił błąd podczas usuwania przepisu"))
+        }
     }
 }
 </script>

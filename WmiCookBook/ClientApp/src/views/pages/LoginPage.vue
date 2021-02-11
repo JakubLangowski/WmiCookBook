@@ -65,7 +65,7 @@ export default {
         function onSubmit(values) {
             store.dispatch("user/login", values)
                 .then(() => {
-                    router.push({ name: 'AdminHomePage' });
+                    router.push({ name: 'AdminRecipesPage' });
                 })
         }
         

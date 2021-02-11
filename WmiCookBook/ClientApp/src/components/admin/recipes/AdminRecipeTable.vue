@@ -1,6 +1,6 @@
 <template>
     <AdminWrapper>
-        <h1 class="text-center text-gray-700 font-bold text-2xl">{{ title }}</h1>
+        <h1 class="text-center text-gray-700 font-bold text-3xl">{{ title }}</h1>
         <br>
         <div v-if="type === 'accepted'" class="flex justify-end pb-3">
             <Switch v-model:switchValue="showFeatured" title="Wyróżnione"/>
