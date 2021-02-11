@@ -66,6 +66,7 @@ namespace WmiCookBook.Controllers
         /// <response code="200"></response>
         [SwaggerResponse(200, "", typeof(PagedResponse<List<RecipeResponse>>))]
         //
+        [Authorize]
         [HttpGet(ApiRoutes.Recipe.GetAllNotAccepted)]
         public async Task<IActionResult> GetAllNotAccepted([FromQuery] PaginationQuery paginationQuery)
         {
