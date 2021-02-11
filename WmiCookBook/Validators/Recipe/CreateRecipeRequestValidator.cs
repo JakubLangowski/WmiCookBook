@@ -11,7 +11,7 @@ namespace WmiCookBook.Validators.Recipe
         {
             RuleFor(x => x.Name)
                 .NotEmpty().WithMessage("Podaj nazwę przepisu")
-                .MaximumLength(100).WithMessage("Nazwa nie może przekraczać 100 znaków");
+                .MaximumLength(150).WithMessage("Nazwa nie może przekraczać 150 znaków");
 
             RuleFor(x => x.Image).SetValidator(new FileValidator());
 
@@ -45,10 +45,10 @@ namespace WmiCookBook.Validators.Recipe
                 {
                     ingredient.RuleFor(x => x.Name)
                         .NotEmpty().WithMessage("Składnik musi mieć nazwę")
-                        .MaximumLength(100).WithMessage("Nazwa nie może przekraczać 100 znaków");
+                        .MaximumLength(150).WithMessage("Nazwa nie może przekraczać 150 znaków");
                     ingredient.RuleFor(x => x.Quantity)
                         .NotEmpty().WithMessage("Składnik musi mieć ilość")
-                        .MaximumLength(100).WithMessage("Ilość nie może przekraczać 100 znaków");
+                        .MaximumLength(150).WithMessage("Ilość nie może przekraczać 150 znaków");
                 });
             
             RuleForEach(x => x.Steps)
@@ -56,7 +56,7 @@ namespace WmiCookBook.Validators.Recipe
                 {
                     ingredient.RuleFor(x => x.Description)
                         .NotEmpty().WithMessage("Krok nie może być pusty")
-                        .MaximumLength(100).WithMessage("Kron nie może przekraczać 1000 znaków");
+                        .MaximumLength(1000).WithMessage("Kron nie może przekraczać 1000 znaków");
                 });
         }
     }

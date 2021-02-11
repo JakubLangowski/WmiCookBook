@@ -41,7 +41,7 @@ namespace WmiCookBook.Data
                 .HasKey(x => x.Id);
             modelBuilder.Entity<Recipe>()
                 .Property(x => x.Name)
-                .HasMaxLength(100);
+                .HasMaxLength(150);
             modelBuilder.Entity<Recipe>()
                 .Property(x => x.Image)
                 .HasMaxLength(500);
@@ -56,10 +56,10 @@ namespace WmiCookBook.Data
                 .HasKey(x => x.Id);
             modelBuilder.Entity<Ingredient>()
                 .Property(x => x.Name)
-                .HasMaxLength(100);
+                .HasMaxLength(150);
             modelBuilder.Entity<Ingredient>()
                 .Property(x => x.Quantity)
-                .HasMaxLength(100);
+                .HasMaxLength(150);
             modelBuilder.Entity<Ingredient>()
                 .HasOne(x => x.Recipe)
                 .WithMany(x => x.Ingredients)

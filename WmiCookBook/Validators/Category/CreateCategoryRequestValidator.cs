@@ -9,7 +9,7 @@ namespace WmiCookBook.Validators.Category
         {
             RuleFor(x => x.Name)
                 .NotEmpty().WithMessage("Podaj nazwę kategorii")
-                .MaximumLength(100).WithMessage("Nazwa nie może przekraczać 100 znaków");
+                .MaximumLength(150).WithMessage("Nazwa nie może przekraczać 150 znaków");
             
             RuleFor(x => x.Image)
                 .NotEmpty().WithMessage("Dodaj url zdjęcia")
