@@ -76,8 +76,8 @@ namespace WmiCookBook.IntegrationTests.Tests
         public async Task GetAll__Admin_Can_Retrieve_List_Of_Not_Accepted_Recipe()
         {
             await LogInAs("admin@gmail.com");
-            await CreateRecipe(false);            
-            await CreateRecipe(false);            
+            await CreateRecipe(true);            
+            await CreateRecipe(true);            
 
             var response = await Client.GetAsync(ApiRoutes.Recipe.GetAll);
             response.StatusCode.Should().Be(HttpStatusCode.OK);

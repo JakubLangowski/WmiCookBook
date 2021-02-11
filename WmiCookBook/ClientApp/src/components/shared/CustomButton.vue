@@ -1,5 +1,5 @@
 <template>
-    <button :type="type" :disabled="disabled" @click="emitClick"
+    <button :type="type" :disabled="disabled"
             class="btn" :class="'btn-' + btnStyle">
         {{ text }}
     </button>
@@ -29,11 +29,6 @@ export default {
             default: () => false,
         },
     },
-    methods: {
-        emitClick: function () {
-            this.$emit('click');
-        }
-    }
 }
 </script>
 

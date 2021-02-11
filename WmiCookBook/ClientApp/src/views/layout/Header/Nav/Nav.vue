@@ -42,7 +42,7 @@
                   />
                   <NavLink
                       v-if="isAuthenticated"
-                      to="/admin/dashboard"
+                      to="/admin"
                       title="Panel Administratora"
                   />
               </div>

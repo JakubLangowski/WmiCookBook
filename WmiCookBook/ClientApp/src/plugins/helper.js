@@ -12,14 +12,14 @@ const helpers = {
                 }
                 return result;
             } else if (error.response.status === 404) {
-                router.push({name: 'notFound'});
+                router.push({name: 'NotFoundPage'});
             } else {
-                store.dispatch('snackbar/createErrorSnackbar', error.response.data.message)
+                store.dispatch('toast/errorToast', error.response.data.message)
             }
         } else if (error.request) {
-            store.dispatch('snackbar/createErrorSnackbar', "The request was made but no response was received")
+            store.dispatch('toast/errorToast', "The request was made but no response was received")
         } else {
-            store.dispatch('snackbar/createSnackbar', "There was an error during request")
+            store.dispatch('toast/errorToast', "There was an error during request")
         }
         return null;
     }

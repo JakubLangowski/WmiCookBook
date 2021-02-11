@@ -27,6 +27,7 @@ namespace WmiCookBook.Contracts
         {
             // Get
             public const string GetAll = Base + "recipe";                   
+            public const string GetAllNotAccepted = Base + "recipe/not-accepted";                   
             public const string GetFeatured = Base + "recipe/featured";        
             public const string GetNew = Base + "recipe/new";        
             public const string Get = Base + "recipe/{recipeId}";     

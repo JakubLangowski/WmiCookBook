@@ -1,7 +1,14 @@
 <template>
-    <div v-if="recipeLoaded" class="grid grid-cols-12 gap-5">
-        <div class="col-span-12 lg:col-span-6 bg-white shadow-2xl rounded-lg">
-            <h1 class="text-3xl text-center lg:text-5xl font-bold text-gray-700 md:p-3 lg:p-7 ">{{ recipe.name }}</h1>
+    <div v-if="recipeLoaded" class="grid grid-cols-12 gap-5 pt-3">
+        <div class="col-span-12 lg:col-span-6 bg-white shadow-lg rounded-lg relative">
+            <CustomButton v-if="isAuthenticated && !recipe.isAccepted" 
+                          class="absolute top-0 right-0" 
+                          type="Submit" 
+                          text="Akceptuj" 
+                          btn-style="outline" 
+                          @click="toggleAccepted"
+            />
+            <h1 class="mt-3 text-3xl text-center lg:text-5xl font-bold text-gray-700 md:p-3 lg:p-7">{{ recipe.name }}</h1>
             <h3 class="text-xl text-center lg:text-xl font-bold text-gray-700 md:p-3 lg:p-7 p-3">Kategoria: <span class="font-semibold">{{ recipe.category.name }}</span></h3>
             <div class="grid grid-cols-2 py-3 h-48 lg:h-52 items-center">
                 <span class="text-center flex flex-col">
@@ -31,10 +38,13 @@
 <script>
 import IngredientsList from "@/components/recipe/IngredientsList";
 import StepsList from "@/components/recipe/StepsList";
+import CustomButton from "@/components/shared/CustomButton";
+import {mapGetters} from "vuex";
 
 export default {
     name: "RecipePage",
     components: {
+        CustomButton,
         StepsList,
         IngredientsList
     },
@@ -42,12 +52,18 @@ export default {
         recipeLoaded: false,
         recipe: {},
     }),
+    computed: {
+        ...mapGetters('user', [
+            'isAuthenticated',
+        ])
+    },
     mounted() {
         this.fetchRecipe()
             .then((response) => {
                 this.recipe = response.data;
                 this.recipeLoaded = true;
-            });
+            })
+            .catch(error => this.$helper.handleErrors(error));
     },
     methods: {
         fetchRecipe: async function () {
@@ -72,6 +88,14 @@ export default {
                 case 3:
                     return 'Trudny'
             }
+        },
+        toggleAccepted: function () {
+            this.$api.patch(`/recipe/${this.$route.params.id}/accept`)
+                .then(() => {
+                    this.$store.dispatch('toast/successToast', "Przepis zaakceptowano")
+                    this.recipe.isAccepted = true;
+                })
+                .catch(() => this.$store.dispatch('toast/errorToast', "Wystąpił błąd podczas akceptowania przepisu"))
         },
     }
 }

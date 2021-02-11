@@ -23,6 +23,16 @@
     object-fit: scale-down!important;
 }
 
+.star-icon {
+    background: url("~@/assets/icons/star.svg") center no-repeat;
+    background-size: contain;
+}
+
+.star-outline-icon {
+    background: url("~@/assets/icons/star-outline.svg") center no-repeat;
+    background-size: contain;
+}
+
 .bg-upload {
     background: url("~@/assets/bg-upload.jpg") center no-repeat;
     background-size: contain;

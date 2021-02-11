@@ -1,0 +1,518 @@
+[
+    {
+        "Name":"Makarony",
+        "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/makaron-z-kurczakiem-i-sosem-smietanowym.jpg",
+        "Recipes":[
+            {
+                "Name":"Lasagne",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/lasagne-z-sosem-bolognese.jpg",
+                "Difficulty":"2",
+                "Time":60,
+                "Steps":[
+                    {
+                        "Description":"Cebule i czosnek pokrój w drobną kostkę, wrzuć na rozgrzaną oliwę. Jak tylko się przesmażą dodaj mielone mięso i smaż powoli."
+                    },
+                    {
+                        "Description":"Wlej wino i poczekaj, aż odparuje."
+                    },
+                    {
+                        "Description":"Fix Knorr wymieszaj w 400 mililitrach wody i wlej do mięsa. Całość duś powoli około 20 minut, mięso powinno być miękkie, a sos gęsty."
+                    },
+                    {
+                        "Description":"Przygotuj sos beszamel. W rondelku rozpuść masło i wsyp mąkę. Mieszaj, aż mąka połączy się z tłuszczem."
+                    },
+                    {
+                        "Description":"Wlej mleko i energicznie mieszaj tak, aby rozbić wszystkie grudki. Sos zagotuj, dopraw szczyptą soli oraz gałką muszkatołową. Na końcu dodaj do gorącego sosu połowę startego sera (najlepszy będzie o wyrazistym smaku). Mieszaj, aż ser się roztopi."
+                    },
+                    {
+                        "Description":"Najlepiej w kwadratowym lub prostokątnym naczyniu żaroodpornym układaj lasagne. Najpierw posmaruj dno sosem beszamel, następnie układaj surowy makaron tak, aby płaty pokryły dno i lekko zachodziły jeden za drugi."
+                    },
+                    {
+                        "Description":"Następnie ponownie posmaruj makaron sosem beszamel. Później nałóż warstwę mięsa, następnie połóż drugą warstwę makaronu i beszamelu. Czynność powtarzaj do wyczerpania mięsa. Ostatnią warstwę przykryj makaronem i polej po wierzchu obficie pozostałym beszamelem. Na końcu posyp serem i piecz w piekarniku rozgrzanym do 180 °C przez 30 minut."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"Czosnek ząbki",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"Fix Lasagne Knorr ",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"Mięso mielone wołowe ",
+                        "Quantity":"500g"
+                    },
+                    {
+                        "Name":"Czerwone wino ",
+                        "Quantity":"150ml"
+                    },
+                    {
+                        "Name":"Cebula",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"Koncentrat pomidorowy",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"Makaron lasagne ",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"Mleko",
+                        "Quantity":"500ml"
+                    },
+                    {
+                        "Name":"Mąka",
+                        "Quantity":"3 łyżki"
+                    },
+                    {
+                        "Name":"Masło",
+                        "Quantity":"60g"
+                    },
+                    {
+                        "Name":"Ser żółty ",
+                        "Quantity":"150g"
+                    },
+                    {
+                        "Name":"Gałka muszkatołowa z Indonezji Knorr ",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"Oliwa",
+                        "Quantity":"3 łyżki"
+                    },
+                    {
+                        "Name":"Woda",
+                        "Quantity":"400ml"
+                    }
+                ]
+            },
+            {
+                "Name":"Makaron z kurczakiem i sosem śmietanowym",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/makaron-z-kurczakiem-i-sosem-smietanowym.jpg",
+                "Difficulty":"1",
+                "Time":45,
+                "Steps":[
+                    {
+                        "Description":"Ugotuj makaron al dente."
+                    },
+                    {
+                        "Description":"Piersi pokrój w kostkę 1x1 cm, cebulę w plastry, a pieczarki w ćwiartki."
+                    },
+                    {
+                        "Description":"Mięso dopraw do smaku przyprawą warzywną oraz pieprzem, oprósz w mące, obsmaż na patelni na rozgrzanym tłuszczu na złoty kolor. Dodaj cebulę i pieczarki. Całość smaż, aż zupełnie odparują soki z mięsa i grzybów."
+                    },
+                    {
+                        "Description":"Dodaj śmietanę i 300 ml zimnej wody. Całość gotuj około 5 minut, aż sos zgęstnieje, a następnie dopraw kostką Rosołu z kury Knorr, dodaj ugotowany makaron i posiekaną natkę pietruszki. Całość dokładnie wymieszaj."
+                    },
+                    {
+                        "Description":"Makaron podawaj posypany startym serem."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"Filety z piersi kurczaka ",
+                        "Quantity":"500g"
+                    },
+                    {
+                        "Name":"Rosół z kury Knorr",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Makaron penne ",
+                        "Quantity":"300g"
+                    },
+                    {
+                        "Name":"Pieczarki",
+                        "Quantity":"300g"
+                    },
+                    {
+                        "Name":"Cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Delikatna przyprawa uniwersalna Knorr ",
+                        "Quantity":"1 łyżeczka"
+                    },
+                    {
+                        "Name":"Woda",
+                        "Quantity":"300ml"
+                    },
+                    {
+                        "Name":"Śmietana 18%",
+                        "Quantity":"200ml"
+                    },
+                    {
+                        "Name":"Mąka pszenna",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"Olej do smażenia",
+                        "Quantity":"80ml"
+                    },
+                    {
+                        "Name":"Mała natka pietruszki",
+                        "Quantity":"1 pęczek"
+                    },
+                    {
+                        "Name":"Starty parmezan lub inny żółty ser",
+                        "Quantity":"100g"
+                    }
+                ]
+            },
+            {
+                "Name":"Super szybkie tagliatelle z kurczakiem",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/super-szybkie-tagliatelle-z-kurczakiem658590.jpg",
+                "Difficulty":1,
+                "Time":25,
+                "Steps":[
+                    {
+                        "Description":"Pierś kurczaka pokrój w kostkę 1x1 cm. Na patelni rozgrzej olej i usmaż pokrojone mięso."
+                    },
+                    {
+                        "Description":"W miseczce wymieszaj zawartość opakowania Knorr z wodą i śmietaną, wlej na patelnię i zagotuj."
+                    },
+                    {
+                        "Description":"Makaron ugotuj al dente we wrzącej lekko osolonej wodzie i odcedź. Ugotowany makaron przełóż na patelnię i wymieszaj z sosem."
+                    },
+                    {
+                        "Description":"Gotowy makaron wyłóż na talerze i posyp startym serem."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"Makaron tagiatelle",
+                        "Quantity":"300g"
+                    },
+                    {
+                        "Name":"Naturalnie smaczne Tagiatelle z kurczakiem Knorr",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"Pierś z kurczaka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Śmietana 18%",
+                        "Quantity":"150ml"
+                    },
+                    {
+                        "Name":"Woda",
+                        "Quantity":"100ml"
+                    },
+                    {
+                        "Name":"Starty ser mozzarella",
+                        "Quantity":"4 łyżki"
+                    },
+                    {
+                        "Name":"Olej",
+                        "Quantity":"2 łyżki"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name":"Wegetariańskie",
+        "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/535x0/dania_weganskie476337.jpg",
+        "Recipes":[
+            {
+                "Name":"Pieczona dynia z fetą i oliwkami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/frittata-z-dynia-i-serem-feta.jpg",
+                "Difficulty":"1",
+                "Time":40,
+                "Steps":[
+                    {
+                        "Description":"Umyj dynię, odsącz nasienie i pokrój w plastry."
+                    },
+                    {
+                        "Description":"Wyłóż blachę papierem do pieczenia, ułóż na niej cząstki dyni."
+                    },
+                    {
+                        "Description":"Posmaruj dynię łyżeczką oliwy."
+                    },
+                    {
+                        "Description":"Wstaw do piekarnika rozgrzanego do 200C i piecz przez około 30 minut (należy dynię raz obrócić). Można też upiec dynię na grillu."
+                    },
+                    {
+                        "Description":"Przygotuj sos: oliwa, sos z cytryny i zioła."
+                    },
+                    {
+                        "Description":"Posyp dynię fetą."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"Dynia",
+                        "Quantity":"Pół średniej"
+                    },
+                    {
+                        "Name":"Ser feta ",
+                        "Quantity":"200g"
+                    },
+                    {
+                        "Name":"Oliwki drylowane",
+                        "Quantity":"100g"
+                    },
+                    {
+                        "Name":"Oliwa",
+                        "Quantity":"3 łyżki"
+                    },
+                    {
+                        "Name":"Sok z cytryny",
+                        "Quantity":"2 łyżeczki"
+                    },
+                    {
+                        "Name":"Zioła",
+                        "Quantity":"Do smaku"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name":"Dania główne",
+        "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/535x0/dania_glowne491942.jpg",
+        "Recipes":[
+            {
+                "Name":"Roladki po bolońsku",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/roladki-po-bolonsku543812.jpg",
+                "Difficulty":"1",
+                "Time":45,
+                "Steps":[
+                    {
+                        "Description":"Na patelni na rozgrzanym tłuszczu podsmaż posiekany czosnek cebulkę i papryczkę chili, dodaj szpinak całość smaż chwilę. Dodaj śmietanę i pokruszone orzeszki nerkowca."
+                    },
+                    {
+                        "Description":"Jeśli uważasz za konieczne dopraw do smaku i odstaw na bok do ostygnięcia. Gdy farsz będzie już zimny dodaj do niego pokrojone w drobna kostkę suszone pomidory i ser mozzarella."
+                    },
+                    {
+                        "Description":"Na foli ułóż piersi z kurczaka przykryj drugą warstwa foli i delikatnie uderzając tłuczkiem rozbij mięso na cienki płat. Na mięsie ułóż porcję szpinaku."
+                    },
+                    {
+                        "Description":"Brzegi mięsa delikatnie zawiń do środka całość zroluj zabezpieczając roladki wykałaczkami przed rozwinięciem się."
+                    },
+                    {
+                        "Description":"Roladki obsmaż z obu stron na rozgrzanym tłuszczu, przełóż je na bok, na tę samą patelnie wlej pomidory z puszki oraz ¼ szklanki wody. Dodaj 1 opakowanie Knorr Naturalnie smaczne."
+                    },
+                    {
+                        "Description":"Całość dokładnie wymieszaj i zagotuj. Do sosu włóż na powrót roladki duś pod przykryciem około 15 minut aż mięso dojdzie środku."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"Pierś z kurczaka ",
+                        "Quantity":"3 sztuki"
+                    },
+                    {
+                        "Name":"Szpinak rozmrożony i odciśnięty z soku ",
+                        "Quantity":"450g"
+                    },
+                    {
+                        "Name":"Naturalnie smaczne Spaghetti Bolognese Knorr ",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"Mozzarella",
+                        "Quantity":"100g"
+                    },
+                    {
+                        "Name":"Pomidory pelatti ",
+                        "Quantity":"1 słoik"
+                    },
+                    {
+                        "Name":"Chilli",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Suszone pomidory ",
+                        "Quantity":"50g"
+                    },
+                    {
+                        "Name":"Gałka muszkatołowa z Indonezji Knorr",
+                        "Quantity":"Szczypta"
+                    },
+                    {
+                        "Name":"Ząbki czosnku ",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"Orzechy nerkowca ",
+                        "Quantity":"100g"
+                    },
+                    {
+                        "Name":"Śmietana 18% ",
+                        "Quantity":"100ml"
+                    },
+                    {
+                        "Name":"Margaryna",
+                        "Quantity":"3 łyżki"
+                    }
+                ]
+            },
+            {
+                "Name":"Kurczak curry",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/curry-z-kurczaka.jpg",
+                "Difficulty":"1",
+                "Time":45,
+                "Steps":[
+                    {
+                        "Description":"Kurczaka pokrój w paski i obficie posyp curry oraz Przyprawą do złotego kurczaka Knorr. "
+                    },
+                    {
+                        "Description":"Pozostaw go na 20 minut w lodówce."
+                    },
+                    {
+                        "Description":"Pokrój cebule i chilli, po czym podsmaż je. Dodaj kurczaka i ponownie podsmaż."
+                    },
+                    {
+                        "Description":"Następnie dodaj mleko kokosowe, śmietanę, pastę curry i sok z połówki limonki. Gotuj do "
+                    },
+                    {
+                        "Description":"momentu, gdy sos się zredukuje i odrobinę zgęstnieje. Podawaj z ryżem."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"Podwójna pierś z kurczaka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Przyprawa do złotego kurczaka Knorr ",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"Średnie cebule ",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"Puszka mleka kokosowego ",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Papryczka chilli ",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Pasta curry ",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"Curry Knorr ",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"Śmietana 18% ",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"Limonka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Olej do smażenia",
+                        "Quantity":"Wedle uznania"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Name":"Przekąski",
+        "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/nalesniki-z-kurczakiem-i-pieczarkami-2.jpg",
+        "Recipes":[
+            {
+                "Name":"Naleśniki z kurczakiem i pieczarkami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/nalesniki-z-kurczakiem-i-pieczarkami-2.jpg",
+                "Difficulty":"1",
+                "Time":45,
+                "Steps":[
+                    {
+                        "Description":"Składniki na ciasto naleśnikowe połącz za pomocą miksera na gładką masę. Smaż cienkie naleśniki na złocisty kolor z obu stron."
+                    },
+                    {
+                        "Description":"Kurczaka umyj i pokrój w paski, oprósz solą i pieprzem."
+                    },
+                    {
+                        "Description":"Pieczarki umyj i pokrój w plastry. Cebulę, czosnek i szczypior posiekaj."
+                    },
+                    {
+                        "Description":"Przesmaż na patelni kurczaka, następnie dodaj cebulę i czosnek. Po 1 minucie dorzuć pieczarki."
+                    },
+                    {
+                        "Description":"Podsmażaj wszystko razem 5 minut. Dodaj śmietanę i sos Knorr. Gotuj na małym ogniu, aż całość zgęstnieje. Podawaj naleśniki posmarowane ciepłym sosem, złożone w trójkąty i posypane szczypiorkiem."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"Filet z kurczaka ",
+                        "Quantity":"300g"
+                    },
+                    {
+                        "Name":"Pieczarki",
+                        "Quantity":"300g"
+                    },
+                    {
+                        "Name":"Menu ze Smakiem Sos pieczarkowy z cebulką Knorr",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"Cebula dymka",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"Szczypiorek",
+                        "Quantity":"1 pęczek"
+                    },
+                    {
+                        "Name":"Sól",
+                        "Quantity":"Do zmaku"
+                    },
+                    {
+                        "Name":"Pieprz czarny z Wietnamu mielony Knorr",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"Olej do smażenia",
+                        "Quantity":"Wedle uznania"
+                    },
+                    {
+                        "Name":"Ząbki czosnku ",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"Mąka",
+                        "Quantity":"250g"
+                    },
+                    {
+                        "Name":"Mleko",
+                        "Quantity":"250ml"
+                    },
+                    {
+                        "Name":"Jajko",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Woda gazowana",
+                        "Quantity":"50ml"
+                    },
+                    {
+                        "Name":"Olej",
+                        "Quantity":"1 łyżeczka"
+                    },
+                    {
+                        "Name":"Sól",
+                        "Quantity":"Do smaku"
+                    }
+                ]
+            }
+        ]
+    }
+]
