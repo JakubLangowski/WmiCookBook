@@ -10,6 +10,7 @@ namespace WmiCookBook.Services.Interfaces
     public interface IRecipeService
     {
         Task<List<Recipe>> GetAllRecipeAsync(PaginationFilter paginationFilter, RecipeFilter recipeFilter);
+        Task<List<Recipe>> GetAllNotAcceptedRecipeAsync(PaginationFilter paginationFilter);
         Task<List<Recipe>> GetFeaturedRecipeAsync();
         Task<List<Recipe>> GetNewRecipeAsync();
         Task<Recipe> GetRecipeByIdAsync(int id);
@@ -18,5 +19,6 @@ namespace WmiCookBook.Services.Interfaces
         Task<bool> AddRecipeToFeaturedAsync(Recipe recipe, FeaturedRequest featuredRequest);
         Task<bool> DeleteRecipeAsync(Recipe recipe);
         Task<int> RecipeCountAsync(RecipeFilter recipeFilter);
+        Task<int> RecipeCountNotAcceptedAsync();
     }
 }

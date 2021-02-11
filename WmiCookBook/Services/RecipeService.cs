@@ -27,20 +27,34 @@ namespace WmiCookBook.Services
 
         public async Task<List<Recipe>> GetAllRecipeAsync(PaginationFilter paginationFilter, RecipeFilter recipeFilter)
         {
-            var queryable = _context.Recipes.AsQueryable();
+            var queryable = _context.Recipes
+                .Where(x => x.IsAccepted)
+                .AsQueryable();
+            
             queryable = FilteredRecipes(queryable, recipeFilter);
+            
             var skip = (paginationFilter.PageNumber - 1) * paginationFilter.PageSize;
+            
             return await queryable
+                .Include(x => x.Category)
+                .Skip(skip).Take(paginationFilter.PageSize)
+                .ToListAsync();
+        }
+        
+        public async Task<List<Recipe>> GetAllNotAcceptedRecipeAsync(PaginationFilter paginationFilter)
+        {
+            var skip = (paginationFilter.PageNumber - 1) * paginationFilter.PageSize;
+            return await _context.Recipes
+                .Where(x => !x.IsAccepted)
+                .Include(x => x.Category)
                 .Skip(skip).Take(paginationFilter.PageSize)
                 .ToListAsync();
         }
 
         public async Task<List<Recipe>> GetFeaturedRecipeAsync()
         {
-            var queryable = _context.Recipes.AsQueryable();
-            queryable = FilterAccepted(queryable);
-            
-            return await queryable
+            return await _context.Recipes
+                .Where(x => x.IsAccepted)
                 .Where(x => x.IsFeatured)
                 .Take(4)
                 .ToListAsync();
@@ -48,10 +62,8 @@ namespace WmiCookBook.Services
 
         public async Task<List<Recipe>> GetNewRecipeAsync()
         {
-            var queryable = _context.Recipes.AsQueryable();
-            queryable = FilterAccepted(queryable);
-            
-            return await queryable
+            return await _context.Recipes
+                .Where(x => x.IsAccepted)
                 .OrderByDescending(x => x.CreatedAt)
                 .Take(8)
                 .ToListAsync();
@@ -106,16 +118,25 @@ namespace WmiCookBook.Services
 
         public async Task<int> RecipeCountAsync(RecipeFilter recipeFilter)
         {
-            var queryable = _context.Recipes.AsQueryable();
+            var queryable = _context.Recipes
+                .Where(x => x.IsAccepted)
+                .AsQueryable();
             queryable = FilteredRecipes(queryable, recipeFilter);
             return await queryable.CountAsync();
+        }
+        
+        public async Task<int> RecipeCountNotAcceptedAsync()
+        {
+            return await _context.Recipes.Where(x => !x.IsAccepted).CountAsync();
         }
         
         private IQueryable<Recipe> FilteredRecipes(IQueryable<Recipe> queryable, RecipeFilter recipeFilter)
         {
             if (recipeFilter.CategoryId != null && recipeFilter.CategoryId.Length > 0)
                 queryable = queryable.Where(x => recipeFilter.CategoryId.Contains(x.CategoryId));
-            queryable = FilterAccepted(queryable);
+            if (recipeFilter.Featured != null)
+                queryable = queryable.Where(x => x.IsFeatured == recipeFilter.Featured);
+            
             return queryable;
         }
         

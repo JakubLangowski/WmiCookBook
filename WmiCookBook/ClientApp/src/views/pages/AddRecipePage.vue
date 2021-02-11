@@ -127,13 +127,14 @@ export default {
                 .then((response) => {
                     categories.push(...response.data)
                 })
-                .catch(() => {
+                .catch((error) => {
+                    this.$helper.handleErrors(error);
                     store.dispatch('toast/errorToast', "Wystąpił błąd podczas wczytywania ketegorii")
                 })
         }
 
         function validateImage() {
-            const pattern = /^data:image\/(?:gif|jpeg|png|bmp|webp)(?:;charset=utf-8)?;base64,(?:[A-Za-z0-9]|[+/])+={0,2}/;
+            const pattern = /^data:image\/(?:jpeg|png)(?:;charset=utf-8)?;base64,(?:[A-Za-z0-9]|[+/])+={0,2}/;
             imageValid.value = pattern.test(image.value);
             return imageValid.value;
         }

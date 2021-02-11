@@ -60,6 +60,30 @@ namespace WmiCookBook.Controllers
         }
         
         /// <summary>
+        /// Zwraca listę wszystkich przepisów które nie są zaakceptowane (stronnicowanie)
+        /// </summary>
+        /// <param name="paginationQuery"></param>
+        /// <response code="200"></response>
+        [SwaggerResponse(200, "", typeof(PagedResponse<List<RecipeResponse>>))]
+        //
+        [Authorize]
+        [HttpGet(ApiRoutes.Recipe.GetAllNotAccepted)]
+        public async Task<IActionResult> GetAllNotAccepted([FromQuery] PaginationQuery paginationQuery)
+        {
+            paginationQuery = PaginationHelper.ValidateQuery(paginationQuery);
+            var paginationFilter = _mapper.Map<PaginationFilter>(paginationQuery);
+
+            var recipeList = await _recipeService.GetAllNotAcceptedRecipeAsync(paginationFilter);
+            var recipeCount = await _recipeService.RecipeCountNotAcceptedAsync();
+            
+            var recipeResponse = _mapper.Map<List<RecipeResponse>>(recipeList);
+            var paginatedResponse =
+                PaginationHelper.Paginate(_uriService, paginationFilter, recipeResponse, recipeCount);
+            
+            return Ok(paginatedResponse);
+        }
+        
+        /// <summary>
         /// Zwraca listę wyróżnionych przepisów (max 4 przepisy)
         /// </summary>
         /// <response code="200"></response>

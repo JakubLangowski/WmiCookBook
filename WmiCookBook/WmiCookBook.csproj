@@ -36,6 +36,17 @@
         <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="6.0.1" />
     </ItemGroup>
 
+	<Target Name="Storage" AfterTargets="ComputeFilesToPublish">
+		<ItemGroup>
+			<DistFiles Include="Storage\**" />
+			<ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+				<RelativePath>%(DistFiles.Identity)</RelativePath>
+				<CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+				<ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+			</ResolvedFileToPublish>
+		</ItemGroup>
+	</Target>
+    
     <ItemGroup>
         <!-- Don't publish the SPA source files, but do show them in the project files list -->
         <Content Remove="$(SpaRoot)**" />
@@ -46,10 +57,6 @@
     <ItemGroup>
         <Content Include="ClientApp\package-lock.json" />
         <Content Include="ClientApp\package.json" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Storage\Recipes" />
     </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

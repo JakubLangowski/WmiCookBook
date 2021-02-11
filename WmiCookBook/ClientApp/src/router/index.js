@@ -9,10 +9,11 @@ import Forbidden from "@/views/errors/Forbidden";
 import ContactPage from "@/views/pages/ContactPage";
 import RegulationsPage from "@/views/pages/RegulationsPage";
 import LoginPage from "@/views/pages/LoginPage";
-import AdminDashboardPage from "@/views/pages/admin/AdminDashboardPage";
 import auth from "@/router/middlewares/auth";
 import guest from "@/router/middlewares/guest";
 import AdminLayout from "@/views/pages/admin/AdminLayout";
+import AdminRecipesPage from "@/views/pages/admin/AdminRecipesPage";
+import AdminNotAcceptedRecipesPage from "@/views/pages/admin/AdminNotAcceptedRecipesPage";
 
 const routes = [
     {path: '/', redirect: "/home"},
@@ -23,8 +24,9 @@ const routes = [
 
     {path: '/login', component: LoginPage, name: "LoginPage", meta: {title: "Login", middleware: [guest],}},
     {path: '/admin', component: AdminLayout, meta: {title: "Admin Panel", middleware: [auth]}, children: [
-            {path: '', component: AdminDashboardPage, meta: {title: "Admin Panel", middleware: [auth]}},
-            {path: 'dashboard', component: AdminDashboardPage, name: "AdminDashboardPage", meta: {title: "Admin Panel", middleware: [auth]}},
+            {path: '', component: AdminRecipesPage,name: "AdminHomePage", meta: {title: "Przepisy", middleware: [auth]}},
+            {path: 'recipes', component: AdminRecipesPage, name: "AdminRecipesPage", meta: {title: "Przepisy", middleware: [auth]}},
+            {path: 'recipes-not-accepted', component: AdminNotAcceptedRecipesPage, name: "AdminNotAcceptedRecipesPage", meta: {title: "Przepisy do akceptacji", middleware: [auth]}},
         ]
     },
     
@@ -32,8 +34,9 @@ const routes = [
     {path: '/regulations', component: RegulationsPage, name: "RegulationsPage", meta: {title: "Regulamin"}},
 
     {path: '/forbidden', component: Forbidden, name: "ForbiddenPage", meta: {title: "Forbidden"}},
-    {path: '/:pathMatch(.*)*', component: NotFound, name: "NotFoundPage", meta: {title: "Not Found"}},
-    {path: '/:pathMatch(.*)', component: NotFound, name: "NotFoundPage", meta: {title: "Not Found"}},
+    {path: '/404', component: NotFound, name: "NotFoundPage", meta: {title: "Not Found"}},
+    {path: '/:pathMatch(.*)*', component: NotFound, meta: {title: "Not Found"}},
+    {path: '/:pathMatch(.*)', component: NotFound, meta: {title: "Not Found"}},
 ]
 
 const router = createRouter({

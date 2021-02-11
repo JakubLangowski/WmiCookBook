@@ -148,7 +148,7 @@ namespace WmiCookBook
         private void InstallDatabaseServices(IServiceCollection services)
         {
             services.AddDbContext<DatabaseContext>(x =>
-                x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection2")));
+                x.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
         
         private void InstallAuthService(IServiceCollection service)
