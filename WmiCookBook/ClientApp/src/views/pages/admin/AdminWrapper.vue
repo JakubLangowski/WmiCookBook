@@ -31,6 +31,7 @@
 import CustomButton from "@/components/shared/CustomButton";
 import Modal from "@/components/shared/Modal";
 import AdminNavLink from "@/components/admin/recipes/AdminNavLink";
+import {mapGetters} from "vuex";
 
 export default {
     name: "AdminWrapper",
@@ -38,6 +39,13 @@ export default {
     data: () => ({
         showMobileMenu: false,
     }),
+    computed: {
+        ...mapGetters('user', [
+            'tokenExpired',
+            'refreshToken',
+            'token',
+        ])
+    },
     methods: {
         logout: function () {
             this.$store.dispatch("user/logout")

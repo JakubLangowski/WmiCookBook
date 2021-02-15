@@ -70,7 +70,7 @@ export default {
     },
     methods: {
         inputClick: function () {
-            if (this.$refs.paginationInput.value < this.totalPages && this.$refs.paginationInput.value >= 1 && parseInt(this.$refs.paginationInput.value) !== this.pageNumber) {
+            if (this.$refs.paginationInput.value <= this.totalPages && this.$refs.paginationInput.value >= 1 && parseInt(this.$refs.paginationInput.value) !== this.pageNumber) {
                 this.$emit('paginationClick', this.$refs.paginationInput.value)
             }
         },

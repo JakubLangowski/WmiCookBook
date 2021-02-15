@@ -1,5 +1,5 @@
 <template>
-    <router-link :to="to" class="col-span-12 sm:col-span-6 lg:col-span-3 rounded bg-white shadow-xl border border-gray-200">
+    <router-link :to="to" class="rounded bg-white shadow-2xl border border-gray-200" :class="grid">
         <div class="flex flex-col my-auto h-full items-center img-hover-zoom overflow-hidden">
             <div class="recipe-card-image-wrapper">
                 <img class="recipe-card-img" :src="image" :alt="name">
@@ -45,6 +45,10 @@ export default {
             type: String,
             required: true
         },
+        grid: {
+            type: String,
+            default: () => "col-span-12 sm:col-span-6 lg:col-span-3"
+        }
     },
     methods: {
         getDifficultyLevelIcon: function (level) {
@@ -76,7 +80,7 @@ export default {
     overflow: hidden;
     width: 100%;
     height: 100vh;
-    max-height: 250px;
+    max-height: 200px;
     border-radius: 3px;
     position: relative;
 }

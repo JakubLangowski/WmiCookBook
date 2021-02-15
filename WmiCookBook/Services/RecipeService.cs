@@ -38,6 +38,7 @@ namespace WmiCookBook.Services
             return await queryable
                 .Include(x => x.Category)
                 .Skip(skip).Take(paginationFilter.PageSize)
+                .OrderBy(x => x.Id)
                 .ToListAsync();
         }
         
@@ -48,6 +49,7 @@ namespace WmiCookBook.Services
                 .Where(x => !x.IsAccepted)
                 .Include(x => x.Category)
                 .Skip(skip).Take(paginationFilter.PageSize)
+                .OrderBy(x => x.Id)
                 .ToListAsync();
         }
 

@@ -50,7 +50,7 @@ export default {
     },
     methods: {
         fetchFeaturedCategories: async function () {
-            return this.$api.get('/category')
+            return this.$api.get('/category/featured')
         },
         fetchFeaturedRecipes: async function () {
             return this.$api.get('/recipe/featured')

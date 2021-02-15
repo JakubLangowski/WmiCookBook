@@ -139,8 +139,10 @@ export default {
                     this.$store.dispatch('toast/successToast', (isFeatured) ? 'Usunięto przepis z wyróżnionych' : 'Dodano przepis do wyróżnionych')
                     this.recipes.find(x => x.id === id).isFeatured = !isFeatured;
                 })
-                .catch(() => this.$store.dispatch('toast/errorToast',
-                    (this.recipe.isFeatured) ? 'Wystąpił błąd podczas usuwania przepis z wyróżnionych' : 'Wystąpił błąd podczas dodawania przepis do wyróżnionych'))
+                .catch(() => {
+                    this.$store.dispatch('toast/errorToast',
+                        (this.recipe.isFeatured) ? 'Wystąpił błąd podczas usuwania przepis z wyróżnionych' : 'Wystąpił błąd podczas dodawania przepis do wyróżnionych')
+                })
         },
         showDeleteModal: function ({id}) {
             this.$store.dispatch('modal/showModal', {
@@ -154,7 +156,9 @@ export default {
                     this.$store.dispatch('toast/successToast', "Usunięto przepis")
                     this.fetchRecipes();
                 })
-                .catch(() => this.$store.dispatch('toast/errorToast', "Wystąpił błąd podczas usuwania przepisu"))
+                .catch(() => {
+                    this.$store.dispatch('toast/errorToast', "Wystąpił błąd podczas usuwania przepisu")
+                })
         }
     }
 }

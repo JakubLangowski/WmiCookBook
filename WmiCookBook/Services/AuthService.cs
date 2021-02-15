@@ -86,7 +86,7 @@ namespace WmiCookBook.Services
             var expiryDateUnix =
                 long.Parse(validatedToken.Claims.Single(x => x.Type == JwtRegisteredClaimNames.Exp).Value);
             var expiryDateTimeUtc = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)
-                .AddSeconds(expiryDateUnix);
+                .AddSeconds(expiryDateUnix - 120);
 
             if (expiryDateTimeUtc > DateTime.UtcNow)
                 return new AuthenticationResult { Error = "This Token hasnt expired yet" };
@@ -113,8 +113,8 @@ namespace WmiCookBook.Services
             storedRefreshZToken.Used = true;
             _context.RefreshTokens.Update(storedRefreshZToken);
             await _context.SaveChangesAsync();
-
-            var user = await _context.Users.FindAsync(validatedToken.Claims.Single(x => x.Type == "login").Value);
+            int id = Int32.Parse(validatedToken.Claims.Single(x => x.Type == "id").Value);
+            var user = await _context.Users.FindAsync(id);
             return await GenerateAuthenticationResultAsync(user);
         }
 

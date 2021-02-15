@@ -21,7 +21,7 @@ namespace WmiCookBook.Controllers
     [ApiController]
     [Produces("application/json")]
     [Consumes("application/json")]
-    [Authorize]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;

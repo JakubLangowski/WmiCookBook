@@ -1,5 +1,5 @@
 <template>
-    <div class="col-span-12 sm:col-span-6 lg:col-span-3 rounded bg-white shadow-xl border border-gray-200">
+    <div class="rounded bg-white shadow-xl border border-gray-200" :class="grid">
         <div class="col-span-12 sm:col-span-6 md:col-span-4 lg:col-span-3 h-full rounded bg-white shadow-xl border border-gray-200 animate-pulse">
             <div class="w-full h-48 bg-gray-200 flex justify-center items-center">
                 <Spinner />
@@ -20,6 +20,12 @@ export default {
     name: "RecipeCardSkeletonLoader",
     components: {
         Spinner
+    },
+    props: {
+        grid: {
+            type: String,
+            default: () => "col-span-12 sm:col-span-6 lg:col-span-3"
+        }
     }
 }
 </script>

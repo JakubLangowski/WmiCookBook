@@ -164,6 +164,52 @@
                 ]
             },
             {
+                "Name":"Tagliatelle z brokułami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/kremowe-tagliatelle-z-brokulami-i-kurczakiem-3.jpg",
+                "Difficulty":1,
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Makaron ugotuj w lekko osolonej wodzie al dente i odcedź. Brokuła pokrój na małe różyczki i sparz krótko we wrzącej wodzie. "
+                    },
+                    {
+                        "Description":"Cebulę pokrój w drobna kostkę i przesmaż na patelni. Kurczaka pokrój w kostkę o boku ok. 2x2 cm i smaż chwilę razem z cebulą. "
+                    },
+                    {
+                        "Description":"Zawartość opakowania Knorr rozmieszaj ze szklanką wody oraz śmietaną. Całość wlej na patelnię i zagotuj. "
+                    },
+                    {
+                        "Description":"Do sosu dodaj makaron, brokuły oraz pokrojone na połówki pomidorki. Gotuj jeszcze chwilę a następnie gotowy makaron nałóż na talerze."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"makaron tagliatelle",
+                        "Quantity":"250 gramów"
+                    },
+                    {
+                        "Name":"pierś z kurczaka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"brokuł",
+                        "Quantity":"250 gramów"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"pomidorki cherry ",
+                        "Quantity":"5 sztuk"
+                    },
+                    {
+                        "Name":"śmietana 18%",
+                        "Quantity":"50 mililitrów"
+                    }
+                ]
+            },
+            {
                 "Name":"Super szybkie tagliatelle z kurczakiem",
                 "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/super-szybkie-tagliatelle-z-kurczakiem658590.jpg",
                 "Difficulty":1,
@@ -212,16 +258,454 @@
                         "Quantity":"2 łyżki"
                     }
                 ]
+            },
+            {
+                "Name":"Szybkie spaghetti carbonara",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/szybkie-spaghetti-carbonara.jpg",
+                "Difficulty":1,
+                "Time":20,
+                "Steps":[
+                    {
+                        "Description":"Zawartość opakowania Knorr wymieszaj w niedużym garnku ze 150 ml wody oraz śmietaną i zagotuj. Zmniejsz ogień i gotuj 5 minut."
+                    },
+                    {
+                        "Description":"Makaron ugotuj al dente. Odcedź, a następnie przełóż do sosu. Oprósz pieprzem i wymieszaj."
+                    },
+                    {
+                        "Description":"Gotowe spaghetti przełóż na talerze i posyp startym ulubionym serem."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"Makaron spaghetti",
+                        "Quantity":"400g"
+                    },
+                    {
+                        "Name":"Fix Spaghetti Carbonara Knorr",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"śmietana 36%",
+                        "Quantity":"100ml"
+                    },
+                    {
+                        "Name":"Pieprz czarny z Wietnamu mielony Knorr",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"ser do posypania",
+                        "Quantity":"wedle uznania"
+                    },
+                    {
+                        "Name":"woda",
+                        "Quantity":"150ml"
+                    }
+                ]
+            },
+            {
+                "Name":"Makaron z kurczakiem i pieczarkami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/makaron-z-kurczakiem-i-pieczarkami.jpg",
+                "Difficulty":1,
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Ugotuj makaron na sposób al dente w dużej ilości wody."
+                    },
+                    {
+                        "Description":"Pokrój mięso i cebulę w kostkę, pieczarki w ćwiartki."
+                    },
+                    {
+                        "Description":"Rozgrzej olej w średniej wielkości garnku i zeszklij na nim cebulę."
+                    },
+                    {
+                        "Description":"Następnie dodaj mięso oraz pieczarki i wszystko razem podsmaż dokładnie, doprawiając odrobiną przyprawy Knorr."
+                    },
+                    {
+                        "Description":"Zalej całość śmietaną i połącz z makaronem, po czym wymieszaj."
+                    },
+                    {
+                        "Description":"Dopraw na koniec kilkoma kroplami soku z cytryny. Serwuj makaron posypany serem."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"filet z kurczaka",
+                        "Quantity":"200g"
+                    },
+                    {
+                        "Name":"Delikat przyprawa uniwersalna Knorr",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"makaron rurki",
+                        "Quantity":"300g"
+                    },
+                    {
+                        "Name":"pieczarki",
+                        "Quantity":"300g"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"tarty ser (gouda lub parmezan)",
+                        "Quantity":"100g"
+                    },
+                    {
+                        "Name":"śmietana",
+                        "Quantity":"250ml"
+                    },
+                    {
+                        "Name":"olej",
+                        "Quantity":"2 łyżki"
+                    }
+                ]
+            },
+            {
+                "Name":"Spaghetti bolognese z warzywami i grzybami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/vegetable-and-mushroom-bolognese_a434845.jpg",
+                "Difficulty":1,
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Pokrój drobno cebulę. Pokrój cukinię i paprykę w drobną kostkę. Dokładnie umyj pieczarki, osusz i pokrój na plasterki. Ugotuj makaron wg. instrukcji na opakowaniu. Odcedź."
+                    },
+                    {
+                        "Description":"W czasie gdy makaron się gotuje przesmaż cebulę w 1 łyżce oleju do momentu gdy zacznie zmieniać kolor. Dodaj pieczarki, cukinię i paprykę. Smaż na dość mocnym ogniu przez 5-7 minut."
+                    },
+                    {
+                        "Description":"Wymieszaj pomidory z puszki z zawartością opakowania Knorr Naturalnie smaczne Spaghetti Bolognese. Doprowadź do wrzenia, zmniejsz ogień i gotuj przez 10 min. Dodaj warzywa i gotuj jeszcze 2-3 minuty. Wymieszaj makaron z sosem i podawaj z listkami świeżej bazylii."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"Makaron spaghetti",
+                        "Quantity":"200g"
+                    },
+                    {
+                        "Name":"krojone pomidory z puszki",
+                        "Quantity":"2 opakowania"
+                    },
+                    {
+                        "Name":"Naturalnie smaczne Spaghetti Bolognese Knorr",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"cukinia",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"papryka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"pieczarki",
+                        "Quantity":"150g"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"garść świeżej bazylii",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"olej",
+                        "Quantity":"1 łyżka "
+                    }
+                ]
+            },
+            {
+                "Name":"Zapiekanka z cukinii z makaronem",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/spring-casserole-with-zucchini_a1565303.jpg",
+                "Difficulty":1,
+                "Time":45,
+                "Steps":[
+                    {
+                        "Description":"Rozgrzej piekarnik do 200 °C. Ugotuj makaron al dente zgodnie z instrukcjami na opakowaniu. Odcedź."
+                    },
+                    {
+                        "Description":"Pokrój szynkę w kostkę. Pokrój cukinię i paprykę. Posiekaj drobno czosnek i podsmaż go na 1 łyżce rozgrzanej oliwy, aż zacznie pachnieć. Dodaj szynkę i smaż przez 2 min. Dodaj warzywa i smaż dalej na średnim ogniu przez 3-4 min."
+                    },
+                    {
+                        "Description":"Wymieszaj mleko z Knorr Naturalnie smaczne. Dodaj jedno jajko. Następnie wymieszaj makaron, szynkę i warzywa."
+                    },
+                    {
+                        "Description":"Całość umieść w naoliwionej brytfannie. Polej sosem. Posyp tartym serem. Piecz przez 25-30 min. lub do momentu aż danie się zarumieni."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"makaron penne",
+                        "Quantity":"250g"
+                    },
+                    {
+                        "Name":"gotowana szynka",
+                        "Quantity":"200g"
+                    },
+                    {
+                        "Name":"cukinia",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Naturalnie smaczne Zapiekanka makaronowa z szynką Knorr",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"czerwona papryka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"ząbek czosnku",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"mleko",
+                        "Quantity":"250ml"
+                    },
+                    {
+                        "Name":"ser żółty twardy",
+                        "Quantity":"100g"
+                    },
+                    {
+                        "Name":"oliwa",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"Makaron tagiatelle",
+                        "Quantity":"1 sztuka"
+                    }
+                ]
+            },
+            {
+                "Name":"Zapiekanka makaronowa PYCHOTKA z kurczakiem i serem",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/zapiekanka-makaronowa-pychotka.jpg",
+                "Difficulty":1,
+                "Time":45,
+                "Steps":[
+                    {
+                        "Description":"Cebulę pokrój w piórka, czosnek przeciśnij przez praskę. Podsmaż je na oleju."
+                    },
+                    {
+                        "Description":"Ugotuj makaron na sposób al dente."
+                    },
+                    {
+                        "Description":"Warzywa pokrój w paski i wraz z kurczakiem dodaj do całości. Duś około 15 minut. Następnie podlej szklanką wody i dodaj kostkę Rosołu z kury Knorr oraz przecier pomidorowy."
+                    },
+                    {
+                        "Description":"Makaron wyłóż do naczynia żaroodpornego, zalej sosem i posyp startym serem. Włóż do piekarnika nagrzanego do 180 stopni na 20 minut. Następnie podawaj."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"makaron świderki",
+                        "Quantity":"100g"
+                    },
+                    {
+                        "Name":"Rosół z kury Knorr",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"filet z kurczaka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"papryka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"pomidor",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"przecier pomidorowy",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"ząbek czosnku",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"mozarella light",
+                        "Quantity":"200g"
+                    },
+                    {
+                        "Name":"olej",
+                        "Quantity":"4 łyżki"
+                    },
+                    {
+                        "Name":"woda",
+                        "Quantity":"1 szklanka"
+                    }
+                ]
+            },
+            {
+                "Name":"Smażony makaron",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/smazony-makaron.jpg",
+                "Difficulty":1,
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Makaron wcześniej ugotuj i odstaw na bok."
+                    },
+                    {
+                        "Description":"Na rozgrzanym tłuszczu podsmaż pokrojonego w plasterki kurczaka. Pod koniec smażenia dodaj orzeszki ziemne i Ketchup Hellmann’s Pikantny. Smaż chwilę. Następnie dodaj warzywa i makaron."
+                    },
+                    {
+                        "Description":"Całość podlej kilkoma łyżkami wody i dodaj Fix Knorr."
+                    },
+                    {
+                        "Description":"Wszystko razem dokładnie wymieszaj."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"piersi z kurczaka",
+                        "Quantity":"200g"
+                    },
+                    {
+                        "Name":"Ketchup Hellmann's Extra Hot",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"Fix Do potraw chińskich Knorr",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"makaron jajeczny lub spaghetti",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"orzeszki ziemne",
+                        "Quantity":"3 łyżki"
+                    },
+                    {
+                        "Name":"chińska mieszanka mrożonych warzyw",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"olej roślinny",
+                        "Quantity":"2 łyżki"
+                    }
+                ]
+            },
+            {
+                "Name":"Smażony makaron z tofu i warzywami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/smazony-makaron-z-tofu-i-warzywami812746.jpg",
+                "Difficulty":1,
+                "Time":25,
+                "Steps":[
+                    {
+                        "Description":"Makaron ugotuj według zaleceń producenta, a następnie przelej zimną wodą i odstaw na bok."
+                    },
+                    {
+                        "Description":"Na patelni rozgrzej olej, podsmaż na nim tofu, a następnie pozostałe warzywa: pokrojoną w plastry kapustę pekińską i w pół plastry marchew oraz pora pokrojonego w paski. Dodaj starty na miazgę imbir, sos sojowy i makaron. Wszystko razem zalej Fixem Knorr rozmieszanym w 200 ml wody, by potrawa zyskała orientalny charakter."
+                    },
+                    {
+                        "Description":"Wszystko razem gotuj 2-3 minuty, cały czas mieszając."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"surowy makaron azjatycki - jajeczny",
+                        "Quantity":"250g"
+                    },
+                    {
+                        "Name":"kapusta pekińska",
+                        "Quantity":"150g"
+                    },
+                    {
+                        "Name":"marchew",
+                        "Quantity":"150g"
+                    },
+                    {
+                        "Name":"por",
+                        "Quantity":"150g"
+                    },
+                    {
+                        "Name":"sos sojowy",
+                        "Quantity":"40g"
+                    },
+                    {
+                        "Name":"imbir",
+                        "Quantity":"20g"
+                    },
+                    {
+                        "Name":"tofu w kostkach",
+                        "Quantity":"220g"
+                    },
+                    {
+                        "Name":"olej",
+                        "Quantity":"28g"
+                    },
+                    {
+                        "Name":"woda",
+                        "Quantity":"50ml"
+                    },
+                    {
+                        "Name":"Fix Do potraw chińskich Knorr",
+                        "Quantity":"1 opakowanie"
+                    }
+                ]
+            },
+            {
+                "Name":"Makaron z sosem 4 sery",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/makaron-z-sosem-4-sery.jpg",
+                "Difficulty":1,
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Zawartość opakowania Knorr wymieszaj ze 250 ml zimnej wody oraz śmietaną. Płyn wlej na patelnię i zagotuj. Zmniejsz ogień i gotuj sos 8 minut, mieszając co jakiś czas. "
+                    },
+                    {
+                        "Description":"Makaron ugotuj al dente i odcedź. Przesyp na patelnię i wymieszaj z serowym sosem."
+                    },
+                    {
+                        "Description":"Gotowe spaghetti wyłóż na talerze, posyp startym serem i udekoruj listkami ziół. Jeśli w lodówce masz kawałek innego sera, np. pleśniowego typu blue, możesz go pokruszyć i dodać do sosu. Dzięki temu smak dania będzie jeszcze bardziej wyrazisty. "
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"makaron spaghetti",
+                        "Quantity":"400 gramów"
+                    },
+                    {
+                        "Name":"starty żółty ser",
+                        "Quantity":"40 gramów"
+                    },
+                    {
+                        "Name":"śmietana 18%",
+                        "Quantity":"4 łyżki"
+                    },
+                    {
+                        "Name":"oliwa",
+                        "Quantity":"50 mililitrów"
+                    },
+                    {
+                        "Name":"świeża bazylia lub natka pietruszki do dekoracji ",
+                        "Quantity":"30 gramów"
+                    },
+                    {
+                        "Name":"woda",
+                        "Quantity":"250 ml"
+                    }
+                ]
             }
         ]
     },
     {
         "Name":"Wegetariańskie",
-        "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/535x0/dania_weganskie476337.jpg",
+        "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/crunchy-falafel-with-yoghurt-dip_a1989322.jpg",
         "Recipes":[
             {
                 "Name":"Pieczona dynia z fetą i oliwkami",
-                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/frittata-z-dynia-i-serem-feta.jpg",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/salatka-z-dyni-z-serem-feta-i-pomidorkami-cherry-3.jpg",
                 "Difficulty":"1",
                 "Time":40,
                 "Steps":[
@@ -270,12 +754,651 @@
                         "Quantity":"Do smaku"
                     }
                 ]
+            },
+            {
+                "Name":"Chrupiący falafel z dipem ziołowo-jogurtowym",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/crunchy-falafel-with-yoghurt-dip_a1989322.jpg",
+                "Difficulty":"1",
+                "Time":15,
+                "Steps":[
+                    {
+                        "Description":"Posiekaj czosnek , cebule, kolendrę i natkę pietruszki. Ciecierzycę odlej z zalewy i wypłucz. Wszystkie składniki umieść w mikserze, dodaj kostkę rosołową, kmin, mąkę i dokładnie zmiel na prawie jednolitą masę"
+                    },
+                    {
+                        "Description":"Z powstałej masy uformuj małe kulki i delikatnie je rozpłaszcz. Kotleciki smaż na złoty kolor, w gorącym, głębokim tłuszczu."
+                    },
+                    {
+                        "Description":"Przygotuj dip jogurtowy mieszając jogurt z sokiem z cytryny, koperkiem i miętą. Dip dopraw do smaku pieprzem."
+                    },
+                    {
+                        "Description":"Gotowe kotleciki podawaj z pitą na sałacie z dipem czosnkowym."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"średniej wielkości cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"ząbek czosnku",
+                        "Quantity":"3 sztuki"
+                    },
+                    {
+                        "Name":"ciecierzyca z puszki",
+                        "Quantity":"2 słoiki"
+                    },
+                    {
+                        "Name":"mąka pszenna",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"Kmin rzymski z Indii mielony Knorr",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"Bulion na włoszczyźnie Knorr",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"pietruszka",
+                        "Quantity":"1 pęczek"
+                    },
+                    {
+                        "Name":"natka kolendry",
+                        "Quantity":"1 pęczek"
+                    },
+                    {
+                        "Name":"olej do smażenia",
+                        "Quantity":"100ml"
+                    },
+                    {
+                        "Name":"gęsty jogurt naturalny",
+                        "Quantity":"200ml"
+                    },
+                    {
+                        "Name":"sok z połowy cytryny",
+                        "Quantity":"25ml"
+                    },
+                    {
+                        "Name":"sałata lodowa",
+                        "Quantity":"3 listków"
+                    },
+                    {
+                        "Name":"posiekana mięta",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"posiekany koperek",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"chleb pita",
+                        "Quantity":"2 sztuki"
+                    }
+                ]
+            },
+            {
+                "Name":"Kotlety z kaszy gryczanej z buraczkami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/kotlety_z_kaszy_gryczanej_z_buraczkami_0815221.jpg",
+                "Difficulty":"1",
+                "Time":70,
+                "Steps":[
+                    {
+                        "Description":"Cebule pokrój w drobną kosteczkę i podziel na dwie części. Buraki zawiń w folię aluminiową i piecz w nagrzanym do 190°C piekarniku przez około 40 minut. Następnie wystudzone i obrane zetrzyj na tarce. Jabłka również obierz i zetrzyj."
+                    },
+                    {
+                        "Description":"Kaszę ugotuj do miękkości w dużej ilości wody. Następnie wystudź i przepuść przez maszynkę do mielenia razem z białym serem."
+                    },
+                    {
+                        "Description":"Jedną część cebuli i pokrojone w plastry pieczarki podsmaż na rozgrzanym oleju i dodaj do kaszy. Do całości wbij jajko i dołącz Fix Knorr."
+                    },
+                    {
+                        "Description":"Farsz dokładnie wymieszaj i uformuj z niego kotlety z wgłębieniem w środku. Oprósz w bułce i obsmaż na złoty kolor."
+                    },
+                    {
+                        "Description":"Następnie na drugiej patelni na maśle zeszklij cebulę, dodaj do niej łyżkę mąki i dokładnie wymieszaj. Powstałą zasmażkę przełóż na bok."
+                    },
+                    {
+                        "Description":"Na tę samą patelnię dodaj starte buraczki i jabłko, wyciśnij sok z jednej połówki cytryny, dodaj szczyptę soli, cukru, pieprz, zasmażkę i całość dokładnie wymieszaj. Gotuj buraczki około 5 minut, ciągle mieszając, aż zgęstnieją. Usmażone kotlety wyłóż na półmisek, a w ich zagłębienia nałóż porcję buraczków."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"kasza gryczana w torebce",
+                        "Quantity":"200g"
+                    },
+                    {
+                        "Name":"Fix Knorr Kaszotto z grzybami i cebulką",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"ser biały",
+                        "Quantity":"200g"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"pieczarki",
+                        "Quantity":"200g"
+                    },
+                    {
+                        "Name":"jajko",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"bułka tarta",
+                        "Quantity":"100g"
+                    },
+                    {
+                        "Name":"olej rzepakowy do smażenia",
+                        "Quantity":"80ml"
+                    },
+                    {
+                        "Name":"buraki",
+                        "Quantity":"3 sztuki"
+                    },
+                    {
+                        "Name":"jabłko",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"masło",
+                        "Quantity":"80g"
+                    },
+                    {
+                        "Name":"mąka pszenna",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"cytryna",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Pieprz czarny z Wietnamu mielony Knorr",
+                        "Quantity":"0.5 łyżeczki"
+                    },
+                    {
+                        "Name":"sól",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"cukier",
+                        "Quantity":"1 szczypta"
+                    }
+                ]
+            },
+            {
+                "Name":"Kotlety z marchewki",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/kotlety-z-marchewki167610.jpg",
+                "Difficulty":"1",
+                "Time":45,
+                "Steps":[
+                    {
+                        "Description":"Marchew zetrzyj na tarce, posiekaj natkę pietruszki, ugotuj do miękkości a następnie wystudź kaszę jaglaną. W misce pomieszaj kaszę, marchew, posiekaną natkę, siemię lniane rodzynki , jajko , mąki oraz przyprawy."
+                    },
+                    {
+                        "Description":"Z masy uformuj kotleciki , smaż je na rozgrzanym oleju po 1,5 minuty z każdej strony."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"marchew",
+                        "Quantity":"300g"
+                    },
+                    {
+                        "Name":"jajko",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"kasza jaglana",
+                        "Quantity":"100g"
+                    },
+                    {
+                        "Name":"natka pietruszki",
+                        "Quantity":"1 pęczek"
+                    },
+                    {
+                        "Name":"Imbir z Nigerii Knorr",
+                        "Quantity":"0.5 łyżeczki"
+                    },
+                    {
+                        "Name":"Kmin rzymski z Indii mielony Knorr",
+                        "Quantity":"1 łyżeczka"
+                    },
+                    {
+                        "Name":"papryka wędzona",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"rodzynki",
+                        "Quantity":"50g"
+                    },
+                    {
+                        "Name":"ziarna siemienia lnianego",
+                        "Quantity":"50g"
+                    },
+                    {
+                        "Name":"mąka pszenna",
+                        "Quantity":"100g"
+                    },
+                    {
+                        "Name":"olej rzepakowy",
+                        "Quantity":"100g"
+                    }
+                ]
+            },
+            {
+                "Name":"Kaszotto z pieczonymi warzywami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/kaszotto_z_pieczonymi_warzywami_inspirowane_kuchnia_marokanska_0292729.jpg",
+                "Difficulty":"1",
+                "Time":40,
+                "Steps":[
+                    {
+                        "Description":"Posiekaj drobno czosnek, chili, natkę pietruszki i miętę. Otrzyj skórkę z cytryny i wyciśnij z niej sok."
+                    },
+                    {
+                        "Description":"Paprykę, bakłażana, cebulę oraz cukinię pokrój w około 2-3 cm kostkę. Warzywa przełóż do dużej miski, wymieszaj z oliwą, skórką z cytryny, harissą oraz szczyptą soli. Następnie rozłóż je na blasze do pieczenia wyłożonej pergaminem. Piecz około 30 minut w temperaturze 190°C."
+                    },
+                    {
+                        "Description":"W tym samym czasie ugotuj kaszę. Do garnka wlej około 400 ml wody, dodaj Fix Knorr oraz kaszę bulgur. Gdy całość zacznie wrzeć, wstaw w drugi garnek z odrobiną wody. W kąpieli wodnej pod przykryciem gotuj kaszę do miękkości około 20-30 minut, mieszając co jakiś czas. Na koniec dodaj warzywa i dokładnie wymieszaj."
+                    },
+                    {
+                        "Description":"W kolejnej misce tahini wymieszaj z sokiem z cytryny, czosnkiem i 50 ml wody, a następnie dodaj natkę pietruszki i miętę. Gotowe warzywa przełóż na półmisek i polej gotowym sosem."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"czerwona papryka",
+                        "Quantity":"3 sztuki"
+                    },
+                    {
+                        "Name":"bakłażan",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"czerwona cebula",
+                        "Quantity":"3 sztuki"
+                    },
+                    {
+                        "Name":"cukinia",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"oliwa z oliwek",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"Fix Knorr Pomidorowe Kaszotto z cukinią i papryką",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"Przyprawa Harissa Knorr",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"tahini",
+                        "Quantity":"3 łyżki"
+                    },
+                    {
+                        "Name":"cytryna",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"jogurt naturalny",
+                        "Quantity":"4 łyżki"
+                    },
+                    {
+                        "Name":"mięta",
+                        "Quantity":"4 listki"
+                    },
+                    {
+                        "Name":"ząbek czosnku",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"strąk ostrej papryki chilli",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"natka pietruszki",
+                        "Quantity":"1 pęczek"
+                    },
+                    {
+                        "Name":"kasza bulgur",
+                        "Quantity":"200g"
+                    }
+                ]
+            },
+            {
+                "Name":"Gulasz z dyni",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/gulasz-z-dyni-03811.jpg",
+                "Difficulty":"1",
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Dynię obierz i pokrój w grubą kostkę około 2x2 cm. Pokrój cebulę w drobną kostkę, posiekaj natkę kolendry, imbir obierz i zetrzyj na drobnej tarce."
+                    },
+                    {
+                        "Description":"W garnku na rozgrzanej oliwie podsmaż cebulę, dodaj czerwone curry, starty imbir, mleko kokosowe, pomidory pelati i Knorr Naturalnie smaczne - Gulasz. Wszytko razem dokładnie wymieszaj, zagotuj, dodaj dynię. Gulasz gotuj na wolnym ogniu, około 15 minut pod przykryciem."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"mała dynia hokkaido",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"świeży imbir",
+                        "Quantity":"10g"
+                    },
+                    {
+                        "Name":"pomidory pelati",
+                        "Quantity":"200ml"
+                    },
+                    {
+                        "Name":"mleko kokosowe",
+                        "Quantity":"200ml"
+                    },
+                    {
+                        "Name":"oliwa z oliwek do smażenia",
+                        "Quantity":"3 łyżki"
+                    },
+                    {
+                        "Name":"Naturalnie smaczne Gulasz Knorr",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"wegetariańskie czerwone curry",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"garść świeżej kolendry",
+                        "Quantity":"1 sztuka"
+                    }
+                ]
+            },
+            {
+                "Name":"Rolada marchewkowa",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/rolada_marchewkowa_05245441576171789000.jpg",
+                "Difficulty":"1",
+                "Time":40,
+                "Steps":[
+                    {
+                        "Description":"Kardamon rozetrzyj na miazgę. Rzodkiewkę zetrzyj na tarce, szczypior drobno pokrój. Obraną marchew zetrzyj na grubych oczkach tarki."
+                    },
+                    {
+                        "Description":"W garnku skarmelizuj miód, dodaj marchew, masło i olej. Marchewkę smaż dłuższą chwilę - około 10 minut. Dopraw ją na koniec kardamonem, chili, pieprzem i szczyptą soli. Całość odstaw do schłodzenia."
+                    },
+                    {
+                        "Description":"Oddziel białko od żółtek. Zimną marchew wymieszaj z żółtkami. Ubij białko z odrobiną soli, delikatnie wymieszaj z marchwią."
+                    },
+                    {
+                        "Description":"Masę wyłóż na blaszkę wyłożoną pergaminem, wyrównaj tak żeby ciasto nie było grubsze niż 1 cm. Ciasto wstaw do nagrzanego do 170*C piekarnika na około 7-10 minut. Po upieczeniu placek oddziel nożem od pergaminu, a następnie zroluj go na nim i pozostaw do wystygnięcia."
+                    },
+                    {
+                        "Description":"W misce połącz śmietanę z serkiem, dopraw do smaku szczyptą soli i pieprzu, a następnie wymieszaj z rzodkiewką i szczypiorem."
+                    },
+                    {
+                        "Description":"Masę rozsmaruj na powierzchni placka z marchewki, a następnie ściśle zroluj. Całość wstaw do lodówki na kilka godzin aby masa się ścięła. Zimną roladę pokrój w grube 2 cm kawałki."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"marchewka",
+                        "Quantity":"500g"
+                    },
+                    {
+                        "Name":"jajka",
+                        "Quantity":"4 sztuki"
+                    },
+                    {
+                        "Name":"masło",
+                        "Quantity":"50g"
+                    },
+                    {
+                        "Name":"olej rzepakowy",
+                        "Quantity":"4 łyżki"
+                    },
+                    {
+                        "Name":"miód",
+                        "Quantity":"1 łyżeczka"
+                    },
+                    {
+                        "Name":"ostra musztarda",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"serek typu Philadelphia",
+                        "Quantity":"150g"
+                    },
+                    {
+                        "Name":"śmietana",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"szczypiorek",
+                        "Quantity":"0.5 pęczka"
+                    },
+                    {
+                        "Name":"rzodkiewka",
+                        "Quantity":"6 sztuk"
+                    },
+                    {
+                        "Name":"Chili z Indii Knorr",
+                        "Quantity":"0.5 łyżeczki"
+                    },
+                    {
+                        "Name":"Pieprz czarny z Wietnamu mielony Knorr",
+                        "Quantity":"0.5 łyżeczki"
+                    },
+                    {
+                        "Name":"kardamon",
+                        "Quantity":"2 ziarna"
+                    },
+                    {
+                        "Name":"sól",
+                        "Quantity":"3 szczypty"
+                    }
+                ]
+            },
+            {
+                "Name":"Zielone naleśniki",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/zielone-nalesniki-sakiewkijpg.jpg",
+                "Difficulty":"1",
+                "Time":40,
+                "Steps":[
+                    {
+                        "Description":"Szpinak opłucz w zimnej wodzie, osusz na czystej ściereczce lub ręczniku kuchennym, pokrój na mniejsze kawałki i przełóż do miski. Do szpinaku dodaj całe jajka, sól, pieprz, gałkę i zblenduj całość na gładko."
+                    },
+                    {
+                        "Description":"Do ciasta dodaj wodę, mleko i 100 g mąki, porządnie wymieszaj wszystkie składniki (najlepiej za pomocą ubijaczki/trzepaczki do jajek – mikserem będzie za mocno chlapać). Ciasto będzie dość rzadkie, to normalne. Ostaw je na ok 15 – 20 minut na blat lub stół kuchenny (nie do lodówki)."
+                    },
+                    {
+                        "Description":"Do garnka przełóż masło, lekko je podgrzej a następnie dodaj całą zawartość opakowania Knorr, drobno posiekany czosnek, pokrojoną paprykę i 350 ml wrzącej wody, zamieszaj i podgrzewaj przez 5 minut na małym ogniu kila razy mieszając (uważaj, żeby się nie przypaliło). Farsz zdejmij z ognia, do garnka dodaj drobno posiekaną natkę pietruszki, bazylię oraz kremowy serek. Wymieszaj. Spróbuj – jeśli jest zbyt pikantne – dodaj więcej serka."
+                    },
+                    {
+                        "Description":"Ciasto na naleśniki powinno nieco zgęstnieć, ale dalej być dość rzadkie. Jeśli uznasz, że powinno być bardziej gęste dodaj ok 2 płaskie łyżki mąki i dokładnie wymieszaj."
+                    },
+                    {
+                        "Description":"Na patelni do naleśników rozgrzej olej, ciepły (ale nie wrzący) przelej do ciasta naleśnikowego i energicznie zamieszaj. Dzięki temu naleśniki będą bardziej elastyczne i nie przykleją się do patelni. Na tej samej patelni, na średnim ogniu smaż naleśniki przez ok 1-2 minuty z każdej strony."
+                    },
+                    {
+                        "Description":"Na jeszcze ciepłe naleśniki, nałóż po łyżce nadzienia, zbierz brzegi naleśnika formując woreczek/sakiewkę. Ściśnij i za pomocą gałązki szczypiorku delikatnie zawiąż supełek. Gotowe naleśniki przed jedzeniem dodatkowo podgrzej, na przykład wkładając je na 5 minut do piekarnika nagrzanego do 100 stopni."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"jajka",
+                        "Quantity":"5 sztuk"
+                    },
+                    {
+                        "Name":"szpinak świerzy",
+                        "Quantity":"100g"
+                    },
+                    {
+                        "Name":"Kotlety z kaszy bulgur Knorr",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"Gałka muszkatołowa z Indonezji Knorr",
+                        "Quantity":"0.3 łyżeczki"
+                    },
+                    {
+                        "Name":"Pieprz czarny z Wietnamu mielony Knorr",
+                        "Quantity":"0.3 łyżeczki"
+                    },
+                    {
+                        "Name":"mleko",
+                        "Quantity":"100ml"
+                    },
+                    {
+                        "Name":"woda gazowana",
+                        "Quantity":"100ml"
+                    },
+                    {
+                        "Name":"sól",
+                        "Quantity":"1 łyżeczka"
+                    },
+                    {
+                        "Name":"papryka zielona (pokrojona w kostkę)",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"ząbek czosnku posiekany",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"mąka pszenna / mąka tortowa",
+                        "Quantity":"125g"
+                    },
+                    {
+                        "Name":"woda-wrzątek",
+                        "Quantity":"350ml"
+                    },
+                    {
+                        "Name":"serek kremowy naturalny",
+                        "Quantity":"3 łyżki"
+                    },
+                    {
+                        "Name":"masło",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"natka pietruszki pół pęczka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"świeża bazylia kilka listków",
+                        "Quantity":"4 sztuki"
+                    },
+                    {
+                        "Name":"szczypiorek 1 pęczek",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"olej roślinny do smażenia",
+                        "Quantity":"4 łyżki"
+                    }
+                ]
+            },
+            {
+                "Name":"Azjatyckie wege gołąbki z kapusty włoskiej",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/polish_20200225_235840343jpg1583503103345.jpg",
+                "Difficulty":"2",
+                "Time":60,
+                "Steps":[
+                    {
+                        "Description":"Przygotuj farsz do gołąbków: zamarynuj tofu w 3 łyżkach sosu sojowego, 2 łyżkach masła orzechowego, świeżym czosnku. Ugotuj fasolkę al dente. Ugotuj ryż. Poczekaj aż ryż wystygnie, następnie wymieszaj z tofu w marynacie. Do całości dodaj pół papryczki chilli, fasolkę szparagową oraz przyprawę do mięsa mielonego. Cebulę pokrój w kostkę i podsmaż na masełku. Dodaj do farszu. Całość dokładnie wymieszaj."
+                    },
+                    {
+                        "Description":"Kapustę umyj i sparz w gorącej, ale nie wrzącej wodzie. Pierwsze liście wyrzuć, bo mogą mieć za dużo goryczki. Na każdy liść nałóż po 2 łyżki farszu. Następnie wrzuć gołąbki na 20 minut do parowaru, a potem na pół godziny do nagrzanego do 180 stopni C piekarnika."
+                    },
+                    {
+                        "Description":"W między czasie przygotuj sos orzechowy. Do miseczki daj 3 łyżki masła orzechowego, łyżkę sosu sojowego, łyżkę syropu klonowego, suszone chilli i czosnek, sok z limonki oraz letnią wodę. Sos wymieszaj. Upieczone gołąbki polej sosem orzechowym."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"kapusta włoska",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"tofu",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"fasolka szparagowa",
+                        "Quantity":"0.5 opakowania"
+                    },
+                    {
+                        "Name":"ryż",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"masło orzechowe z kawałkami orzechów",
+                        "Quantity":"5 łyżek"
+                    },
+                    {
+                        "Name":"sos sojowy",
+                        "Quantity":"4 łyżki"
+                    },
+                    {
+                        "Name":"sok z limonki",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"Czosnek z USA Knorr",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Imbir z Nigerii Knorr",
+                        "Quantity":"2 szczypty"
+                    },
+                    {
+                        "Name":"chilli papryka",
+                        "Quantity":"0.5 sztuki"
+                    },
+                    {
+                        "Name":"Chili z Indii Knorr",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"syrop klonowy",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"Przyprawa do mięsa mielonego Knorr bez dodatku soli",
+                        "Quantity":"2 łyżeczki"
+                    },
+                    {
+                        "Name":"woda letnia",
+                        "Quantity":"8 łyżek"
+                    },
+                    {
+                        "Name":"olej rzepakowy",
+                        "Quantity":"3 łyżki"
+                    },
+                    {
+                        "Name":"czosnek ząbek",
+                        "Quantity":"1 sztuka"
+                    }
+                ]
             }
         ]
     },
     {
         "Name":"Dania główne",
-        "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/535x0/dania_glowne491942.jpg",
+        "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/roladki-po-bolonsku543812.jpg",
         "Recipes":[
             {
                 "Name":"Roladki po bolońsku",
@@ -421,6 +1544,693 @@
                         "Quantity":"Wedle uznania"
                     }
                 ]
+            },
+            {
+                "Name":"Duszona kaczka z jabłkami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/duszona-kaczka-z-jablkami.jpg",
+                "Difficulty":1,
+                "Time":60,
+                "Steps":[
+                    {
+                        "Description":"Osuszone udka natrzyj rozgniecionym czosnkiem i posyp majerankiem. Odstaw na kilka minut w chłodne miejsce."
+                    },
+                    {
+                        "Description":"W misce rozmieszaj wino, 200 ml wody oraz Fix Knorr. Dodaj żurawinę."
+                    },
+                    {
+                        "Description":"Cebulę oraz jabłka pokrój w cząstki i przesmaż wraz z rozmarynem na rozgrzanej patelni. Wlej przygotowany Fix i zagotuj."
+                    },
+                    {
+                        "Description":"W naczyniu żaroodpornym ułóż udka. Wlej przygotowany Fix, dodaj jabłka i pozostałe składniki. Naczynie przykryj i wstaw do nagrzanego do 180°C piekarnika na 45 minut."
+                    },
+                    {
+                        "Description":"Po tym czasie naczynie odkryj. Sos wraz z jabłkami zlej do rondelka, przetrzyj przez sito i dopraw do smaku."
+                    },
+                    {
+                        "Description":"Mięso z powrotem umieść w piekarniku i zapiecz na ruszcie, aby skórka była chrupiąca. Gotowe udka podawaj z sosem i puree."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"Udka z kaczki",
+                        "Quantity":" 4 sztuki "
+                    },
+                    {
+                        "Name":" jabłka ",
+                        "Quantity":" 3 sztuki "
+                    },
+                    {
+                        "Name":"Fix Danie orientalne z kurczakiem Knorr",
+                        "Quantity":"1 opakowanie "
+                    },
+                    {
+                        "Name":"cebula ",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"woda",
+                        "Quantity":"200 mililitrów"
+                    },
+                    {
+                        "Name":"żurawina ze słoika",
+                        "Quantity":"2 łyżki "
+                    },
+                    {
+                        "Name":"gałązka świeżego rozmarynu",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":" ząbek czosnku ",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":" czerwone wino ",
+                        "Quantity":"200 mililitrów"
+                    }
+                ]
+            },
+            {
+                "Name":"Ryż smażony z warzywami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/ryz-smazony-z-warzywami4786.jpg",
+                "Difficulty":1,
+                "Time":57,
+                "Steps":[
+                    {
+                        "Description":"Ugotuj ryż w osolonej wodzie do czasu, gdy stanie się miękki."
+                    },
+                    {
+                        "Description":"Pokrój paprykę i marchewkę w centymetrową kostkę. Marchewkę ugotuj."
+                    },
+                    {
+                        "Description":"Rozgrzej olej na patelni lub woku. Rozmieszaj jajka i wylej na patelnię. Następnie dodaj pokrojone warzywa, groszek oraz ryż, energicznie przy tym mieszając."
+                    },
+                    {
+                        "Description":"Dopraw danie sosem sojowy jasnym i pokruszoną Przyprawę w mini kostkach Czosnek Knorr oraz Smażona cebula Knorr. Przed podaniem udekoruj ryż drobno posiekanym szczypiorkiem."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"ryż",
+                        "Quantity":"300 gramów"
+                    },
+                    {
+                        "Name":"Przyprawa w Mini kostkach Smażona cebula Knorr",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"papryka",
+                        "Quantity":"2 sztuka"
+                    },
+                    {
+                        "Name":"marchewka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"groszek",
+                        "Quantity":"0.5 szklanki"
+                    },
+                    {
+                        "Name":" jajka",
+                        "Quantity":"2 sztuka"
+                    },
+                    {
+                        "Name":"sos sojowy jasny",
+                        "Quantity":"Ilosc skladniku 1"
+                    },
+                    {
+                        "Name":"posiekany szczypiorek",
+                        "Quantity":"2 sztuki"
+                    }
+                ]
+            },
+            {
+                "Name":"Kotlety z kalafiora i kaszy jaglanej",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/pio_12677431041588874770000.jpg",
+                "Difficulty":2,
+                "Time":45,
+                "Steps":[
+                    {
+                        "Description":"Kasze jaglaną ugotuj w 200 ml wody,100 ml mleka z kostką rosołową do miękkości. Kasza może być lekko rozgotowania."
+                    },
+                    {
+                        "Description":"2 jaja ugotuj na twardo obierz posiekaj nożem z grubsza. Cebulę pokrój w kostkę, przesmaż na odrobinie oleju. Pestki dyni upraż na suchej patelni."
+                    },
+                    {
+                        "Description":"Surowego kalafiora posiekaj nożem powinien być mocno rozdrobniony. Posiekaj pęczek kolendry."
+                    },
+                    {
+                        "Description":"W misce połącz ciepła kaszę , jajka , kalafiora pestki dyni, cebulę, mąkę, kolendrę, pieprz , curry, chili . Wszystkie składniki dokładnie wymieszaj w razie potrzeby dopraw odrobiną soli do smaku."
+                    },
+                    {
+                        "Description":"Z masy uformuj ma kotleciki obtocz je z wierzchu w bułce obsmaż na złoty kolor na patelni. Kotleciki podawaj z dipem czosnkowym."
+                    },
+                    {
+                        "Description":"Jogurt połącz majonezem z sokiem z połówki cytryny i czosnkiem. Kotleciki podawaj z ulubioną sałatką."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"kasza jaglana",
+                        "Quantity":"300 gramów"
+                    },
+                    {
+                        "Name":" mleko",
+                        "Quantity":"160 ml"
+                    },
+                    {
+                        "Name":"mąka z ciecierzycy",
+                        "Quantity":"100 gramów"
+                    },
+                    {
+                        "Name":"nieduży kalafior ",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"olej rzepakowy",
+                        "Quantity":"150 ml"
+                    },
+                    {
+                        "Name":"cebula ",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"kolendra",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"jajka",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"bułka tarta",
+                        "Quantity":"50 gramów "
+                    },
+                    {
+                        "Name":"stki dyni",
+                        "Quantity":"30 gramów "
+                    },
+                    {
+                        "Name":"jogurt naturalny",
+                        "Quantity":"150 ml"
+                    },
+                    {
+                        "Name":"cytryna",
+                        "Quantity":"1 sztuka"
+                    }
+                ]
+            },
+            {
+                "Name":"Papryka faszerowana mięsem",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/faszerowana-papryka-miesna.jpg",
+                "Difficulty":2,
+                "Time":90,
+                "Steps":[
+                    {
+                        "Description":"Kuskus przygotuj według wskazówek umieszczonych na opakowaniu. 4 papryki umyj i odetnij z każdej z nich wierzch grubości ok 1 cm. Ostatnią paprykę pokrój w drobną kostkę."
+                    },
+                    {
+                        "Description":"Mięso przesmaż z pokrojoną w kostkę cebulą na oliwie. Knorr Naturalnie smaczne - Spaghetti Bolognese wymieszaj ze szklanką zimnej wody i wlej do mięsa – duś na wolnym ogniu ok. 10 minut."
+                    },
+                    {
+                        "Description":"Do mięsa dołóż posiekaną paprykę, kuskus oraz pokruszoną fetę – wymieszaj. Następnie farsz nałóż do każdej z papryk. "
+                    },
+                    {
+                        "Description":"Natkę posiekaj drobno. Ser żółty zetrzyj na tarce i wymieszaj z natką – posyp wierzch nafaszerowanych papryk. Gotowe papryki ułóż w naczyniu żaroodpornym i wstaw do nagrzanego piekarnika. Zapiekaj w temp 180 °C przez ok. 45 minut. Udekoruj listkami bazylii.1"
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"mięso mielone",
+                        "Quantity":"300 gramów "
+                    },
+                    {
+                        "Name":"feta",
+                        "Quantity":"100 gramów"
+                    },
+                    {
+                        "Name":"Naturalnie smaczne Spaghetti Bolognese Knorr",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":" świeża bazylia",
+                        "Quantity":"30 gramów"
+                    },
+                    {
+                        "Name":" papryka",
+                        "Quantity":"5 sztuk"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":" kuskus",
+                        "Quantity":"100 gramów"
+                    },
+                    {
+                        "Name":" natka pietruszki",
+                        "Quantity":"1 pęczek"
+                    },
+                    {
+                        "Name":" ser żółty",
+                        "Quantity":"20 gramów"
+                    }
+                ]
+            },
+            {
+                "Name":"Gulasz z kiełbasek",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/gulasz-z-kielbasek.jpg",
+                "Difficulty":2,
+                "Time":40,
+                "Steps":[
+                    {
+                        "Description":"Kiełbasę pokrój w plasterki, a boczek w kostkę. Całość usmaż na dużej patelni bez dodatku tłuszczu. "
+                    },
+                    {
+                        "Description":"Całą włoszczyznę dokładnie umyj, obierz i pokrój w kostkę. Cebulę i czosnek posiekaj. "
+                    },
+                    {
+                        "Description":"Dodaj wszystkie warzywa do kiełbasy i boczku. Całość smaż około 10 minut, mieszając od czasu do czasu. "
+                    },
+                    {
+                        "Description":"Zalej gulasz 500 ml wody i dodaj Knorr Naturalnie Smaczne - Gulasz. Dokładnie wymieszaj. "
+                    },
+                    {
+                        "Description":"Na koniec dodaj koncentrat pomidorowy oraz odcedzoną fasolkę. Duś jeszcze około 15 minut. Udekoruj natką pietruszki. Taki gulasz podawaj z kromką chleba lub bułką. "
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"cienkie kiełbaski",
+                        "Quantity":"8 sztuk"
+                    },
+                    {
+                        "Name":"woda",
+                        "Quantity":"500 mililitrów"
+                    },
+                    {
+                        "Name":"boczek wędzony",
+                        "Quantity":"8 plastrów"
+                    },
+                    {
+                        "Name":" włoszczyzna",
+                        "Quantity":"1 pęczek"
+                    },
+                    {
+                        "Name":" cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":" ząbki czosnku",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"koncentrat pomidorowy",
+                        "Quantity":"1 opakowanie"
+                    }
+                ]
+            },
+            {
+                "Name":"Curry z kurczaka",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/curry-z-kurczaka-2.jpg",
+                "Difficulty":2,
+                "Time":40,
+                "Steps":[
+                    {
+                        "Description":"W dużym garnku podsmaż na oleju posiekany czosnek, chilli oraz cebulę. "
+                    },
+                    {
+                        "Description":"Gdy warzywa się zrumienią dodaj curry, kumin, cynamon i gałkę muszkatołową. Podsmaż chwilę, żeby potrawa nabrała aromatu."
+                    },
+                    {
+                        "Description":"Fix Knorr wymieszaj ze szklanką bulionu. Wlej powstały płyn do pomidorów i całość duś przez około 15 minut, aż sos zgęstnieje."
+                    },
+                    {
+                        "Description":"Kurczaka pokrój w kostkę i wraz z groszkiem wrzuć do sosu. "
+                    },
+                    {
+                        "Description":"Do naczynia żaroodpornego wsyp ryż. Następnie zalej go gęstym sosem z mięsem. Naczynie przykryj i piecz w 180 stopniach przez 20 minut. Podawaj polane jogurtem"
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"ryż",
+                        "Quantity":"300 gram"
+                    },
+                    {
+                        "Name":" pierś z kurczaka",
+                        "Quantity":"4000 gram"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"papryczka chili",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"ząbek czosnku",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":" bulion",
+                        "Quantity":"300 ml"
+                    },
+                    {
+                        "Name":" jogurt",
+                        "Quantity":"20 ml"
+                    }
+                ]
+            },
+            {
+                "Name":"Zupa ze świeżych grzybów",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/wild-mushroom-soup_a905616.jpg",
+                "Difficulty":3,
+                "Time":35,
+                "Steps":[
+                    {
+                        "Description":"Ugotuj makaron zgodnie z instrukcją na opakowaniu. "
+                    },
+                    {
+                        "Description":"Umyj grzyby i pokrój na plasterki. Drobno pokrój cebulę i czosnek. Przesmaż czosnek i cebulę na oleju. Posiekaj tymianek."
+                    },
+                    {
+                        "Description":"Dodaj grzyby i smaż na złoto na dużym ogniu przez kilka minut. Dodaj tymianek, 1 l wody i Bulion Grzybowy Knorr. Doprowadź zupę do wrzenia i gotuj przez 15 min."
+                    },
+                    {
+                        "Description":"Dodaj śmietankę i kluski. Podawaj zupę z pietruszką zieloną i posiekanym tymiankiem. "
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"świeże grzyby leśne lub pieczarki",
+                        "Quantity":" olej "
+                    },
+                    {
+                        "Name":"makaron kokardki",
+                        "Quantity":"100 gramów"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":" ząbek czosnku",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":" śmietanka",
+                        "Quantity":"30 ml"
+                    },
+                    {
+                        "Name":" olej",
+                        "Quantity":"5 ml"
+                    }
+                ]
+            },
+            {
+                "Name":"Łosoś w cieście francuskim ze szpinakiem",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/losos-pieczony-w-ciescie-francuskim-ze-szpinakiem-i-sosem-pieczarkowym.jpg",
+                "Difficulty":2,
+                "Time":60,
+                "Steps":[
+                    {
+                        "Description":"Na rozgrzanym oleju podsmaż posiekany czosnek, chilli i cebulę, dodaj rozmrożony i odciśnięty z nadmiaru wody szpinak. Całość smaż chwilę, po czym dopraw do smaku łyżką przyprawy uniwersalnej Knorr oraz gałką muszkatołową. Szpinak ostudź, dodaj do niego serek ricotta oraz pokrojone w kostkę suszone pomidory."
+                    },
+                    {
+                        "Description":"Łososia oczyść z ości i usuń skórę. Rybę oprósz pozostałą ilością Delikatu Knorr. Rybę ułóż na rozwałkowanym płacie ciasta francuskiego, na wierzch nałóż szpinak. Całość zroluj w cieście, smarując uprzednio brzegi oraz wierzch ciasta rozkłóconym jajkiem. Rybę piecz w nagrzanym do 190°C piekarniku przez 20 minut. "
+                    },
+                    {
+                        "Description":"Pokrój cebulę w kostkę, pieczarki w plastry. Smaż na tej samej patelni co wcześniej warzywa, na rozgrzanym oleju przez minutę. "
+                    },
+                    {
+                        "Description":"Zdejmij patelnię z ognia, wlej 200 ml zimnej wody, dodaj Sos do pieczeni jasny Knorr, dzięki której sos będzie gęsty i dobrze doprawiony. Całość dokładnie wymieszaj upewniając się, że esencja zupełnie się rozpuściła. "
+                    },
+                    {
+                        "Description":"Wszystko razem gotuj 5 minut, po czym sos zapraw śmietaną. Łososia podawaj z sosem. "
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"pieczarki",
+                        "Quantity":"200 gramów"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"olej",
+                        "Quantity":"5 ml"
+                    },
+                    {
+                        "Name":"śmietana",
+                        "Quantity":"100 ml"
+                    },
+                    {
+                        "Name":" szpinak",
+                        "Quantity":"20 gramów"
+                    },
+                    {
+                        "Name":" ser ricotta",
+                        "Quantity":"100 gramów"
+                    },
+                    {
+                        "Name":"suszone pomidory",
+                        "Quantity":"20 gramów"
+                    },
+                    {
+                        "Name":"ząbki czosnku",
+                        "Quantity":"3 sztuki"
+                    },
+                    {
+                        "Name":"filet z łososia",
+                        "Quantity":"200 gramów"
+                    },
+                    {
+                        "Name":"ciasto francuskie",
+                        "Quantity":"300 gramów"
+                    },
+                    {
+                        "Name":" jajko",
+                        "Quantity":"1 sztuka"
+                    }
+                ]
+            },
+            {
+                "Name":"Paella z kurczakiem",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/535x0/paella-z-kurczakiem-krok-5.jpg",
+                "Difficulty":1,
+                "Time":25,
+                "Steps":[
+                    {
+                        "Description":"Cebule i czosnek drobno posiekaj. Papryki pokrój w paski. Pomidory lekko rozdziel i odsącz z soku."
+                    },
+                    {
+                        "Description":"Mięso umyj, osusz, posyp przyprawą do kurczaka pikantną Knorr. Przesmaż pałki z kurczaka, odstaw na bok."
+                    },
+                    {
+                        "Description":"Na pozostałym tłuszczy przesmaż czosnek oraz cebulę, dodaj warzywa, smaż chwilę, dodaj odsączone pomidory. Na patelnię wsyp ryż, smaż przez kilka minut. Następnie wlej wodę tak, aby przykryła ryż ponad 1,5 centymetra i dodaj kostki Knorr oraz szafran. Wszystko dokładnie wymieszaj i zagotuj aż do rozpuszczenia się kostek."
+                    },
+                    {
+                        "Description":"Dodaj mięso i wszystkie warzywa. Patelnię przykryj, włóż do piekarnika nagrzanego do 180 stopni i piecz przez 20 minut."
+                    },
+                    {
+                        "Description":"Potrawę skrop sokiem z limonki i udekoruj jej cząstkami. "
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"pałki z kurczaka",
+                        "Quantity":"500 gramów"
+                    },
+                    {
+                        "Name":"Ryż długoziarnisty",
+                        "Quantity":"150 gramów"
+                    },
+                    {
+                        "Name":"cebule",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"ząbek czosnku",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"czerwona papryka",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"pomidory z puszk",
+                        "Quantity":"30 gramów"
+                    },
+                    {
+                        "Name":" limonka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"oliwa",
+                        "Quantity":"50 ml"
+                    }
+                ]
+            },
+            {
+                "Name":"Bigos domowy",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/bigos-domowy.jpg",
+                "Difficulty":3,
+                "Time":70,
+                "Steps":[
+                    {
+                        "Description":"Kapustę białą poszatkuj, a kiszoną przetnij 2 razy, żeby ją rozdrobnić."
+                    },
+                    {
+                        "Description":"Cebulę obierz i pokrój w kostkę, podsmaż w garnku i dodaj kapusty. Podlej winem, dodaj liść laurowy i ziele angielskie."
+                    },
+                    {
+                        "Description":"Boczek, szynkę i kiełbasę pokrój w kostkę. Podsmaż na patelni, lekko posypując przyprawą Delikat Knorr."
+                    },
+                    {
+                        "Description":"Mięso dodaj do kapusty. Duś 60 min. Dopraw do smaku przyprawą Delikat Knorr. Czynność z duszeniem można powtarzać przez 3 dni dla lepszego smaku. Podawaj w misce odgrzane porcje."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"kapusta kiszona",
+                        "Quantity":"300 gramów"
+                    },
+                    {
+                        "Name":"kapusta biała",
+                        "Quantity":"200 gramów"
+                    },
+                    {
+                        "Name":" kiełbasa zwyczajna",
+                        "Quantity":"100 gramów"
+                    },
+                    {
+                        "Name":"szynka wieprzowa",
+                        "Quantity":"100 gramów"
+                    },
+                    {
+                        "Name":"boczek wędzony",
+                        "Quantity":"30 gramów"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    }
+                ]
+            },
+            {
+                "Name":"Pstrąg zapiekany",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/filet-z-pstraga-zapiekany-z-borowikami-i-szynka.jpg",
+                "Difficulty":3,
+                "Time":50,
+                "Steps":[
+                    {
+                        "Description":"Cebule i borowiki pokrój w kostkę. Podsmaż na patelni z masłem, aż zrobią się rumiane."
+                    },
+                    {
+                        "Description":"Dodaj starty ser i dopraw całość łyżeczką przyprawy Knorr."
+                    },
+                    {
+                        "Description":"Filety z pstrąga skop oliwą i posyp przyprawą Knorr."
+                    },
+                    {
+                        "Description":"Na każdym rozłóż plaster szynki, następnie ułóż farsz z grzybów i sera. Zwiń i zepnij wykałaczką."
+                    },
+                    {
+                        "Description":"Układaj roladki w naczyniu żaroodpornym. Zapiekaj przez 20 minut w temperaturze 180 stopni. Pamiętaj, aby przed podaniem usunąć wykałaczki. "
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"szynka wędzona",
+                        "Quantity":"10 plastrów"
+                    },
+                    {
+                        "Name":"Delikat przyprawa uniwersalna Knorr",
+                        "Quantity":"15 gramów"
+                    },
+                    {
+                        "Name":" oscypek",
+                        "Quantity":"250 gramów"
+                    },
+                    {
+                        "Name":"borowiki",
+                        "Quantity":"200 gramów"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":" filet z pstrąga",
+                        "Quantity":"10 sztuk "
+                    },
+                    {
+                        "Name":"oliwa",
+                        "Quantity":"10 łyżek "
+                    },
+                    {
+                        "Name":"masło",
+                        "Quantity":"1 łyżka"
+                    }
+                ]
+            },
+            {
+                "Name":"Leczo węgierskie",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/wegierskie-leczo-z-kielbasa-i-czosnkiem.jpg",
+                "Difficulty":3,
+                "Time":50,
+                "Steps":[
+                    {
+                        "Description":"Kiełbasę pokrój w plastry, a pozostałe składniki w kostkę. "
+                    },
+                    {
+                        "Description":"W szerokim rondlu podsmaż kiełbasę, cebulę i paprykę. Po chwili smażenia dodaj posiekany czosnek i paprykę mieloną. "
+                    },
+                    {
+                        "Description":"Pomidory z puszki posiekaj i dodaj do warzyw. Całość duś około 5 minut."
+                    },
+                    {
+                        "Description":"OFix Knorr wymieszaj ze szklanką wody i wlej do rondla. Całość dokładnie wymieszaj i duś kolejne 5 minut. Węgierskie leczo podawaj z ryżem lub ziemniakami. "
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"kiełbasa",
+                        "Quantity":"100 gramów"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"papryka czerwona",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"papryka zielona",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":" pomidory z puszki",
+                        "Quantity":"30 gramów"
+                    },
+                    {
+                        "Name":"ząbki czosnku",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":" olej",
+                        "Quantity":"2 ml"
+                    },
+                    {
+                        "Name":"woda",
+                        "Quantity":"20 ml"
+                    }
+                ]
             }
         ]
     },
@@ -510,6 +2320,789 @@
                     {
                         "Name":"Sól",
                         "Quantity":"Do smaku"
+                    }
+                ]
+            },
+            {
+                "Name":"Bruschetta",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/1131397.jpg",
+                "Difficulty":"1",
+                "Time":15,
+                "Steps":[
+                    {
+                        "Description":"Pokrój bagietkę na 12 kromek. Ułóż na blasze, posyp Przyprawą Uniwersalną Delikat Knorr."
+                    },
+                    {
+                        "Description":"Każdą kromkę polej odrobiną oliwy. Piecz w piekarniku w temperaturze 200 stopni do momentu, aż będą złociste."
+                    },
+                    {
+                        "Description":"Sparz pomidory, zdejmij z nich skórkę, wykrój środek i pokrój w drobną kostkę. Wymieszaj w miseczce z posiekanym czosnkiem, julienne z bazylii, dopraw solą, pieprzem i oliwą z oliwek."
+                    },
+                    {
+                        "Description":"Nakładaj na grzanki po łyżce doprawionych pomidorów. Podawaj zaraz po przygotowaniu."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"bagietka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"Delikat przyprawa uniwersalna Knorr",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"Pomidory",
+                        "Quantity":"3 sztuki"
+                    },
+                    {
+                        "Name":"oliwa z oliwek",
+                        "Quantity":"6 łyżek"
+                    },
+                    {
+                        "Name":"Ząbek czosnku",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"Pieprz czarny z Wietnamu mielony Knorr",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"sól morska",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"świeża bazylia",
+                        "Quantity":"3 listki"
+                    }
+                ]
+            },
+            {
+                "Name":"Włoskie szaszłyki",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/wloskie-szaszlyczki-z-meatballami.jpg",
+                "Difficulty":"1",
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Zawartość opakowania Knorr rozmieszaj z wodą i odstaw na 3 minuty. Patyki namocz w zimnej wodzie, co sprawi że nie będą palić się na grillu."
+                    },
+                    {
+                        "Description":"Mięso przełóż do miski, połącz z przygotowanym Fixem oraz bazylią pokrojoną w cienkie paseczki i dokładnie wymieszaj."
+                    },
+                    {
+                        "Description":"Papryki pokrój w dużą kostkę, pieczarki obierz, a pomidorki umyj."
+                    },
+                    {
+                        "Description":"Z mięsnej masy uformuj nieduże kulki o średnicy włoskiego orzecha."
+                    },
+                    {
+                        "Description":"Następnie mięsne kulki nabijaj na patyki na przemian z warzywami. Gotowe skrop oliwą i grilluj 10-12 minut, obracając je co jakiś czas. Podawaj z chrupiącą sałatą."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"mieso mielone mieszane",
+                        "Quantity":"500 gram"
+                    },
+                    {
+                        "Name":"papryka czerwona",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"papryka zielona",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"pieczarki",
+                        "Quantity":"4 sztuki"
+                    },
+                    {
+                        "Name":"Fix Kotlety mielone Knorr",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"pomidorki koktajlowe",
+                        "Quantity":"8 sztuk"
+                    },
+                    {
+                        "Name":"świeża bazylia",
+                        "Quantity":"4 listki"
+                    },
+                    {
+                        "Name":"oliwa z oliwek",
+                        "Quantity":"3 łyżki"
+                    },
+                    {
+                        "Name":"woda",
+                        "Quantity":"125 ml"
+                    }
+                ]
+            },
+            {
+                "Name":"Smażone oliwki",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/smazone-oliwki.jpg",
+                "Difficulty":"1",
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Tacę wyłóż pergaminem do pieczenia. Zawartość szerszej saszetki opakowania przesyp do miski i wymieszaj z parmezanem."
+                    },
+                    {
+                        "Description":"Oliwki obtocz w mące, a następnie w rozkłóconym jajku."
+                    },
+                    {
+                        "Description":"Oliwki przełóż do miski z panierką Knorr i delikatnie potrząsając, wymieszaj tak, aby całkowicie były obtoczone w niej."
+                    },
+                    {
+                        "Description":"Ułóż je na pergaminie i wstaw na 15 minut do lodówki. W tym czasie zawartość węższej saszetki Knorr wymieszaj z Ketchupem Hellmann’s Łagodnym oraz Majonezem Babuni Hellmann's."
+                    },
+                    {
+                        "Description":"W niewielkim garnku rozgrzej olej i ostrożnie smaż po kilka oliwek na złoty kolor. Usmażone oliwki podawaj z przygotowanym dipem."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"oliwki zielone nadziane papryką",
+                        "Quantity":"20 sztuk"
+                    },
+                    {
+                        "Name":"Fix Nagetsy z sosem meksykańskim Knorr",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"parmezan starty",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"jajka",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"mąka pszenna",
+                        "Quantity":"5 łyżek"
+                    },
+                    {
+                        "Name":"Ketchup Hellmann's Łagodny",
+                        "Quantity":"5 łyżek"
+                    },
+                    {
+                        "Name":"Majonez Hellmann's Babuni",
+                        "Quantity":"4 łyżki"
+                    },
+                    {
+                        "Name":"olej do smażenia",
+                        "Quantity":"0,5 litra"
+                    }
+                ]
+            },
+            {
+                "Name":"Grissini gryczane",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/grissini-gryczane4582391581406868500.jpg",
+                "Difficulty":"1",
+                "Time":110,
+                "Steps":[
+                    {
+                        "Description":"Połącz obie mąki. Dodaj suszone drożdże oraz przyprawę Knorr."
+                    },
+                    {
+                        "Description":"Dodaj 250 ml letniej wody, oliwę i połącz ciasto. Odstaw w ciepłym miejscu pod przykryciem na 45 minut."
+                    },
+                    {
+                        "Description":"Po tym czasie ponownie ugnieć ciasto i roluj grossini. Układaj na pergaminie pieczeniowym "
+                    },
+                    {
+                        "Description":"Spryskaj grissini wodą, posyp sezamem i piecz w 180 stopniach przez 15-18 minut."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"mąka gryczana",
+                        "Quantity":"150 gram"
+                    },
+                    {
+                        "Name":"mąka orkiszowa",
+                        "Quantity":"150 gram"
+                    },
+                    {
+                        "Name":"Mieszanka ziół i przypraw Zioła prowansalskie Knorr",
+                        "Quantity":"4 łyżki"
+                    },
+                    {
+                        "Name":"suszone drożdże",
+                        "Quantity":"1 opakowania"
+                    },
+                    {
+                        "Name":"oliwa",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"ziarna sezamu",
+                        "Quantity":"4 łyżki"
+                    },
+                    {
+                        "Name":"letnia woda",
+                        "Quantity":"250 ml"
+                    }
+                ]
+            },
+            {
+                "Name":"Deser z mascarpone i borówkami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/20200508_094231jpg1593015526762.jpg",
+                "Difficulty":"1",
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Śmietanę 30% ubijamy z cukrem na puszystą masę, łączymy z serkiem mascarpone"
+                    },
+                    {
+                        "Description":"1/3 masy odkładamy, pozostałość miksujemy z około 100 gram borówki"
+                    },
+                    {
+                        "Description":"Układamy warstwami w 5 szklankach: 2 pokruszone biszkopty, masa z borówkami, 2 pokruszone biszkopty, masa bez borówek, kilka borowek do dekoracji na wierzch. Owoce mozna zastapic innymi ulubionymi :)"
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"serek mascarpone",
+                        "Quantity":"250 gram"
+                    },
+                    {
+                        "Name":"śmietana 30%",
+                        "Quantity":"200 ml"
+                    },
+                    {
+                        "Name":"cukier",
+                        "Quantity":"20 gram"
+                    },
+                    {
+                        "Name":"borówki",
+                        "Quantity":"200 gram"
+                    },
+                    {
+                        "Name":"biszkopty okrągłe",
+                        "Quantity":"1 opakowanie"
+                    }
+                ]
+            },
+            {
+                "Name":"Tostowe koszyczki",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/konkurs-filmowy-3406-x-2278jpg1594535787533.jpg",
+                "Difficulty":"1",
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Chleb tostowy rozwałkować i wyłożyć nim posmarowane masłem foremki do muffinek."
+                    },
+                    {
+                        "Description":"Kabanosy ,paprykę, pomidorki, oliwki, pokroić . Dodać starty żółty ser, wbić jajka , doprawić do smaku. Wszystko wymieszać. Masą wypełnić przygotowane tostowe koszyczki ."
+                    },
+                    {
+                        "Description":"Zapiekać w piekarniku nagrzanym do 190-195 C przez 15 min - do zrumienianie chleba :-) Zajadać podczas seansu filmowego :-)"
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"chleb tostowy",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"kabanosy",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"pomidorki koktajlowe",
+                        "Quantity":"4 sztuki"
+                    },
+                    {
+                        "Name":"oliwki czarne z zalewy",
+                        "Quantity":"5 sztuk"
+                    },
+                    {
+                        "Name":"ser żółty tarty",
+                        "Quantity":"1 garść"
+                    },
+                    {
+                        "Name":"jajka",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"papryka żółta",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"sól",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"pieprz czarny",
+                        "Quantity":"1 szczypta"
+                    }
+                ]
+            },
+            {
+                "Name":"Szparagi w cieście francuskim",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/inbound8870284068680634527jpg1593076075193.jpg",
+                "Difficulty":"1",
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Ciasto francuskie rozwinąć; wyciąć z niego wąskie, długie prostokąty"
+                    },
+                    {
+                        "Description":"Szparagi zawinąć w szynkę parmeńską i ser oraz owinąć ciastem francuskim"
+                    },
+                    {
+                        "Description":"Posypać gotowe szparagi łyżeczką sezamu"
+                    },
+                    {
+                        "Description":"Piec ok. 15 minut w temperaturze 220 stopni"
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"szparagi",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"ciasto francuskie",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"sezamem",
+                        "Quantity":"1 łyżeczka"
+                    },
+                    {
+                        "Name":"ser żółty",
+                        "Quantity":"7 plastrów"
+                    },
+                    {
+                        "Name":"szynka parmeńska",
+                        "Quantity":"7 plastrów"
+                    }
+                ]
+            },
+            {
+                "Name":"Bułeczki pizzowe",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/img_20190921_194708jpg1593099481648.jpg",
+                "Difficulty":"2",
+                "Time":90,
+                "Steps":[
+                    {
+                        "Description":"Drożdże rozpuścić w 1/5 szklanki ciepłej wody. Następnie dodaj cukier i 3 łyżki mąki. Wymieszać i odstaw przykryte pod ściereczką na 10 minut w ciepłe miejsce do wyrośnięcia."
+                    },
+                    {
+                        "Description":"Mąkę przesiać do miski, wymieszać z solą. Stopniowo wlewać rozczyn drożdży, oliwę i resztę ciepłej wody. Wymieszaj delikatnie składniki. Wyrabiaj na oprószonej mąką stolnicy parę minut, aż ciasto będzie elastyczne i gładkie. Włożyć do dużej miski, przykryć ściereczką i odstawić na ok. 1 godzinę do wyrośnięcia."
+                    },
+                    {
+                        "Description":" Po tym czasie rozwałkuj ciasto na duży kwadrat i podziel na 4 prostokąty. Kawałki posmaruj passatą. Na długim boku poukładaj składniki i zwijaj od długiego boku ze składnikami. Przełóż na blachy wyłożonej papierem do pieczenia łączeniem do dołu. Zostaw na 30 minut."
+                    },
+                    {
+                        "Description":"Piecz w nagrzanym do 220 stopni piekarniku ok. 15 minut. Pokrój na kawałki. Smacznego!"
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"mąka pszenna",
+                        "Quantity":"250 gram"
+                    },
+                    {
+                        "Name":"ciepła woda",
+                        "Quantity":"150 ml"
+                    },
+                    {
+                        "Name":"drożdże",
+                        "Quantity":"25 gram"
+                    },
+                    {
+                        "Name":"sól",
+                        "Quantity":"1 łyżeczka"
+                    },
+                    {
+                        "Name":"cukier",
+                        "Quantity":"0,5 łyżeczki"
+                    },
+                    {
+                        "Name":"oliwa",
+                        "Quantity":"0,5 łyżki"
+                    },
+                    {
+                        "Name":"passata pomidorowa",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"starty ser żółty",
+                        "Quantity":"5 łyżek"
+                    },
+                    {
+                        "Name":"pieczarki",
+                        "Quantity":"50 gram"
+                    },
+                    {
+                        "Name":"oliwki",
+                        "Quantity":"50 gram"
+                    },
+                    {
+                        "Name":"szynka",
+                        "Quantity":"20 gram"
+                    }
+                ]
+            },
+            {
+                "Name":"Migdałowe gofry z malinami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/goto1jpg1594730409741.jpg",
+                "Difficulty":"1",
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Migdał przekładam do kielicha miksującego i rozdrabniam blenderem na mąkę."
+                    },
+                    {
+                        "Description":"Dodaję mąkę pszenną, żółtko, sól, cukier, olej rzepakowy, mleko. Całość miksuję żeby nie było grudek. Biało ubijam na sztywno i dodaję do ciasta. Mieszam już delikatnie łyżką. Gofrownicę smaruję olejem, rozgrzewam wylewam po łyżce ciasta na jednego gofra. Piekę około 5 minut. Zależy to od mocy urządzenia."
+                    },
+                    {
+                        "Description":"Sześć malin rozgniatam i przecieram przez sitko. Sok wlewam do miseczki. Dodaję jogurt. Gofry podaję z malinami i sosem jogurtowym."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"migdały",
+                        "Quantity":"6 łyżek"
+                    },
+                    {
+                        "Name":"mąka",
+                        "Quantity":"4 łyżki"
+                    },
+                    {
+                        "Name":"jajka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"sól",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"cukier waniliowy",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"mleko",
+                        "Quantity":"125 ml"
+                    },
+                    {
+                        "Name":"oliwa",
+                        "Quantity":"50 ml"
+                    },
+                    {
+                        "Name":"proszek do pieczenia",
+                        "Quantity":"3 szczypty"
+                    },
+                    {
+                        "Name":"jogurt grecki",
+                        "Quantity":"200 gram"
+                    },
+                    {
+                        "Name":"maliny",
+                        "Quantity":"200 gram"
+                    },
+                    {
+                        "Name":"mięta",
+                        "Quantity":"10 listków"
+                    }
+                ]
+            },
+            {
+                "Name":"Nachos",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/38-nachos_hellmanns887765.jpg",
+                "Difficulty":"1",
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Rozgrzej oliwę na patelni. Dodaj cebulę oraz zieloną paprykę i smaż 3-4 minuty. Następnie dodaj czosnek, smaż chwilę. Dodaj mięso mielone, chilli w proszku i kumin. Smaż do momentu, gdy mięso będzie zrumienione."
+                    },
+                    {
+                        "Description":"W dużej misce wymieszaj pomidory, dymkę, Jalapeno, kolendrę oraz sok z limonki. Przełóż do salaterki."
+                    },
+                    {
+                        "Description":"Do kielicha blendera włóż chilli, awokado, sok z limonki, kwaśną śmietanę oraz majonez Hellmann's. Całość zmiksuj I przełóż do miseczki, w której będziesz docelowo podawać."
+                    },
+                    {
+                        "Description":"Tortille przełóż na talerz. Wierzch pokryj przygotowanym mięsem a następnie posyp startym serem. Całość zapiecz ok. 2 minut.Danie udekoruj papryczkami Jalapeno."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"chipsy tortilla",
+                        "Quantity":"1 opakowanie"
+                    },
+                    {
+                        "Name":"Majonez Hellmann’s Oryginalny",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"zielona papryka",
+                        "Quantity":"0,5 sztuki"
+                    },
+                    {
+                        "Name":"oliwa z oliwek",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"ząbek czosnku",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"mielona wołowina",
+                        "Quantity":"250 gram"
+                    },
+                    {
+                        "Name":"Chilli z Indii Knorr",
+                        "Quantity":"1 łyżeczka"
+                    },
+                    {
+                        "Name":"posiekany pęczek kolendry",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"sok z limonki",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"papryczka chilli",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"awokado",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"kwaśna śmietana",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"ser cheddar",
+                        "Quantity":"100 gram"
+                    },
+                    {
+                        "Name":"marynowane paprycznki jalapeno",
+                        "Quantity":"5 sztuk"
+                    }
+                ]
+            },
+            {
+                "Name":"Quesadilla z kurczakiem",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/quesadilla_z_kurczakiem_07634331597059942000.jpg",
+                "Difficulty":"1",
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Warzywa oraz mięso umyj i pokrój w paski."
+                    },
+                    {
+                        "Description":"Na rozgrzanym oleju podsmaż mięso z warzywami, dodaj Fix Knorr oraz masło. Całość smaż aż warzywa zmiękną. Odstaw na bok."
+                    },
+                    {
+                        "Description":"Tortille posypaną startym serem smaż na suchej patelni pojedynczo na złoty kolor."
+                    },
+                    {
+                        "Description":"Na połowie tortilli wyłóż farsz mięsny i zawiń drugą połową. Przekrój na pól i podawaj z kwaśną śmietaną i posiekaną kolendrą."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"pierś z kurczaka",
+                        "Quantity":"400 gram"
+                    },
+                    {
+                        "Name":"papryka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"pieczarki",
+                        "Quantity":"8 sztuk"
+                    },
+                    {
+                        "Name":"ser żółty tarty",
+                        "Quantity":"200 gram"
+                    },
+                    {
+                        "Name":"Fix Smaki Świata Tortilla Meksykańska",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"świeża kolendra posiekana",
+                        "Quantity":"3 łyżki"
+                    },
+                    {
+                        "Name":"kwaśna śmietana",
+                        "Quantity":"4 łyżki"
+                    },
+                    {
+                        "Name":"tortilla",
+                        "Quantity":"4 sztuki"
+                    },
+                    {
+                        "Name":"masło",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"olej",
+                        "Quantity":"5 łyżek"
+                    }
+                ]
+            },
+            {
+                "Name":"Fajita z kurczakiem",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/fajita_z_kurczakiem_08108441597061392000.jpg",
+                "Difficulty":"1",
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Cebulę, paprykę oraz chili pokrój w kostkę. Sałatę porwij na mniejsze kawałki."
+                    },
+                    {
+                        "Description":"Kurczaka pokrój w paski, przełóż do miski, dodaj olej, warzywa oraz Fix Knorr. Dobrze wymieszaj."
+                    },
+                    {
+                        "Description":"Wszystko smaż na rozgrzanej patelni ok.10 min. Pod koniec dodaj papryczkę chili i smaż jeszcze chwilę razem."
+                    },
+                    {
+                        "Description":"Gotową fajite podawaj z rulonami tortilli z sałatą."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"sałata",
+                        "Quantity":"0,5 sztuki"
+                    },
+                    {
+                        "Name":"pierś z kurczaka",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"Fix Smaki Świata Tortilla Meksykańska",
+                        "Quantity":"1 łyżka"
+                    },
+                    {
+                        "Name":"cebula",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"papryka",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"papryczka chilli",
+                        "Quantity":"1 sztuka"
+                    },
+                    {
+                        "Name":"olej",
+                        "Quantity":"3 łyżki"
+                    },
+                    {
+                        "Name":"tortilla",
+                        "Quantity":"4 sztuki"
+                    }
+                ]
+            },
+            {
+                "Name":"Guacamole z grillowanymi warzywami",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/guacamole-z-grillowanymi-warzywami6294451581413135000.jpg",
+                "Difficulty":"1",
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Warzywa obierz i pokrój wzdłuż na mniejsze kawałki. Ułóż na blaszce do pieczenia"
+                    },
+                    {
+                        "Description":"Skrop warzywa oliwą, 4 łyżkami wody i posyp przyprawą do warzyw z grilla Knorr. Lekko wymieszaj i piecz w 200 stopniach przez 25 minut. W między czasie lekko je przemieszaj. Następnie odstaw do ostygnięcia."
+                    },
+                    {
+                        "Description":"Wyciśnij sok z cytryny. Awokado przekrój na pół, pozbądź się pestki i wydrąż Miąższ rozgnieć i dopraw przyprawą Adobo Knorr oraz sokiem z cytryny. Grillowane warzywa podawaj z guacamole."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"dojrzałe awokado",
+                        "Quantity":"2 sztuki"
+                    },
+                    {
+                        "Name":"Przyprawa Adobo Knorr",
+                        "Quantity":"1 łyżeczka"
+                    },
+                    {
+                        "Name":"słodkie ziemniaki",
+                        "Quantity":"400 gram"
+                    },
+                    {
+                        "Name":"buraki",
+                        "Quantity":"400 gram"
+                    },
+                    {
+                        "Name":"korzeń pietruszki",
+                        "Quantity":"300 gram"
+                    },
+                    {
+                        "Name":"Przyprawa do warzyw z grilla Knorr",
+                        "Quantity":"2 łyżeczki"
+                    },
+                    {
+                        "Name":"oliwa",
+                        "Quantity":"3 łyżki"
+                    },
+                    {
+                        "Name":"cytryna",
+                        "Quantity":"1 sztuka"
+                    }
+                ]
+            },
+            {
+                "Name":"Pieczarki pieczone z masłem tymiankowym",
+                "Image":"https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/pieczarki-pieczone-z-maslem-tymiankowym.jpg",
+                "Difficulty":"1",
+                "Time":30,
+                "Steps":[
+                    {
+                        "Description":"Pieczarki myjemy i wyrywamy im nóżki."
+                    },
+                    {
+                        "Description":"Masło rozcieramy z tymiankiem, czosnkiem , sola i pieprzem. Kawałki masła rozkładamy w kapeluszach pieczarek."
+                    },
+                    {
+                        "Description":"Układamy na blaszce i pieczemy 15 min w 180st."
+                    }
+                ],
+                "Ingredients":[
+                    {
+                        "Name":"pieczarki",
+                        "Quantity":"10 sztuk"
+                    },
+                    {
+                        "Name":"masło",
+                        "Quantity":"2 łyżki"
+                    },
+                    {
+                        "Name":"suszony tymianek",
+                        "Quantity":"0,5 łyżki"
+                    },
+                    {
+                        "Name":"sól",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"pieprz",
+                        "Quantity":"1 szczypta"
+                    },
+                    {
+                        "Name":"Przyprawa w Mini kostkach Czosnek Knorr",
+                        "Quantity":"1 sztuka"
                     }
                 ]
             }

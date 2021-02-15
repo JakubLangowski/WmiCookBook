@@ -29,6 +29,7 @@ namespace WmiCookBook.Services
 
             return await queryable
                 .Skip(skip).Take(paginationFilter.PageSize)
+                .OrderBy(x => x.Id)
                 .ToListAsync();
         }
 

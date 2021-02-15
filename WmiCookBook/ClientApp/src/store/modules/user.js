@@ -15,6 +15,8 @@ const getters = {
     isAuthenticated: state => (state.token != null && state.refreshToken != null),
     token: state => state.token,
     id: state => parseInt(state.id),
+    refreshToken: state => state.refreshToken,
+    tokenExpired: state => state.tokenExp,
 };
 
 const mutations = {
@@ -83,7 +85,22 @@ const actions = {
                 reject()
             }
         }))
-    }
+    },
+    refreshToken({commit, state}) {
+        return new Promise(((resolve, reject) => {
+            axios.post('/api/auth/refresh', {
+                token: state.token,
+                refreshToken: state.refreshToken
+            })
+                .then(result => {
+                    commit('setAuthData', result.data);
+                    resolve(result.data.token)
+                })
+                .catch(error => {
+                    reject(error)
+                })
+        }))
+    },
 };
 
 export default {

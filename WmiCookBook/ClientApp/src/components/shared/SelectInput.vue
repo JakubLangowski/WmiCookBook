@@ -1,9 +1,9 @@
 <template>
     <div class="floating-input">
-        <select @change="handleChange" :required="display" @input="handleChange"
+        <select v-model="selected" @change="changed" :required="display" @input="handleChange"
                 :class="(errorMessage) ? 'error' : ''">
             <option value=""></option>
-            <option v-for="(item, index) in data"  :key="index" :value="item[objKey]">{{ item[objValueKey] }}</option>
+            <option v-for="(item, index) in data" :key="index" :value="item[objKey]">{{ item[objValueKey] }}</option>
         </select>
         <label>{{ (label) ? label : '' }}</label>
         <transition>
@@ -18,6 +18,9 @@ import { useField } from "vee-validate";
 export default {
     name: "SelectInput",
     props: {
+        selectedCategory: {
+            required: true,
+        },
         data: {
             type: Array,
             required: true,
@@ -43,6 +46,9 @@ export default {
             default: () => 'name',
         }
     },
+    data: () => ({
+       selected: null, 
+    }),
     setup(props) {
         const {
             value: inputValue,
@@ -58,6 +64,16 @@ export default {
             inputValue,
             meta,
         };
+    },
+    watch: {
+        selectedCategory: function (value) {
+            this.selected = value;
+        }
+    },
+    methods: {
+        changed: function () {
+            this.$emit('changed', this.selected);
+        }
     }
 }
 </script>

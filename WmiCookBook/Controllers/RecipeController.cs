@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
@@ -66,7 +67,7 @@ namespace WmiCookBook.Controllers
         /// <response code="200"></response>
         [SwaggerResponse(200, "", typeof(PagedResponse<List<RecipeResponse>>))]
         //
-        [Authorize]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet(ApiRoutes.Recipe.GetAllNotAccepted)]
         public async Task<IActionResult> GetAllNotAccepted([FromQuery] PaginationQuery paginationQuery)
         {
@@ -168,7 +169,7 @@ namespace WmiCookBook.Controllers
         [SwaggerResponse(400, "", typeof(ErrorResponse))]
         [SwaggerResponse(404)]
         //
-        [Authorize]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPatch(ApiRoutes.Recipe.AddToFeatured)]
         public async Task<IActionResult> AddToFeatured([FromRoute] int recipeId, [FromBody] FeaturedRequest featuredRequest)
         {
@@ -196,7 +197,7 @@ namespace WmiCookBook.Controllers
         [SwaggerResponse(400, "", typeof(ErrorResponse))]
         [SwaggerResponse(404)]
         //
-        [Authorize]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPatch(ApiRoutes.Recipe.AcceptRecipe)]
         public async Task<IActionResult> AcceptRecipe([FromRoute] int recipeId)
         {
@@ -224,7 +225,7 @@ namespace WmiCookBook.Controllers
         [SwaggerResponse(400, "", typeof(ErrorResponse))]
         [SwaggerResponse(404)]
         //
-        [Authorize]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpDelete(ApiRoutes.Recipe.Delete)]
         public async Task<IActionResult> Delete([FromRoute] int recipeId)
         {

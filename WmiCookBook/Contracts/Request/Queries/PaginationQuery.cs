@@ -5,7 +5,7 @@
         public PaginationQuery()
         {
             PageNumber = 1;
-            PageSize = 10;
+            PageSize = 12;
         }
 
         public PaginationQuery(int pageNumber, int pageSize)

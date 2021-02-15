@@ -2,7 +2,7 @@
     <h1 class="text-3xl text-center py-4 font-bold text-gray-500">{{ title }}</h1>
     <div v-if="isLoaded" class="grid grid-cols-12 gap-2">
         <CategoryCard v-for="({id, name, image}, index) in categories" :key="index"
-                    :to="{ name: 'RecipesPage', params: { id: id }}" :name="name" :image="image"/>
+                    :to="{ name: 'RecipesPage', query: { categoryId: id }}" :name="name" :image="image"/>
     </div>
     <div v-else class="grid grid-cols-12 gap-2">
         <CategoryCardSkeletonLoader v-for="index in 4" :key="index" />

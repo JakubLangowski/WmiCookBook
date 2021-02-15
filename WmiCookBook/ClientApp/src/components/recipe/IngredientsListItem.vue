@@ -1,7 +1,9 @@
 <template>
     <tr>
         <td>
-            <CheckboxInput :name="name" :text="name"/>
+            <span class="inline-flex items-center mt-3">
+                <span class="ml-2 font-semibold">{{ name }}</span>
+            </span>
         </td>
         <td>
             {{ quantity }}
@@ -10,11 +12,9 @@
 </template>
 
 <script>
-import CheckboxInput from "@/components/shared/CheckboxInput";
 
 export default {
     name: "IngredientsListItem",
-    components: {CheckboxInput},
     props: {
         name: {
             type: String,

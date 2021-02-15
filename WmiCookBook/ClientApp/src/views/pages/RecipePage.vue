@@ -111,7 +111,9 @@ export default {
                     this.$store.dispatch('toast/successToast', "Przepis zaakceptowano")
                     this.$router.push({ name: "AdminNotAcceptedRecipesPage"})
                 })
-                .catch(() => this.$store.dispatch('toast/errorToast', "Wystąpił błąd podczas akceptowania przepisu"))
+                .catch(() => {
+                    this.$store.dispatch('toast/errorToast', "Wystąpił błąd podczas akceptowania przepisu")
+                })
         },
         showDeleteModal: function () {
             this.$store.dispatch('modal/showModal', {
@@ -125,7 +127,9 @@ export default {
                     this.$store.dispatch('toast/successToast', "Usunięto przepis")
                     this.$router.push({ name: "AdminNotAcceptedRecipesPage"})
                 })
-                .catch(() => this.$store.dispatch('toast/errorToast', "Wystąpił błąd podczas usuwania przepisu"))
+                .catch(() => {
+                    this.$store.dispatch('toast/errorToast', "Wystąpił błąd podczas usuwania przepisu")
+                })
         }
     }
 }

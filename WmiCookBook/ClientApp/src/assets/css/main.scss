@@ -6,3 +6,7 @@
 @import "animations";
 @import "form";
 
+html {
+    scroll-behavior: smooth;
+}
+

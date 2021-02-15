@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
@@ -82,7 +83,7 @@ namespace WmiCookBook.Controllers
         [SwaggerResponse(201, "", typeof(CategoryResponse))]
         [SwaggerResponse(400, "", typeof(ErrorResponse))]
         //
-        [Authorize]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPost(ApiRoutes.Category.Create)]
         public async Task<IActionResult> Create([FromBody] CreateCategoryRequest request)
         {
@@ -109,7 +110,7 @@ namespace WmiCookBook.Controllers
         [SwaggerResponse(400, "", typeof(ErrorResponse))]
         [SwaggerResponse(404)]
         //
-        [Authorize]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpPatch(ApiRoutes.Category.AddToFeatured)]
         public async Task<IActionResult> AddToFeatured([FromRoute] int categoryId, [FromBody] FeaturedRequest featuredRequest)
         {
@@ -137,7 +138,7 @@ namespace WmiCookBook.Controllers
         [SwaggerResponse(400, "", typeof(ErrorResponse))]
         [SwaggerResponse(404)]
         //
-        [Authorize]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpDelete(ApiRoutes.Category.Delete)]
         public async Task<IActionResult> Delete([FromRoute] int categoryId)
         {

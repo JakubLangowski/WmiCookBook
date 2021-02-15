@@ -33,7 +33,7 @@ import TextInput from "@/components/shared/TextInput";
 import { setLocale } from 'yup';
 import CustomButton from "@/components/shared/CustomButton";
 import {reactive} from "@vue/reactivity";
-import {useStore} from "vuex";
+import {mapGetters, useStore} from "vuex";
 import {useRouter} from "vue-router";
 
 setLocale({

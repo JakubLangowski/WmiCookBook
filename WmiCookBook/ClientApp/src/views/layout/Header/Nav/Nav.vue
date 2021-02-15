@@ -23,9 +23,9 @@
           <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div class="flex-shrink-0 flex items-center">
               <img class="block lg:hidden h-12 w-auto"
-                   src="~@/assets/icons/cookbooklogo.svg" alt="Workflow">
+                   src="~@/assets/icons/cookbooklogowhite.svg" alt="Workflow">
               <img class="hidden lg:block h-12"
-                   src="~@/assets/icons/cookbooklogo.svg" alt="Workflow">
+                   src="~@/assets/icons/cookbooklogowhite.svg" alt="Workflow">
             </div>
             <div class="hidden sm:flex items-center sm:ml-6 ">
               <div class="flex space-x-4">
